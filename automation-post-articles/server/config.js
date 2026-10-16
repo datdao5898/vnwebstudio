@@ -6,6 +6,8 @@ export const config = {
   timezone: process.env.APP_TIMEZONE || 'Asia/Ho_Chi_Minh',
   syncEveryMinutes: Number(process.env.SYNC_EVERY_MINUTES || 5),
   dryRun: String(process.env.DRY_RUN ?? 'true').toLowerCase() === 'true',
+  // Trang chủ VN Web Studio, tự chèn vào mọi bài Facebook (xem withSiteLink trong services/facebook.js)
+  siteUrl: process.env.SITE_URL || 'https://datdao5898.github.io/vnwebstudio/',
   lark: {
     appId: process.env.LARK_APP_ID,
     appSecret: process.env.LARK_APP_SECRET,

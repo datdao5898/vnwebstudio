@@ -25,6 +25,16 @@ async function uploadHiddenPhoto(pageId, image) {
   return data.id;
 }
 
+// Bài nào chưa có link trang chủ thì chèn thêm, đặt trước dòng hashtag cuối bài (nếu có).
+export function withSiteLink(message) {
+  if (!config.siteUrl || message.includes(config.siteUrl)) return message;
+  const date = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Ho_Chi_Minh' });
+  const link = `🌐 Xem các mẫu website tại: ${config.siteUrl}?utm_source=facebook&utm_campaign=${date}`;
+  const parts = message.trim().split(/\n\s*\n/);
+  if (parts.length > 1 && parts.at(-1).trim().startsWith('#')) parts.splice(-1, 0, link); else parts.push(link);
+  return parts.join('\n\n');
+}
+
 // draft=true tạo bài chưa đăng (published=false): bài nằm trên Page nhưng không hiện cho người xem.
 // Bài chưa đăng không công khai nên vẫn được tạo thật kể cả khi DRY_RUN=true.
 // images: danh sách { name, path, type } đã kiểm tra bởi resolveImages().
@@ -37,7 +47,7 @@ export async function publishFacebookPost({ pageId, message, draft = false, imag
     const mediaIds = [];
     for (const image of images) mediaIds.push(await uploadHiddenPhoto(targetPageId, image));
 
-    const params = { message, access_token: config.facebook.pageAccessToken };
+    const params = { message: withSiteLink(message), access_token: config.facebook.pageAccessToken };
     if (draft) params.published = false;
     mediaIds.forEach((id, index) => { params[`attached_media[${index}]`] = JSON.stringify({ media_fbid: id }); });
 
