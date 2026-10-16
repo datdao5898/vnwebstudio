@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Tiệm Hoa Mộc — hoa tươi cắt trong ngày, giao trong 2 giờ tại TP.HCM." />
+  <title>Tiệm Hoa Mộc — Hoa tươi giao trong 2 giờ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="logo" href="#top">Tiệm Hoa <i>Mộc</i></a>
+      <nav class="nav" aria-label="Điều hướng">
+        <a href="#shop">Bó hoa</a><a href="#shop">Lẵng & kệ</a><a href="#how">Cách đặt</a><a href="#contact">Liên hệ</a>
+      </nav>
+      <button class="cart-btn" id="openCart" aria-label="Mở giỏ hoa">Giỏ hoa <b id="count">0</b></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <div class="wrap">
+        <div>
+          <div class="eyebrow">Hoa tươi cắt trong ngày · TP. Hồ Chí Minh</div>
+          <h1>Gửi một bó hoa, <em>đến trong 2 giờ.</em></h1>
+          <p>Hoa nhập sáng sớm từ Đà Lạt, bó tay tại tiệm ở Quận 3. Chọn mẫu, ghi lời nhắn, chọn khung giờ giao. Phần còn lại để Mộc lo.</p>
+          <div class="cta">
+            <a class="btn primary" href="#shop">Chọn hoa ngay</a>
+            <a class="btn ghost" href="#how">Xem cách đặt</a>
+          </div>
+          <div class="facts">
+            <div><strong>2 giờ</strong>giao nội thành</div>
+            <div><strong>500.000₫</strong>miễn phí giao từ</div>
+            <div><strong>3 ngày</strong>đổi hoa nếu héo</div>
+          </div>
+        </div>
+        <div class="hero-art" id="heroArt">
+          <div class="tag-float"><strong>Bó “Sớm Mai”</strong>Hồng Ecuador, cát tường, baby trắng</div>
+        </div>
+      </div>
+    </div>
+
+    <section id="shop">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <h2>Hoa theo dịp</h2>
+            <p>Giá đã gồm thiệp viết tay và giấy gói.</p>
+          </div>
+          <label><span class="meta">Sắp xếp </span>
+            <select class="sort" id="sort">
+              <option value="pop">Bán chạy</option>
+              <option value="asc">Giá thấp → cao</option>
+              <option value="desc">Giá cao → thấp</option>
+            </select>
+          </label>
+        </div>
+        <div class="chips" id="chips"></div>
+        <div class="grid" id="grid"></div>
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="wrap">
+        <div class="sec-head"><h2>Đặt hoa trong ba bước</h2></div>
+        <div class="steps">
+          <div class="step"><div class="n">1</div><h3>Chọn mẫu & dịp</h3><p>Lọc theo sinh nhật, khai trương, kỷ niệm. Mỗi mẫu ghi rõ loại hoa và số cành.</p></div>
+          <div class="step"><div class="n">2</div><h3>Ghi lời nhắn</h3><p>Viết lời chúc, Mộc chép tay lên thiệp kraft. Muốn giấu tên người gửi cũng được.</p></div>
+          <div class="step"><div class="n">3</div><h3>Chọn giờ giao</h3><p>Khung 2 tiếng từ 8h đến 20h. Có ảnh chụp bó hoa thật gửi qua Zalo trước khi giao.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="band">
+      <div class="wrap">
+        <h2>Đặt hoa sự kiện, tiệc cưới hay hoa văn phòng theo tháng?</h2>
+        <a class="btn" href="#contact">Nhận báo giá</a>
+      </div>
+    </div>
+  </main>
+
+  <footer id="contact">
+    <div class="wrap">
+      <div>
+        <strong>Tiệm Hoa Mộc</strong>
+        <div>123 Võ Văn Tần, Phường 6, Quận 3, TP.HCM</div>
+        <div>© 2026 Tiệm Hoa Mộc</div>
+      </div>
+      <div><strong>Hotline / Zalo</strong><div class="phone">0909 123 456</div></div>
+      <div><strong>Giờ mở cửa</strong>7:00 – 21:00, cả tuần<br />Nhận đơn gấp đến 19:00</div>
+    </div>
+  </footer>
+
+  <div class="scrim" id="scrim" hidden></div>
+  <aside class="drawer" id="drawer" aria-label="Giỏ hoa" aria-hidden="true">
+    <header><h2>Giỏ hoa</h2><button class="x" id="closeCart" aria-label="Đóng">×</button></header>
+    <div class="items" id="items"></div>
+    <div id="checkout"></div>
+  </aside>
+  <div class="toast" id="toast" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

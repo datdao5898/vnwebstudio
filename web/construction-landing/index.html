@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="K2 Studio — thiết kế, quản lý và thi công công trình." />
+  <title>K2 Studio — Design + Build</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Bebas+Neue&family=DM+Mono:wght@400;500&family=Roboto+Condensed:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Roboto Condensed keeps a firm industrial character while retaining complete Vietnamese glyph coverage. */
+    .hero h1, .statement h2, .work h2, .process h2, .contact h2,
+    .services-heading h2, .service-list h3, .project-info h3, .project-notes h3,
+    .process-items h3 { font-family: "Roboto Condensed", Archivo, sans-serif; font-weight: 700; letter-spacing: -.025em; }
+    .hero h1 { line-height: 1.08; }
+    .statement h2, .work h2, .process h2, .contact h2, .services-heading h2 { line-height: 1.1; }
+    .service-list h3, .project-info h3, .project-notes h3, .process-items h3 { line-height: 1.08; }
+    .contact h2 { font-size: clamp(54px, 7vw, 104px); }
+  </style>
+</head>
+<body>
+  <div class="grain"></div>
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="K2 Studio trang chủ"><b>K2</b><span>STUDIO<br>DESIGN + BUILD</span></a>
+    <nav aria-label="Điều hướng chính"><a href="#work">Công trình</a><a href="#services">Dịch vụ</a><a href="#contact">Liên hệ</a></nav>
+    <button class="menu-toggle" aria-label="Mở menu" aria-expanded="false"><i></i><i></i></button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-meta"><span>HCM / VN</span><span>EST. 2014</span><span>01—06</span></div>
+      <div class="hero-type" aria-hidden="true"><span>FORM</span><span>/FUNCTION</span></div>
+      <div class="hero-visual"><img src="assets/villa-hero.png" alt="Biệt thự hiện đại với vật liệu gỗ và bê tông" /></div>
+      <div class="hero-copy">
+        <p class="mono">DESIGN IS A DECISION.</p>
+        <h1>KIẾN TẠO<br><em>CHẤT SỐNG</em><br>BẰNG HÌNH KHỐI.</h1>
+        <p class="intro">K2 là studio thiết kế và thi công dành cho những công trình có định hướng rõ ràng — từ ý tưởng đầu tiên đến ngày mở cửa.</p>
+        <a class="round-link" href="#work"><span>KHÁM PHÁ<br>DỰ ÁN</span><b>↓</b></a>
+      </div>
+      <p class="hero-side">ARCHITECTURE<br>INTERIOR<br>CONSTRUCTION</p>
+    </section>
+
+    <section class="statement section" id="about">
+      <p class="section-no">[ 01 / ABOUT ]</p>
+      <div class="statement-content reveal"><p class="mono accent">KHÔNG GIAN CÓ LÝ DO ĐỂ TỒN TẠI.</p><h2>Chúng tôi không làm công trình “đẹp cho đủ”. Mỗi đường nét đều bắt đầu từ cách bạn <em>sống, vận hành và cảm nhận.</em></h2></div>
+      <div class="statement-foot"><p>Thiết kế là một hệ thống: ánh sáng, vật liệu, ngân sách, tiến độ và những thói quen rất riêng. K2 giữ tất cả chúng trong cùng một bản vẽ.</p><span class="big-index">K²</span></div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="services-heading"><p class="section-no">[ 02 / EXPERTISE ]</p><h2>ONE TEAM.<br>FULL SCOPE.</h2></div>
+      <div class="service-list">
+        <article class="reveal"><span>01</span><div><h3>Kiến trúc</h3><p>Quy hoạch, công năng, mặt đứng và hồ sơ kỹ thuật phù hợp với bối cảnh thực tế.</p></div><b>↗</b></article>
+        <article class="reveal"><span>02</span><div><h3>Nội thất</h3><p>Không gian có nhịp điệu, tối ưu trải nghiệm và thể hiện đúng cá tính chủ nhân.</p></div><b>↗</b></article>
+        <article class="reveal"><span>03</span><div><h3>Thi công</h3><p>Quản lý hiện trường, ngân sách và chất lượng bằng quy trình minh bạch theo tuần.</p></div><b>↗</b></article>
+      </div>
+    </section>
+
+    <section class="work section" id="work">
+      <div class="work-top"><p class="section-no">[ 03 / SELECTED WORK ]</p><p>06° 14' N / 106° 43' E<br>MADE FOR TROPICAL LIVING</p></div>
+      <div class="work-title"><h2>ĐÚNG BỐI CẢNH.<br><em>ĐÚNG BẢN SẮC.</em></h2><span>2024—26</span></div>
+      <div class="project-layout">
+        <article class="main-project reveal"><div class="image-wrap"><img src="assets/villa-hero.png" alt="Horizon Courtyard Villa" /></div><div class="project-info"><span>01 / BIỆT THỰ</span><h3>Horizon Courtyard</h3><p>Thảo Điền · 490 m² · 2026</p></div></article>
+        <aside class="project-notes reveal"><p>01 / 03</p><h3>NHÀ LÀ MỘT<br>HỆ SINH THÁI<br>RIÊNG.</h3><div class="rule"></div><p>Ánh sáng, khoảng lùi và vườn được tổ chức như ba lớp chuyển tiếp giữa phố xá và nhịp sống riêng tư.</p><a href="#contact">Xem hồ sơ dự án <b>→</b></a></aside>
+      </div>
+      <div class="project-strip"><span>02 — Sora townhouse</span><span>03 — Noli coffee house</span><span>04 — An Lac apartment</span><a href="#contact">TẤT CẢ DỰ ÁN ↗</a></div>
+    </section>
+
+    <section class="numbers">
+      <p class="section-no">[ 04 / IN FIGURES ]</p><div class="number-grid reveal"><div><strong>12</strong><span>Năm kinh nghiệm</span></div><div><strong>86</strong><span>Công trình hoàn thiện</span></div><div><strong>98<span>%</span></strong><span>Khách hàng giới thiệu</span></div></div>
+    </section>
+
+    <section class="process section">
+      <div><p class="section-no">[ 05 / PROCESS ]</p><h2>ÍT BẤT NGỜ.<br><em>NHIỀU MINH BẠCH.</em></h2></div>
+      <div class="process-items"><article class="reveal"><span>01</span><h3>Đọc đề bài</h3><p>Khảo sát, lắng nghe và xác lập bài toán đầu tư trước khi bắt đầu vẽ.</p></article><article class="reveal"><span>02</span><h3>Kiểm chứng thiết kế</h3><p>Phát triển bản vẽ, vật liệu và dự toán thành một phương án khả thi.</p></article><article class="reveal"><span>03</span><h3>Đưa vào thực tế</h3><p>Thi công có kiểm soát, cập nhật tiến độ rõ ràng và nghiệm thu cẩn trọng.</p></article></div>
+    </section>
+
+    <section class="contact" id="contact">
+      <p class="mono">LET'S MAKE IT REAL —</p><h2>BẮT ĐẦU<br><em>MỘT BẢN VẼ</em><br>ĐÁNG NHỚ.</h2>
+      <a class="contact-button" href="mailto:hello@k2studio.vn"><span>GỬI CHO K2<br>Ý TƯỞNG CỦA BẠN</span><b>↗</b></a>
+      <footer><span>© 2026 K2 STUDIO</span><span>HCM, VIETNAM</span><span>INSTAGRAM / FACEBOOK</span></footer>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

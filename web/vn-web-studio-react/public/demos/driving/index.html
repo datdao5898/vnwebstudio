@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Đèn Xanh — học và thi bằng lái xe máy, ô tô. Lộ trình rõ ràng, sân sa hình riêng, lịch học buổi tối và cuối tuần." />
+  <title>Đèn Xanh — Học lái chắc tay, thi một lần là đậu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <a href="#home" class="brand" aria-label="Đèn Xanh — về đầu trang">
+      <span class="light" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="brand-name">Đèn Xanh<small>Trung tâm đào tạo lái xe</small></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#hang-bang">Hạng bằng & học phí</a>
+      <a href="#lo-trinh">Lộ trình</a>
+      <a href="#sa-hinh">Sa hình</a>
+      <a href="#hoi-dap">Hỏi đáp</a>
+    </nav>
+    <a class="hotline" href="tel:0900000000"><span>Hotline</span>0900 000 000</a>
+    <a class="btn btn-blue header-cta" href="#dang-ky">Đăng ký học</a>
+    <button class="menu-button" aria-label="Mở menu" aria-expanded="false" aria-controls="nav">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="kicker"><span class="dot"></span> Khai giảng lớp hạng B ngày 20/10 · còn 6 chỗ</p>
+        <h1><span>Học lái chắc tay.</span> <span>Thi một lần là đậu.</span></h1>
+        <p class="lead">Lý thuyết, mô phỏng, sa hình và đường trường — học đúng thứ tự, tập trên đúng loại xe sẽ thi, với thầy kèm 1:1 từ buổi đầu tiên.</p>
+        <div class="actions">
+          <a class="btn btn-yellow" href="#dang-ky">Đăng ký học thử miễn phí</a>
+          <a class="btn btn-line" href="#hang-bang">Xem học phí</a>
+        </div>
+        <ul class="facts">
+          <li><b>94%</b> học viên đậu ngay lần thi đầu</li>
+          <li><b>Sân riêng</b> sa hình 11 bài tập bất cứ lúc nào</li>
+          <li><b>Tối & cuối tuần</b> lịch học cho người đi làm</li>
+        </ul>
+      </div>
+      <figure class="hero-map" aria-label="Sơ đồ sân sa hình 11 bài với xe tập đang chạy">
+        <div class="map" data-map="hero"></div>
+        <figcaption><span class="pin">▲</span> Sân sa hình Đèn Xanh, Long Biên — mô phỏng đúng 11 bài thi chính thức</figcaption>
+      </figure>
+    </section>
+
+    <section class="signs" aria-label="Cam kết">
+      <div><span class="sign sign-round">40</span><p>Giờ chạy xe trên sân và đường trường cho hạng B, không cắt giờ.</p></div>
+      <div><span class="sign sign-square">P</span><p>Xe tập đời mới có camera lùi, tập đúng mẫu xe trong sân thi.</p></div>
+      <div><span class="sign sign-tri">!</span><p>Thi thử có chấm điểm như thật trước ngày thi chính thức.</p></div>
+    </section>
+
+    <section class="section classes" id="hang-bang">
+      <div class="section-head">
+        <h2>Chọn hạng bằng phù hợp</h2>
+        <p>Học phí trọn gói đã gồm tài liệu, giờ chạy xe, xăng xe và lệ phí hồ sơ. Không phát sinh thêm trừ khi bạn muốn học thêm giờ.</p>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Loại xe">
+        <button role="tab" aria-selected="true" data-group="moto">Xe máy</button>
+        <button role="tab" aria-selected="false" data-group="car">Ô tô</button>
+      </div>
+      <div class="plates">
+        <article class="plate" data-group="moto">
+          <header><span class="class-code">A1</span><span class="tag">Phổ biến</span></header>
+          <h3>Xe máy đến 125 cm³</h3>
+          <p>Cho xe số, xe ga thông dụng như Wave, Vision, Lead.</p>
+          <dl><div><dt>Thời gian</dt><dd>2–3 tuần</dd></div><div><dt>Lý thuyết</dt><dd>250 câu</dd></div></dl>
+          <div class="price"><span>Trọn gói</span><strong>690.000đ</strong></div>
+          <a class="btn btn-blue" href="#dang-ky" data-pick="Hạng A1">Chọn hạng A1</a>
+        </article>
+        <article class="plate" data-group="moto">
+          <header><span class="class-code">A</span></header>
+          <h3>Mô tô trên 125 cm³</h3>
+          <p>Cho xe phân khối lớn, có tập vòng số 8 và đường hẹp với xe thật.</p>
+          <dl><div><dt>Thời gian</dt><dd>4–6 tuần</dd></div><div><dt>Lý thuyết</dt><dd>250 câu</dd></div></dl>
+          <div class="price"><span>Trọn gói</span><strong>2.900.000đ</strong></div>
+          <a class="btn btn-blue" href="#dang-ky" data-pick="Hạng A">Chọn hạng A</a>
+        </article>
+        <article class="plate" data-group="car" hidden>
+          <header><span class="class-code">B</span><span class="tag">Số tự động</span></header>
+          <h3>Ô tô con số tự động</h3>
+          <p>Hợp với người lái xe gia đình trong phố. Nhẹ chân, dễ làm quen.</p>
+          <dl><div><dt>Thời gian</dt><dd>3–4 tháng</dd></div><div><dt>Lý thuyết</dt><dd>600 câu</dd></div></dl>
+          <div class="price"><span>Trọn gói</span><strong>18.500.000đ</strong></div>
+          <a class="btn btn-blue" href="#dang-ky" data-pick="Hạng B số tự động">Chọn B tự động</a>
+        </article>
+        <article class="plate featured" data-group="car" hidden>
+          <header><span class="class-code">B</span><span class="tag">Số sàn</span></header>
+          <h3>Ô tô con số sàn</h3>
+          <p>Lái được cả số sàn lẫn số tự động. Lựa chọn của người chạy dịch vụ.</p>
+          <dl><div><dt>Thời gian</dt><dd>3–4 tháng</dd></div><div><dt>Lý thuyết</dt><dd>600 câu</dd></div></dl>
+          <div class="price"><span>Trọn gói</span><strong>19.900.000đ</strong></div>
+          <a class="btn btn-yellow" href="#dang-ky" data-pick="Hạng B số sàn">Chọn B số sàn</a>
+        </article>
+        <article class="plate" data-group="car" hidden>
+          <header><span class="class-code">C1</span></header>
+          <h3>Xe tải 3,5 – 7,5 tấn</h3>
+          <p>Cho tài xế giao hàng, xe tải nhẹ. Học thêm kỹ năng lùi chuồng.</p>
+          <dl><div><dt>Thời gian</dt><dd>4–5 tháng</dd></div><div><dt>Lý thuyết</dt><dd>600 câu</dd></div></dl>
+          <div class="price"><span>Trọn gói</span><strong>24.500.000đ</strong></div>
+          <a class="btn btn-blue" href="#dang-ky" data-pick="Hạng C1">Chọn hạng C1</a>
+        </article>
+      </div>
+      <p class="note">Học phí tham khảo cho khóa khai giảng tháng 10/2026. Trả góp 0% trong 3 đợt cho hạng B và C1.</p>
+    </section>
+
+    <section class="route" id="lo-trinh">
+      <div class="section-head on-blue">
+        <h2>Bốn chặng, đi đúng thứ tự</h2>
+        <p>Mỗi chặng có bài kiểm tra riêng. Chỉ khi bạn qua chặng trước, thầy mới cho sang chặng sau — nên đến ngày thi không còn gì bất ngờ.</p>
+      </div>
+      <ol class="milestones">
+        <li><span class="km"><b>Km</b>1</span><h3>Lý thuyết</h3><p>Học bộ câu hỏi trên app, có câu điểm liệt được đánh dấu riêng. Thi thử không giới hạn.</p><small>2–3 tuần</small></li>
+        <li><span class="km"><b>Km</b>2</span><h3>Mô phỏng</h3><p>120 tình huống giao thông trên máy tính. Luyện bấm đúng thời điểm để đạt điểm tối đa.</p><small>1 tuần</small></li>
+        <li><span class="km"><b>Km</b>3</span><h3>Sa hình</h3><p>Tập 11 bài trên sân riêng, xe có cảm biến chấm điểm như sân thi thật.</p><small>6–8 tuần</small></li>
+        <li><span class="km"><b>Km</b>4</span><h3>Đường trường</h3><p>Chạy thực tế trong phố, đường đông người và đường cao tốc cùng thầy kèm.</p><small>3–4 tuần</small></li>
+      </ol>
+    </section>
+
+    <section class="section course" id="sa-hinh">
+      <div class="section-head">
+        <h2>11 bài sa hình, bài nào cũng có mẹo</h2>
+        <p>Chọn một bài để xem xe chạy tới đâu và những lỗi thường bị trừ điểm.</p>
+      </div>
+      <div class="course-grid">
+        <ol class="exercise-list" id="exercise-list"></ol>
+        <div class="course-panel">
+          <div class="map" data-map="course"></div>
+          <div class="tip" aria-live="polite">
+            <p class="tip-step" id="tip-step">Bài 1</p>
+            <h3 id="tip-title">Xuất phát</h3>
+            <p id="tip-text"></p>
+            <p class="tip-error" id="tip-error"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stories">
+      <div class="section-head">
+        <h2>Người đã cầm bằng nói gì</h2>
+      </div>
+      <div class="story-list">
+        <figure><blockquote>Mình sợ nhất ghép xe ngang. Thầy cho tập riêng bài đó suốt hai buổi tối, đến ngày thi làm trơn tru luôn.</blockquote><figcaption><b>Thu Hà</b>, nhân viên văn phòng — Hạng B số tự động, đậu lần đầu</figcaption></figure>
+        <figure><blockquote>Lịch học tối thứ 3, thứ 5 và sáng chủ nhật nên không phải xin nghỉ làm buổi nào.</blockquote><figcaption><b>Quang Minh</b>, kỹ sư phần mềm — Hạng B số sàn</figcaption></figure>
+        <figure><blockquote>Thi thử ở sân trung tâm giống y sân thật, vào phòng thi không còn run tay nữa.</blockquote><figcaption><b>Đức Anh</b>, tài xế giao hàng — Hạng C1</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section faq" id="hoi-dap">
+      <div class="section-head">
+        <h2>Câu hỏi hay gặp</h2>
+      </div>
+      <div class="faq-list">
+        <details open><summary>Hồ sơ đăng ký cần những gì?</summary><p>Căn cước công dân, giấy khám sức khỏe cho người lái xe (trung tâm hỗ trợ đặt lịch khám) và ảnh chân dung nền xanh. Bạn chỉ cần mang bản gốc, nhân viên làm hồ sơ giúp.</p></details>
+        <details><summary>Tôi chưa từng cầm vô-lăng, có theo kịp không?</summary><p>Phần lớn học viên hạng B bắt đầu từ con số 0. Năm buổi đầu tập ở sân vắng với thầy kèm riêng, chỉ khi bạn tự tin mới chuyển sang bài sa hình.</p></details>
+        <details><summary>Nếu thi trượt thì sao?</summary><p>Bạn được tập bổ sung miễn phí đúng phần bị trượt và trung tâm đăng ký lại kỳ thi gần nhất. Bạn chỉ đóng lệ phí thi lại theo quy định.</p></details>
+        <details><summary>Có học được vào buổi tối và cuối tuần không?</summary><p>Có. Sân mở cửa đến 21 giờ các ngày trong tuần và cả ngày thứ 7, chủ nhật. Bạn tự chọn ca trên app sau khi nhập học.</p></details>
+      </div>
+    </section>
+
+    <section class="signup" id="dang-ky">
+      <div class="signup-copy">
+        <h2>Bắt đầu bằng một buổi học thử</h2>
+        <p>Để lại số điện thoại, tư vấn viên gọi lại trong 15 phút giờ hành chính để xếp lịch học thử 45 phút trên sân — miễn phí, không ràng buộc.</p>
+        <p class="address">Sân tập: 88 đường Cổ Linh, Long Biên, Hà Nội<br />Văn phòng mở cửa 7:30 – 20:30, cả cuối tuần</p>
+      </div>
+      <form class="signup-form" id="signup-form" novalidate>
+        <label>Họ và tên<input name="name" autocomplete="name" placeholder="Nguyễn Văn An" required /></label>
+        <label>Số điện thoại<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="09xx xxx xxx" required /></label>
+        <label>Hạng bằng muốn học
+          <select name="class" id="class-select">
+            <option>Hạng A1</option><option>Hạng A</option><option>Hạng B số tự động</option><option selected>Hạng B số sàn</option><option>Hạng C1</option><option>Chưa chắc, cần tư vấn</option>
+          </select>
+        </label>
+        <fieldset>
+          <legend>Lịch học mong muốn</legend>
+          <label class="chip"><input type="radio" name="time" value="Ngày thường" checked /><span>Ngày thường</span></label>
+          <label class="chip"><input type="radio" name="time" value="Buổi tối" /><span>Buổi tối</span></label>
+          <label class="chip"><input type="radio" name="time" value="Cuối tuần" /><span>Cuối tuần</span></label>
+        </fieldset>
+        <button class="btn btn-yellow" type="submit">Đặt lịch học thử</button>
+        <p class="form-message" id="form-message" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#home" class="brand"><span class="light" aria-hidden="true"><i></i><i></i><i></i></span><span class="brand-name">Đèn Xanh<small>Trung tâm đào tạo lái xe</small></span></a>
+    <p>© 2026 Đèn Xanh. Thông tin trong trang là nội dung mẫu.</p>
+    <div class="footer-links"><a href="#hang-bang">Học phí</a><a href="#hoi-dap">Hỏi đáp</a><a href="#dang-ky">Đăng ký</a></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

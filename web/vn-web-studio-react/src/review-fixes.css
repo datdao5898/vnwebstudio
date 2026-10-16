@@ -1,0 +1,65 @@
+.desktop-nav-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.mobile-nav-actions {
+  display: none;
+}
+
+.service-card {
+  grid-template-columns: 35px 50px minmax(170px, .9fr) minmax(210px, 1fr) max-content;
+  gap: 14px;
+}
+
+.service-card button {
+  white-space: nowrap;
+}
+
+@media (max-width: 840px) {
+  .desktop-nav-actions {
+    display: none;
+  }
+
+  .header.menu-open + main .hero {
+    padding-top: 265px;
+  }
+
+  .nav.open .mobile-nav-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 3px;
+  }
+
+  .nav.open .mobile-nav-actions .nav-cta {
+    display: block;
+  }
+
+  .service-card {
+    grid-template-columns: 35px 45px minmax(0, 1fr);
+    grid-template-areas:
+      "number icon title"
+      ". . copy";
+    gap: 8px 9px;
+  }
+
+  .service-card > span {
+    grid-area: number;
+  }
+
+  .service-card .service-icon {
+    grid-area: icon;
+  }
+
+  .service-card h3 {
+    grid-area: title;
+    margin: 0;
+  }
+
+  .service-card p {
+    grid-area: copy;
+    max-width: none;
+  }
+}

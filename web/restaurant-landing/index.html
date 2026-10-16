@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BẾP MÙA — nhà hàng Việt đương đại, nấu theo mùa và kể chuyện bằng nguyên liệu bản địa.">
+  <title>BẾP MÙA — Vietnamese Seasonal Kitchen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=DM+Mono:wght@400;500&family=Lora:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="studio-back" href="../vn-web-studio-react/">← VN WEB STUDIO</a>
+  <div class="top-note"><span>NHÀ HÀNG VIỆT ĐƯƠNG ĐẠI · SÀI GÒN</span><span>TRƯA 11:30—14:30 · TỐI 17:30—22:30</span><span>ĐANG NHẬN ĐẶT BÀN</span></div>
+
+  <header class="header">
+    <a class="brand" href="#home"><span>BẾP</span><i></i><span>MÙA</span><small>SEASONAL KITCHEN</small></a>
+    <nav id="navigation" aria-label="Điều hướng chính"><a href="#story">Câu chuyện</a><a href="#menu">Thực đơn</a><a href="#space">Không gian</a><a href="#reserve">Đặt bàn</a></nav>
+    <a class="reserve-top" href="#reserve">ĐẶT BÀN <span>↗</span></a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="navigation">Menu</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">THỰC ĐƠN MÙA HẠ · 2026</p>
+        <h1>Một mùa<br>trên <em>mâm cơm.</em></h1>
+        <p class="hero-intro">Chúng tôi nấu món Việt bằng nguyên liệu đang ở độ ngon nhất — gần gũi trong ký ức, mới mẻ trên bàn ăn.</p>
+        <div class="hero-actions"><a href="#menu">Xem thực đơn mùa <span>→</span></a><a href="#story"><i>↓</i> Câu chuyện của Bếp</a></div>
+        <div class="hero-meta"><span>NGUYÊN LIỆU THÁNG 08</span><p>Sen Đồng Tháp · Tôm sông<br>Bưởi da xanh · Rau vườn</p></div>
+      </div>
+      <figure class="hero-visual reveal">
+        <img src="assets/bep-mua-hero.png" alt="Mâm cơm Việt theo mùa tại nhà hàng Bếp Mùa">
+        <figcaption><span>01 / BỮA CƠM MÙA HẠ</span><span>ẢNH: BẾP MÙA ARCHIVE</span></figcaption>
+        <div class="season-seal"><small>NOW SERVING</small><b>MÙA<br>HẠ</b><span>08 / 26</span></div>
+      </figure>
+      <div class="hero-index">01</div>
+    </section>
+
+    <div class="ingredient-ticker" aria-hidden="true"><div>HẠT SEN NON ✦ BƯỞI DA XANH ✦ TÔM SÔNG ✦ MẮM NHĨ ✦ RAU THƠM ✦ CÁ KHO TỘ ✦ HẠT SEN NON ✦ BƯỞI DA XANH ✦ TÔM SÔNG ✦ MẮM NHĨ ✦ RAU THƠM ✦ CÁ KHO TỘ ✦</div></div>
+
+    <section class="story section" id="story">
+      <div class="story-aside reveal"><p class="eyebrow">02 / CÂU CHUYỆN</p><span>TỪ BẾP NHÀ<br>ĐẾN BÀN ĂN</span></div>
+      <div class="story-main reveal">
+        <h2>Món ăn ngon bắt đầu<br>từ một nguyên liệu <em>đúng mùa.</em></h2>
+        <div class="story-text"><p class="lead">Bếp Mùa tìm về những vùng nguyên liệu nhỏ, gặp người trồng, người đánh bắt và cùng họ chọn điều ngon nhất của từng tháng.</p><p>Chúng tôi giữ lại hương vị quen thuộc của bữa cơm Việt, rồi kể lại bằng cách nấu nhẹ hơn, cân bằng hơn và tôn trọng trọn vẹn tính cách của nguyên liệu.</p></div>
+      </div>
+      <div class="story-stamp reveal"><span>12</span><p>VÙNG NGUYÊN LIỆU<br>ĐỒNG HÀNH CÙNG BẾP</p></div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <header class="menu-head reveal"><div><p class="eyebrow">03 / THỰC ĐƠN</p><h2>Vị của <em>mùa này.</em></h2></div><p>Thực đơn thay đổi theo sản vật mỗi tháng.<br>Giá chưa bao gồm 8% VAT.</p></header>
+      <div class="menu-tabs" role="tablist" aria-label="Nhóm thực đơn"><button class="active" type="button" data-category="signature">Món Bếp Mùa</button><button type="button" data-category="starter">Khai vị</button><button type="button" data-category="main">Món chính</button><button type="button" data-category="dessert">Tráng miệng</button></div>
+      <div class="menu-layout">
+        <div class="menu-note reveal"><span>SET MÙA HẠ</span><strong>680K</strong><p>06 món · dành cho 01 khách<br>Phục vụ từ 17:30 mỗi ngày</p><a href="#reserve">Đặt trải nghiệm set ↗</a></div>
+        <div class="menu-list" aria-live="polite">
+          <article data-menu="signature"><span>01</span><div><h3>Gỏi bưởi &amp; ngó sen</h3><p>Tôm sông · rau răm · đậu phộng rang</p></div><b>185</b></article>
+          <article data-menu="signature"><span>02</span><div><h3>Cá kho tộ Bếp Mùa</h3><p>Cá theo chuyến · tiêu xanh · nước dừa</p></div><b>295</b></article>
+          <article data-menu="signature"><span>03</span><div><h3>Tôm sông nướng lá chuối</h3><p>Muối ớt xanh · rau vườn · chanh giấy</p></div><b>345</b></article>
+          <article data-menu="starter" hidden><span>01</span><div><h3>Cuốn cá lóc nướng</h3><p>Bánh tráng gạo · xoài xanh · mắm me</p></div><b>165</b></article>
+          <article data-menu="starter" hidden><span>02</span><div><h3>Chả giò cua đồng</h3><p>Nấm mèo · bún tàu · rau thơm</p></div><b>155</b></article>
+          <article data-menu="main" hidden><span>01</span><div><h3>Vịt quay mắc mật</h3><p>Khoai môn · cải chua · sốt mận</p></div><b>385</b></article>
+          <article data-menu="main" hidden><span>02</span><div><h3>Bò nướng lá lốt</h3><p>Bún tươi · mỡ hành · mắm nêm</p></div><b>325</b></article>
+          <article data-menu="dessert" hidden><span>01</span><div><h3>Kem sữa gạo rang</h3><p>Chuối caramel · mè đen · gạo nổ</p></div><b>125</b></article>
+          <article data-menu="dessert" hidden><span>02</span><div><h3>Chè hạt sen long nhãn</h3><p>Thạch lá dứa · đường phèn · hoa nhài</p></div><b>115</b></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="space">
+      <header class="gallery-head reveal"><p class="eyebrow">04 / TỪ BẾP ĐẾN BÀN</p><h2>Một bữa ăn,<br><em>nhiều câu chuyện.</em></h2></header>
+      <div class="gallery-grid">
+        <figure class="gallery-item crop-one reveal"><img src="assets/bep-mua-gallery.png" alt="Đầu bếp hoàn thiện món tôm nướng"><figcaption><span>TRONG BẾP</span><b>Ngọn lửa &amp; đôi tay</b></figcaption></figure>
+        <figure class="gallery-item crop-two reveal"><img src="assets/bep-mua-gallery.png" alt="Không gian dùng bữa ấm cúng của Bếp Mùa"><figcaption><span>KHÔNG GIAN</span><b>Một bàn ăn ấm</b></figcaption></figure>
+        <figure class="gallery-item crop-three reveal"><img src="assets/bep-mua-gallery.png" alt="Món gỏi bưởi và ngó sen theo mùa"><figcaption><span>TRÊN ĐĨA</span><b>Vị mùa hạ</b></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="experience section">
+      <p class="eyebrow reveal">05 / TRẢI NGHIỆM</p>
+      <div class="experience-grid">
+        <h2 class="reveal">Dành thời gian<br>cho một bữa ăn <em>thật chậm.</em></h2>
+        <div class="experience-notes reveal"><article><span>01</span><h3>Bữa trưa</h3><p>Thực đơn gọi món nhẹ nhàng cho những cuộc gặp giữa ngày.</p><b>11:30 — 14:30</b></article><article><span>02</span><h3>Bữa tối</h3><p>Set theo mùa và thực đơn gọi món, trong không gian ấm hơn.</p><b>17:30 — 22:30</b></article><article><span>03</span><h3>Bàn riêng</h3><p>Phòng riêng 8–14 khách cho gia đình và những dịp đặc biệt.</p><b>ĐẶT TRƯỚC 24H</b></article></div>
+      </div>
+    </section>
+
+    <section class="reserve" id="reserve">
+      <div class="reserve-copy reveal"><p class="eyebrow">06 / ĐẶT BÀN</p><h2>Hẹn nhau<br><em>một bữa ngon.</em></h2><p>Để Bếp chuẩn bị một chỗ ngồi vừa vặn cho câu chuyện của bạn.</p><div><span>28 Trần Ngọc Diện, Thảo Điền</span><span>0944 190 237</span></div></div>
+      <form class="reserve-form reveal" id="reserve-form">
+        <label>Họ và tên<input name="name" required placeholder="Tên của bạn"></label>
+        <div class="form-row"><label>Ngày<input name="date" required type="date"></label><label>Thời gian<select name="time"><option>11:30</option><option>12:30</option><option>18:00</option><option>19:30</option><option>20:30</option></select></label></div>
+        <div class="form-row"><label>Số khách<select name="guests"><option>2 khách</option><option>3 khách</option><option>4 khách</option><option>5–6 khách</option><option>7+ khách</option></select></label><label>Số điện thoại<input name="phone" required inputmode="tel" placeholder="09xx xxx xxx"></label></div>
+        <label>Ghi chú<textarea name="note" rows="2" placeholder="Dị ứng, dịp đặc biệt hoặc yêu cầu chỗ ngồi"></textarea></label>
+        <button type="submit">GỬI YÊU CẦU ĐẶT BÀN <span>→</span></button>
+        <p class="form-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#home"><span>BẾP</span><i></i><span>MÙA</span></a><p>VIETNAMESE SEASONAL KITCHEN · SAIGON</p><div><a href="#">Instagram</a><a href="#">Facebook</a><a href="#reserve">Đặt bàn</a></div><small>© 2026 BẾP MÙA. CONCEPT BY VN WEB STUDIO.</small></footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "restaurant",
+    "name": "Bếp Mùa",
+    "type": { "en": "Restaurant", "vi": "Nhà hàng" },
+    "description": { "en": "A seasonal Vietnamese kitchen with a signature-dish menu, gallery and table reservation.", "vi": "Nhà hàng món Việt theo mùa với thực đơn món đặc trưng, thư viện ảnh và đặt bàn." }
+  },
+  {
+    "slug": "pt-gym",
+    "name": "K/V Performance",
+    "type": { "en": "Personal Training", "vi": "Huấn luyện cá nhân" },
+    "description": { "en": "A bold personal-training site with a 4-step coaching method, goal picker and 12-week program.", "vi": "Website PT cá nhân mạnh mẽ với phương pháp 4 bước, chọn mục tiêu và lộ trình 12 tuần." }
+  },
+  {
+    "slug": "hair-salon",
+    "name": "NÉT Salon",
+    "type": { "en": "Hair Salon", "vi": "Salon tóc" },
+    "description": { "en": "A calm hair salon site with service picker, today's free slots and stylist booking.", "vi": "Website salon tóc tối giản với chọn dịch vụ, lịch trống trong ngày và đặt stylist." }
+  },
+  {
+    "slug": "flower-shop",
+    "name": "Tiệm Hoa Mộc",
+    "type": { "en": "Flower Shop", "vi": "Tiệm hoa" },
+    "description": { "en": "A fresh flower shop with bouquet catalogue, prices and 2-hour delivery ordering.", "vi": "Tiệm hoa tươi với bộ sưu tập bó hoa, bảng giá và đặt giao hoa trong 2 giờ." }
+  },
+  {
+    "slug": "spa",
+    "name": "Tịnh Thủy Spa",
+    "type": { "en": "Spa & Skincare", "vi": "Spa & chăm sóc da" },
+    "description": { "en": "A West Lake spa with treatment menu, time-slot booking and gift vouchers.", "vi": "Spa bên hồ Tây với bảng liệu trình, đặt giờ hẹn và tặng voucher cho người thương." }
+  },
+  {
+    "slug": "dental-clinic",
+    "name": "Nha khoa An Nhiên",
+    "type": { "en": "Dental Clinic", "vi": "Phòng khám nha khoa" },
+    "description": { "en": "A friendly dental clinic site with clear pricing, a treatment cost calculator and online booking.", "vi": "Phòng khám nha khoa với bảng giá rõ ràng, công cụ tính chi phí điều trị và đặt lịch online." }
+  }
+]

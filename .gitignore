@@ -1,0 +1,17 @@
+# Secrets & local data — never commit
+.env
+.env.local
+*.db
+*.db-journal
+automation-post-articles/data/
+automation-post-articles/daily/logs/
+
+# Dependencies, caches, builds
+node_modules/
+.npm-cache/
+dist/
+.browser-profile/
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini

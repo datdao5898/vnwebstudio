@@ -1,0 +1,35 @@
+{
+  "name": "automation-post-articles",
+  "version": "1.0.0",
+  "description": "Ứng dụng tự động đăng bài từ Lark Base/Lark Drive lên Facebook theo lịch duyệt",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm:server\" \"npm:client\"",
+    "server": "nodemon server/index.js",
+    "client": "vite --host 0.0.0.0 --port 5174",
+    "start": "node server/index.js",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 4174",
+    "test:config": "node server/scripts/check-config.js"
+  },
+  "keywords": ["lark", "facebook", "automation", "scheduler"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "axios": "latest",
+    "better-sqlite3": "latest",
+    "cors": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "node-cron": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "vite": "latest"
+  },
+  "devDependencies": {
+    "concurrently": "latest",
+    "nodemon": "latest"
+  }
+}

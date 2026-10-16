@@ -1,0 +1,60 @@
+@media (min-width: 841px) {
+  .project-grid { grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
+  .project-image { height: 235px; }
+  .project-details { padding: 17px; }
+  .project-details h3 { font-size: 21px; }
+}
+
+.project-card.oxide { border-color: rgba(230, 77, 50, .45); }
+.project-card.oxide:hover { border-color: #ff7258; box-shadow: 0 20px 42px rgba(230, 77, 50, .18); }
+.project-card.oxide .project-image span { border-color: rgba(255, 126, 101, .65); color: #ffd1c7; }
+.project-card.travel { border-color: rgba(236, 186, 112, .44); }
+.project-card.travel:hover { border-color: #f3c673; box-shadow: 0 20px 42px rgba(64, 133, 120, .22); }
+.project-card.travel .project-image span { border-color: rgba(238, 207, 143, .65); color: #ffedbf; }
+.project-card.office { border-color: rgba(201, 240, 93, .42); }
+.project-card.office:hover { border-color: #c9f05d; box-shadow: 0 20px 42px rgba(201, 240, 93, .14); }
+.project-card.office .project-image span { border-color: rgba(201, 240, 93, .72); color: #eaffad; }
+.project-card.portfolio-luxury { border-color: rgba(182, 151, 114, .48); }
+.project-card.portfolio-luxury:hover { border-color: #d6b58d; box-shadow: 0 20px 42px rgba(95, 36, 45, .22); }
+.project-card.portfolio-luxury .project-image { background: #271f1a; }
+.project-card.portfolio-luxury .project-image img { object-position: center 26%; }
+.project-card.portfolio-luxury .project-image span { border-color: rgba(230, 207, 179, .7); color: #f2ddc4; }
+.project-card.portfolio-mc { border-color: rgba(216, 183, 128, .48); }
+.project-card.portfolio-mc:hover { border-color: #d8b780; box-shadow: 0 20px 42px rgba(114, 26, 69, .25); }
+.project-card.portfolio-mc .project-image { background: #191114; }
+.project-card.portfolio-mc .project-image img { object-position: 62% 32%; }
+.project-card.portfolio-mc .project-image span { border-color: rgba(216, 183, 128, .78); color: #ffe0ad; }
+
+.tech-section { padding: 115px 6vw; display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(300px, .65fr); gap: clamp(45px, 8vw, 120px); background: #06142a; }
+.tech-main > h2 { margin: 0; font-size: clamp(48px, 5.4vw, 76px); line-height: .97; letter-spacing: -.06em; }
+.tech-main > h2 em { font-style: normal; background: linear-gradient(90deg, #1573ff, #15d9ff); color: transparent; background-clip: text; }
+.tech-main > p:not(.eyebrow) { max-width: 510px; color: #91a4c1; font-size: 15px; line-height: 1.75; margin: 29px 0 42px; }
+.tech-list { border-top: 1px solid rgba(118, 164, 255, .2); max-width: 680px; }
+.tech-list article { display: grid; grid-template-columns: 52px 1fr; gap: 20px; padding: 21px 0; border-bottom: 1px solid rgba(118, 164, 255, .2); }
+.tech-list article > span { color: #12dfff; font: 10px "DM Mono", monospace; padding-top: 4px; }
+.tech-list h3 { margin: 0 0 7px; font-size: 21px; letter-spacing: -.04em; }
+.tech-list p { margin: 0; color: #8fa0ba; font-size: 12px; line-height: 1.65; max-width: 440px; }
+.rush-card { position: relative; overflow: hidden; align-self: stretch; min-height: 425px; padding: 31px; display: flex; flex-direction: column; border: 1px solid rgba(32, 205, 255, .6); background: linear-gradient(145deg, #0b4dc4, #07235d 72%); box-shadow: inset 0 0 45px rgba(55, 225, 255, .1), 0 0 36px rgba(9, 114, 255, .14); }
+.rush-card > span { color: #bdf8ff; font: 10px "DM Mono", monospace; letter-spacing: .1em; text-transform: uppercase; }
+.rush-card h3 { position: relative; z-index: 1; margin: 50px 0 15px; font-size: clamp(41px, 4vw, 58px); line-height: .93; letter-spacing: -.07em; }
+.rush-card h3 em { font-style: normal; color: #b9f8ff; }
+.rush-card p { position: relative; z-index: 1; color: #c6dcff; font-size: 12px; line-height: 1.65; max-width: 270px; }
+.rush-card button { position: relative; z-index: 1; margin-top: auto; width: 100%; padding: 13px 14px; border: 1px solid #bdf8ff; background: transparent; color: #fff; text-align: left; font-size: 11px; font-weight: 700; cursor: pointer; }
+.rush-card button:hover { background: #12dfff; color: #062050; }
+.rush-card button b { float: right; color: #bdf8ff; font-size: 17px; }
+.rush-orbit { position: absolute; top: -37px; right: -32px; height: 170px; width: 170px; display: grid; place-items: center; border: 1px solid rgba(183, 248, 255, .38); border-radius: 50%; color: #c5f9ff; font: 29px "DM Mono", monospace; transform: rotate(-18deg); }
+
+@media (max-width: 840px) {
+  .tech-section { padding: 78px 7vw; grid-template-columns: 1fr; gap: 45px; }
+  .tech-main > h2 { font-size: 50px; }
+  .rush-card { min-height: 360px; }
+}
+
+.contact-socials { display: flex; gap: 11px; margin-top: 28px; }
+.contact-socials a { display: flex; align-items: center; gap: 8px; color: #cde9ff; font-size: 11px; font-weight: 700; }
+.social-icon { width: 30px; height: 30px; display: grid; place-items: center; border: 1px solid rgba(121, 202, 255, .58); border-radius: 50%; color: #b9f8ff; font-size: 16px; transition: .2s; }
+.social-icon.telegram { font-size: 15px; transform: rotate(-28deg); }
+.social-icon.zalo { font: 700 12px Manrope, Arial, sans-serif; }
+.social-icon.facebook { font: 700 19px Arial, sans-serif; }
+.contact-socials a:hover .social-icon { color: #06142c; border-color: #12dfff; background: #12dfff; transform: translateY(-3px); }
+.contact-socials a:hover .social-icon.telegram { transform: translateY(-3px) rotate(-28deg); }

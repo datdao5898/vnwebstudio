@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NEST Workspaces — dịch vụ thuê văn phòng linh hoạt, văn phòng riêng và trụ sở doanh nghiệp tại TP.HCM.">
+  <title>NEST Workspaces — Không gian làm việc đúng nhịp</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="studio-back" href="../vn-web-studio-react/" aria-label="Quay về VN Web Studio">← VN WEB STUDIO</a>
+
+  <div class="status-strip" aria-hidden="true">
+    <span>Văn phòng sẵn sàng trong 48 giờ</span>
+    <span>•</span>
+    <span>Quận 1 · Thủ Thiêm · Phú Mỹ Hưng</span>
+    <span>•</span>
+    <span>Tham quan không gian miễn phí</span>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="NEST Workspaces trang chủ">
+      <span class="brand-mark"><i></i><i></i><i></i></span>
+      <span>NEST<small>WORKSPACES</small></span>
+    </a>
+    <nav id="site-nav" aria-label="Điều hướng chính">
+      <a href="#spaces">Không gian</a>
+      <a href="#floorplan">Mặt bằng</a>
+      <a href="#locations">Vị trí</a>
+      <a href="#services">Tiện ích</a>
+    </nav>
+    <a class="header-cta" href="#visit">ĐẶT LỊCH THAM QUAN <span>↗</span></a>
+    <button class="menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="site-nav">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <img class="hero-image" src="assets/office-hero.png" alt="Không gian văn phòng hiện đại nhìn ra trung tâm Thành phố Hồ Chí Minh">
+      <div class="hero-shade"></div>
+      <div class="hero-index">01 — NEST / SAIGON</div>
+      <div class="hero-copy reveal">
+        <p class="kicker">VĂN PHÒNG LINH HOẠT · TP.HCM</p>
+        <h1>Không gian đúng.<br><em>Công việc trôi.</em></h1>
+        <p>Một địa chỉ chuyên nghiệp, một nơi đội ngũ muốn đến mỗi ngày và mọi thứ vận hành sẵn từ lúc bạn bước vào.</p>
+      </div>
+      <div class="hero-side-note">38 TẦNG<br>12.400 M²<br>03 VỊ TRÍ</div>
+
+      <form class="space-finder" id="space-finder">
+        <div class="finder-heading">
+          <span>TÌM VĂN PHÒNG</span>
+          <strong>Bắt đầu từ nhu cầu thật.</strong>
+        </div>
+        <label>Vị trí
+          <select name="location">
+            <option value="all">Tất cả vị trí</option>
+            <option value="q1">Quận 1</option>
+            <option value="tt">Thủ Thiêm</option>
+            <option value="pmh">Phú Mỹ Hưng</option>
+          </select>
+        </label>
+        <label>Quy mô
+          <select name="size">
+            <option value="all">Mọi quy mô</option>
+            <option value="small">1–6 người</option>
+            <option value="medium">7–20 người</option>
+            <option value="large">21+ người</option>
+          </select>
+        </label>
+        <button type="submit">XEM KHÔNG GIAN <span>→</span></button>
+      </form>
+    </section>
+
+    <section class="statement section-pad">
+      <div class="section-number">02</div>
+      <p class="eyebrow">KHÔNG CHỈ LÀ MỘT CHỖ NGỒI</p>
+      <h2>Văn phòng phải giúp doanh nghiệp <span>tiến về phía trước.</span></h2>
+      <div class="statement-copy">
+        <p>NEST kết hợp thiết kế, vận hành và dịch vụ trong một trải nghiệm liền mạch. Bạn tập trung vào đội ngũ; chúng tôi lo phần còn lại.</p>
+        <div class="metric"><strong>92%</strong><span>khách hàng gia hạn sau năm đầu tiên</span></div>
+      </div>
+    </section>
+
+    <section class="availability" id="spaces">
+      <header class="availability-head section-pad">
+        <div>
+          <p class="eyebrow">SPACE AVAILABILITY / CẬP NHẬT HÔM NAY</p>
+          <h2>Chọn cách bạn làm việc.</h2>
+        </div>
+        <div class="filter-pills" aria-label="Lọc không gian">
+          <button class="active" data-filter="all">Tất cả</button>
+          <button data-filter="small">1–6 người</button>
+          <button data-filter="medium">7–20 người</button>
+          <button data-filter="large">21+ người</button>
+        </div>
+      </header>
+
+      <div class="space-board">
+        <article class="space-row reveal" data-size="small" data-location="q1">
+          <span class="space-code">N01</span>
+          <div><span class="availability-dot"></span>SẴN SÀNG NGAY</div>
+          <h3>Studio Office</h3>
+          <p>Văn phòng riêng yên tĩnh cho cá nhân hoặc nhóm nhỏ.</p>
+          <strong>1–6 <small>NGƯỜI</small></strong>
+          <span>QUẬN 1</span>
+          <button type="button" data-space="Studio Office">XEM CHI TIẾT ↗</button>
+        </article>
+        <article class="space-row reveal" data-size="medium" data-location="tt">
+          <span class="space-code">N02</span>
+          <div><span class="availability-dot"></span>CÒN 02 PHÒNG</div>
+          <h3>Team Suite</h3>
+          <p>Không gian đồng bộ cho đội ngũ đang tăng trưởng.</p>
+          <strong>7–20 <small>NGƯỜI</small></strong>
+          <span>THỦ THIÊM</span>
+          <button type="button" data-space="Team Suite">XEM CHI TIẾT ↗</button>
+        </article>
+        <article class="space-row reveal" data-size="large" data-location="pmh">
+          <span class="space-code">N03</span>
+          <div><span class="availability-dot amber"></span>NHẬN BÀN GIAO T9</div>
+          <h3>Enterprise Floor</h3>
+          <p>Trọn tầng tùy biến cho thương hiệu và quy trình riêng.</p>
+          <strong>21–80 <small>NGƯỜI</small></strong>
+          <span>PHÚ MỸ HƯNG</span>
+          <button type="button" data-space="Enterprise Floor">XEM CHI TIẾT ↗</button>
+        </article>
+      </div>
+      <p class="finder-result" id="finder-result" role="status"></p>
+    </section>
+
+    <section class="floor-section" id="floorplan">
+      <div class="floor-copy reveal">
+        <p class="eyebrow">MẶT BẰNG TƯƠNG TÁC · TẦNG 18</p>
+        <h2>Mỗi mét vuông<br>đều có lý do.</h2>
+        <p>Chọn một khu vực trên sơ đồ để khám phá cách không gian hỗ trợ những nhịp làm việc khác nhau.</p>
+        <div class="zone-info" id="zone-info">
+          <span>01 / FOCUS</span>
+          <h3>Văn phòng tập trung</h3>
+          <p>Không gian riêng với tiêu âm chủ động, ánh sáng tự nhiên và quyền kiểm soát ra vào.</p>
+        </div>
+      </div>
+      <div class="floor-plan reveal" aria-label="Sơ đồ mặt bằng tầng 18">
+        <div class="plan-label">NEST / FLOOR 18</div>
+        <button class="zone focus active" data-zone="focus"><b>01</b><span>FOCUS</span></button>
+        <button class="zone meet" data-zone="meet"><b>02</b><span>MEET</span></button>
+        <button class="zone social" data-zone="social"><b>03</b><span>SOCIAL</span></button>
+        <button class="zone reset" data-zone="reset"><b>04</b><span>RESET</span></button>
+        <div class="plan-core">CORE<br>18F</div>
+        <div class="plan-grid" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="locations section-pad" id="locations">
+      <div class="locations-title">
+        <p class="eyebrow">03 ĐIỂM CHẠM THÀNH PHỐ</p>
+        <h2>Đặt đội ngũ<br>gần cơ hội.</h2>
+      </div>
+      <div class="location-stack">
+        <article class="location-card reveal">
+          <span>01</span><strong>Q1</strong>
+          <div><h3>Lê Thánh Tôn</h3><p>3 phút đến Metro · View trung tâm</p></div>
+          <b>10.7427° N</b>
+        </article>
+        <article class="location-card reveal">
+          <span>02</span><strong>TT</strong>
+          <div><h3>Thủ Thiêm</h3><p>Ven sông · Kết nối CBD mới</p></div>
+          <b>10.7873° N</b>
+        </article>
+        <article class="location-card reveal">
+          <span>03</span><strong>PMH</strong>
+          <div><h3>Phú Mỹ Hưng</h3><p>Khu đô thị xanh · Bãi đỗ xe riêng</p></div>
+          <b>10.7298° N</b>
+        </article>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="service-marquee" aria-hidden="true"><span>WORK READY · FULLY MANAGED · FLEXIBLE TERMS · WORK READY · FULLY MANAGED · FLEXIBLE TERMS ·</span></div>
+      <div class="service-grid section-pad">
+        <div class="service-intro">
+          <p class="eyebrow">MỌI THỨ ĐÃ SẴN SÀNG</p>
+          <h2>Đến và<br>bắt đầu.</h2>
+        </div>
+        <ul>
+          <li><span>01</span><div><h3>Lễ tân & vận hành</h3><p>Đón khách, thư tín, kỹ thuật và vệ sinh mỗi ngày.</p></div></li>
+          <li><span>02</span><div><h3>Internet doanh nghiệp</h3><p>Hai đường truyền dự phòng, Wi-Fi riêng cho từng đội ngũ.</p></div></li>
+          <li><span>03</span><div><h3>Phòng họp thông minh</h3><p>Đặt phòng tức thì, hội nghị trực tuyến và bảng trình chiếu.</p></div></li>
+          <li><span>04</span><div><h3>Điều khoản linh hoạt</h3><p>Mở rộng hoặc thu gọn diện tích theo đúng nhịp doanh nghiệp.</p></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="visit" id="visit">
+      <div class="visit-orbit" aria-hidden="true"></div>
+      <p class="eyebrow">LỊCH THAM QUAN · 30 PHÚT</p>
+      <h2>Không gian thật.<br><em>Cảm nhận thật.</em></h2>
+      <p>Cho chúng tôi biết quy mô đội ngũ. Một chuyên viên NEST sẽ chuẩn bị đúng không gian để bạn xem.</p>
+      <div class="visit-actions">
+        <a href="https://zalo.me/0944190237" target="_blank" rel="noreferrer">ĐẶT LỊCH QUA ZALO <span>↗</span></a>
+        <a href="https://t.me/daviddao98" target="_blank" rel="noreferrer">TELEGRAM <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#top"><span class="brand-mark"><i></i><i></i><i></i></span><span>NEST<small>WORKSPACES</small></span></a>
+    <p>Văn phòng linh hoạt cho đội ngũ hiện đại.<br>TP. Hồ Chí Minh, Việt Nam.</p>
+    <div><a href="https://zalo.me/0944190237">ZALO</a><a href="https://t.me/daviddao98">TELEGRAM</a><a href="https://www.facebook.com/profile.php?id=61592644081779">FACEBOOK</a></div>
+    <span>© 2026 NEST WORKSPACES</span>
+  </footer>
+
+  <dialog id="space-dialog">
+    <button class="dialog-close" type="button" aria-label="Đóng">×</button>
+    <span>KHÔNG GIAN ĐỀ XUẤT</span>
+    <h2 id="dialog-title">Studio Office</h2>
+    <p>Hãy để lại lời nhắn qua Zalo hoặc Telegram để nhận báo giá và lịch tham quan phù hợp.</p>
+    <div><a href="https://zalo.me/0944190237" target="_blank" rel="noreferrer">ZALO ↗</a><a href="https://t.me/daviddao98" target="_blank" rel="noreferrer">TELEGRAM ↗</a></div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
