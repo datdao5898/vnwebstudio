@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import './styles.css';
 import './portfolio-extra.css';
 import './review-fixes.css';
+import './library.css';
 import demos from './demos.json';
 
 const copy = {
@@ -47,6 +48,7 @@ function App() {
   const [language, setLanguage] = useState('en');
   const [open, setOpen] = useState(false);
   const [sent, setSent] = useState('');
+  const [showAll, setShowAll] = useState(false);
   const t = copy[language];
   const data = localized[language];
   const projects = [...data.projects, language === 'en'
@@ -68,8 +70,11 @@ function App() {
     : { eyebrow: 'Xây để bạn tự chủ động', title: <>Website dễ quản lý,<br /><em>không phụ thuộc.</em></>, text: 'Website được xây trên nền tảng thực tế, dễ sử dụng để các cập nhật thường ngày không cần gọi lập trình viên.', items: [['01', 'Tự cập nhật nội dung', 'Thay đổi chữ, ảnh, menu và ưu đãi bất cứ khi nào doanh nghiệp cần.'], ['02', 'Nền tảng nhanh & ổn định', 'Responsive, sẵn sàng SEO và đủ linh hoạt cho chiến dịch tiếp theo.']], rush: 'Launch Today', rushTitle: <>Cần website<br />trong ngày?</>, rushText: 'Một landing page tập trung cho chiến dịch, sự kiện hoặc ưu đãi — thiết kế và ra mắt trong một ngày làm việc.', rushButton: 'Tư vấn gói làm nhanh' };
   const navigation = language === 'en' ? ['Services', 'UI library', 'Process'] : ['Dịch vụ', 'Kho giao diện', 'Quy trình'];
   const library = language === 'en'
-    ? { eyebrow: 'UI library', title: <>Interface<br /><em>experiments.</em></>, text: 'A growing collection of visual directions for different industries. Open any demo to explore its full experience.', view: 'Open demo', consult: 'Free consultation' }
-    : { eyebrow: 'Kho giao diện demo', title: <>Những giao diện<br /><em>để khám phá.</em></>, text: 'Bộ sưu tập các hướng thiết kế cho nhiều ngành nghề. Mở từng demo để xem trọn vẹn trải nghiệm.', view: 'Mở demo', consult: 'Tư vấn miễn phí' };
+    ? { eyebrow: 'UI library', title: <>Interface<br /><em>experiments.</em></>, text: 'A growing collection of visual directions for different industries. Open any demo to explore its full experience.', view: 'Open demo', consult: 'Free consultation', count: 'templates', latest: 'New', more: (n) => `Show ${n} more templates`, less: 'Show less' }
+    : { eyebrow: 'Kho giao diện demo', title: <>Những giao diện<br /><em>để khám phá.</em></>, text: 'Bộ sưu tập các hướng thiết kế cho nhiều ngành nghề. Mở từng demo để xem trọn vẹn trải nghiệm.', view: 'Mở demo', consult: 'Tư vấn miễn phí', count: 'mẫu giao diện', latest: 'Mới', more: (n) => `Xem thêm ${n} mẫu`, less: 'Thu gọn' };
+  // Mẫu mới nhất (cuối danh sách) hiện trước; ban đầu chỉ hiện 9 thẻ.
+  const libraryItems = projects.map((project, index) => [project, projectMedia[index]]).reverse();
+  const visibleItems = showAll ? libraryItems : libraryItems.slice(0, 9);
 
   useEffect(() => {
     const show = () => document.querySelectorAll('.reveal').forEach((element) => {
@@ -77,7 +82,7 @@ function App() {
     });
     show(); window.addEventListener('scroll', show, { passive: true });
     return () => window.removeEventListener('scroll', show);
-  }, [language]);
+  }, [language, showAll]);
 
   useEffect(() => {
     document.documentElement.lang = language;
@@ -135,7 +140,7 @@ function App() {
       <section className="trust"><span>{t.trust}</span><div><b>STARTUP</b><b>HOSPITALITY</b><b>LOCAL BUSINESS</b><b>CREATORS</b><b>RETAIL</b></div></section>
       <section className="services section" id="services"><div className="section-intro reveal"><p className="eyebrow"><i></i> {t.servicesEyebrow}</p><h2>{t.servicesTitle}</h2><p>{t.servicesText}</p></div><div className="service-list">{data.services.map(([number,title,text]) => <article className="service-card reveal" key={number}><span>{number}</span><div className="service-icon">{number === '01' ? '✦' : number === '02' ? '◫' : '↗'}</div><h3>{title}</h3><p>{text}</p><button onClick={() => scrollTo('#contact')}>{t.serviceButton} <i>→</i></button></article>)}</div></section>
       <section className="tech-section" id="tech"><div className="tech-main"><p className="eyebrow"><i></i> {tech.eyebrow}</p><h2>{tech.title}</h2><p>{tech.text}</p><div className="tech-list">{tech.items.map(([number, title, text]) => <article className="reveal" key={number}><span>{number}</span><div><h3>{title}</h3><p>{text}</p></div></article>)}</div></div><aside className="rush-card reveal"><span>{tech.rush}</span><div className="rush-orbit">24H</div><h3>{tech.rushTitle}</h3><p>{tech.rushText}</p><button onClick={() => scrollTo('#contact')}>{tech.rushButton} <b>↗</b></button></aside></section>
-      <section className="work section" id="work"><div className="work-heading reveal"><div><p className="eyebrow"><i></i> {library.eyebrow}</p><h2>{library.title}</h2></div><p>{library.text}</p></div><div className="project-grid">{projects.map(([type,name,description], index) => <article className={`project-card ${projectMedia[index][2]} reveal`} key={name}><div className="project-image"><img src={projectMedia[index][0]} alt={`${name} website concept`} /><span>{type}</span></div><div className="project-details"><div><h3>{name}</h3><p>{description}</p></div><a href={projectMedia[index][1]} target="_blank" rel="noreferrer">{library.view} <i>↗</i></a></div></article>)}</div></section>
+      <section className="work section" id="work"><div className="work-heading reveal"><div><p className="eyebrow"><i></i> {library.eyebrow}</p><h2>{library.title}</h2></div><div className="work-meta"><p>{library.text}</p><strong>{libraryItems.length} <small>{library.count}</small></strong></div></div><div className="project-grid">{visibleItems.map(([[type, name, description], [image, href, tone]], index) => <article className={`project-card ${tone} reveal`} key={name}><a className="project-image" href={href} target="_blank" rel="noreferrer"><img src={image} alt={`${name} website concept`} loading="lazy" /><span>{type}</span>{index === 0 && <b className="project-new">{library.latest}</b>}</a><div className="project-details"><h3>{name}</h3><p>{description}</p><a href={href} target="_blank" rel="noreferrer">{library.view} <i>↗</i></a></div></article>)}</div>{libraryItems.length > 9 && <div className="project-more"><button onClick={() => setShowAll(!showAll)}>{showAll ? library.less : library.more(libraryItems.length - 9)}</button></div>}</section>
       <section className="process" id="process"><div className="process-intro reveal"><p className="eyebrow"><i></i> {t.processEyebrow}</p><h2>{t.processTitle}</h2></div><div className="process-steps">{data.process.map(([number,title,text]) => <div className="process-step reveal" key={number}><span>{number}</span><h3>{title}</h3><p>{text}</p></div>)}</div></section>
       <section className="testimonial section"><div className="quote-mark">“</div><p className="eyebrow reveal"><i></i> {t.testimonialEyebrow}</p><blockquote className="reveal">{t.quote}</blockquote><div className="quote-by reveal"><span>TM</span><p><strong>Thảo Minh</strong><small>{t.quoteRole}</small></p></div></section>
       <section className="contact" id="contact"><div className="contact-glow"></div><div className="contact-copy reveal"><p className="eyebrow"><i></i> {t.contactEyebrow}</p><h2>{t.contactTitle}</h2><p>{t.contactText}</p><div className="contact-socials"><a href="https://t.me/daviddao98" target="_blank" rel="noreferrer" aria-label="Telegram"><span className="social-icon telegram">➤</span><small>Telegram</small></a><a href="https://zalo.me/0944190237" target="_blank" rel="noreferrer" aria-label="Zalo"><span className="social-icon zalo">Z</span><small>Zalo</small></a><a href="https://www.facebook.com/profile.php?id=61592644081779" target="_blank" rel="noreferrer" aria-label="Facebook"><span className="social-icon facebook">f</span><small>Facebook</small></a></div></div><form className="contact-form reveal" onSubmit={submitForm}><label>{t.name}<input required name="name" placeholder={t.namePlaceholder} /></label><label>{t.email}<input required type="email" name="email" placeholder={t.emailPlaceholder} /></label><label>{t.need}<select name="service"><option>{language === 'en' ? 'A new website' : 'Website mới'}</option><option>{language === 'en' ? 'Landing page design' : 'Thiết kế landing page'}</option><option>{language === 'en' ? 'Website refresh' : 'Làm mới website'}</option><option>{language === 'en' ? 'Not sure yet' : 'Chưa chắc chắn'}</option></select></label><label>{t.note}<textarea name="message" rows="3" placeholder={t.notePlaceholder}></textarea></label><button className="primary-button" type="submit">{t.send} <span>→</span></button>{sent && <p className="success" role="status">{sent}</p>}</form></section>

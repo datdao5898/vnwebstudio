@@ -1,0 +1,32 @@
+/* Kho giao diện: lưới thẻ rộng, dễ đọc (ghi đè styles.css + portfolio-extra.css) */
+.work-meta { display: flex; flex-direction: column; align-items: flex-end; gap: 14px; text-align: right; }
+.work-meta > p { color: #91a4c1; font-size: 15px; line-height: 1.75; max-width: 380px; margin: 0; }
+.work-meta strong { font-size: 40px; line-height: 1; letter-spacing: -.04em; color: #fff; }
+.work-meta strong small { font: 11px "DM Mono", monospace; letter-spacing: .1em; text-transform: uppercase; color: #12dfff; margin-left: 4px; }
+
+.project-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; }
+.project-card { display: flex; flex-direction: column; border-radius: 14px; }
+.project-image { display: block; height: auto; aspect-ratio: 16 / 10; }
+.project-image img { object-position: center top; }
+.project-image span { font-size: 10px; padding: 7px 10px; left: 16px; top: 16px; }
+.project-new { position: absolute; z-index: 2; right: 16px; top: 16px; padding: 6px 11px; border-radius: 99px; background: #12dfff; color: #04122a; font-size: 11px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
+.project-details { flex: 1; display: flex; flex-direction: column; align-items: stretch; gap: 0; padding: 22px 24px 24px; }
+.project-details h3 { font-size: 24px; margin: 0 0 9px; letter-spacing: -.03em; }
+.project-details p { font-size: 14px; line-height: 1.65; color: #9fb0c8; max-width: none; margin: 0 0 22px; }
+.project-details a { margin-top: auto; align-self: flex-start; display: inline-flex; align-items: center; padding: 10px 16px; border: 1px solid rgba(18, 223, 255, .45); border-radius: 99px; font-size: 12px; transition: .2s; }
+.project-details a:hover { background: #12dfff; border-color: #12dfff; color: #04122a; }
+
+.project-more { display: flex; justify-content: center; margin-top: 44px; }
+.project-more button { padding: 14px 28px; border: 1px solid rgba(18, 223, 255, .55); border-radius: 99px; background: transparent; color: #fff; font-family: inherit; font-size: 13px; font-weight: 700; cursor: pointer; transition: .2s; }
+.project-more button:hover { background: #12dfff; color: #04122a; }
+
+@media (max-width: 1100px) {
+  .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 840px) {
+  .work-meta { align-items: flex-start; text-align: left; margin-top: 20px; }
+}
+@media (max-width: 620px) {
+  .project-grid { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .project-details { padding: 20px; }
+}
