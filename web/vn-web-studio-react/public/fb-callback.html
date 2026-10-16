@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <title>Đang kết nối Facebook…</title>
+  <style>body{font-family:system-ui,sans-serif;padding:32px;color:#1d2820;background:#f6f7f4}</style>
+</head>
+<body>
+  <!-- App Meta ở chế độ Live chỉ nhận địa chỉ quay về dạng https, nên Facebook trả về trang này
+       rồi trang chuyển tiếp mã xác thực sang tool đăng bài chạy trên máy (automation-post-articles). -->
+  <p id="msg">Đang chuyển về tool đăng bài trên máy…</p>
+  <script>
+    (function () {
+      var src = new URLSearchParams(location.search);
+      var out = new URLSearchParams();
+      ['code', 'state', 'error', 'error_reason', 'error_description'].forEach(function (key) {
+        if (src.has(key)) out.set(key, src.get(key));
+      });
+      if (!out.has('state')) {
+        document.getElementById('msg').textContent = 'Thiếu dữ liệu xác thực từ Facebook. Hãy bấm kết nối lại trên tool.';
+        return;
+      }
+      location.replace('http://localhost:8655/auth/facebook/callback?' + out.toString());
+    })();
+  </script>
+</body>
+</html>
