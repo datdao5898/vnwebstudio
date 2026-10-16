@@ -50,7 +50,10 @@ try {
     const demoDir = path.join(react, 'public', 'demos', base);
     fs.cpSync(siteDir, demoDir, { recursive: true });
     const demoIndex = path.join(demoDir, 'index.html');
-    fs.writeFileSync(demoIndex, fs.readFileSync(demoIndex, 'utf8').replaceAll('href="../vn-web-studio-react/"', 'href="../../"'));
+    let html = fs.readFileSync(demoIndex, 'utf8').replaceAll('href="../vn-web-studio-react/"', 'href="../../"');
+    // Đếm lượt truy cập bằng GoatCounter (vnwebstudio.goatcounter.com)
+    if (!html.includes('goatcounter')) html = html.replace('</head>', '  <script data-goatcounter="https://vnwebstudio.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>\n</head>');
+    fs.writeFileSync(demoIndex, html);
     shotTo(path.join(react, 'public', 'assets', `${base}-sample.png`), pathToFileURL(demoIndex).href, '1440,815');
     const vi = job.summary || `Mẫu website ${job.industry.toLowerCase()} giao diện máy tính và điện thoại.`;
     demos.push({ slug: base, name: job.brand, type: { en: job.industryEn || job.industry, vi: job.industry }, description: { en: job.summaryEn || vi, vi } });
@@ -77,7 +80,9 @@ pushRepo(`Mẫu website ngày ${date}: ${job.brand}`);
 
 // Chèn link demo + trang chủ vào caption, trước dòng hashtag.
 const homeUrl = process.env.SITE_URL || 'https://datdao5898.github.io/vnwebstudio/';
-const links = `👉 Xem demo: ${homeUrl}demos/${base}/\n🌐 Trang chủ VN Web Studio: ${homeUrl}`;
+// utm_campaign = ngày đăng, để GoatCounter biết bài ngày nào kéo được bao nhiêu lượt vào web.
+const utm = `?utm_source=facebook&utm_campaign=${date}`;
+const links = `👉 Xem demo: ${homeUrl}demos/${base}/${utm}\n🌐 Trang chủ VN Web Studio: ${homeUrl}${utm}`;
 const parts = job.caption.trim().split(/\n\s*\n/);
 if (parts.length > 1 && parts.at(-1).trim().startsWith('#')) parts.splice(-1, 0, links); else parts.push(links);
 const caption = parts.join('\n\n');
