@@ -27,6 +27,8 @@ export function getFacebookAuthorizationUrl() {
     redirect_uri: config.facebook.redirectUri,
     state,
     response_type: 'code',
+    // Luôn hỏi lại quyền và danh sách Page, để tích thêm Page mới (vd. TopKhoaHoc) thay vì dùng lại lựa chọn cũ.
+    auth_type: 'rerequest',
     scope: requiredScopes.join(',')
   });
   return `https://www.facebook.com/${config.facebook.graphVersion}/dialog/oauth?${params}`;
