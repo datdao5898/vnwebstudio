@@ -10,6 +10,7 @@ automation-post-articles/daily/logs/
 node_modules/
 .npm-cache/
 dist/
+dist-ssr/
 .browser-profile/
 *.log
 .DS_Store

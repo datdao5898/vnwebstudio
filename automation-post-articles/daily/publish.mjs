@@ -53,6 +53,8 @@ try {
     let html = fs.readFileSync(demoIndex, 'utf8').replaceAll('href="../vn-web-studio-react/"', 'href="../../"');
     // Đếm lượt truy cập bằng GoatCounter (vnwebstudio.goatcounter.com)
     if (!html.includes('goatcounter')) html = html.replace('</head>', '  <script data-goatcounter="https://vnwebstudio.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>\n</head>');
+    // Thương hiệu trong demo là giả nên không cho Google lập chỉ mục (SEO dồn về trang chủ)
+    if (!html.includes('name="robots"')) html = html.replace('</head>', '  <meta name="robots" content="noindex, follow">\n</head>');
     fs.writeFileSync(demoIndex, html);
     shotTo(path.join(react, 'public', 'assets', `${base}-sample.png`), pathToFileURL(demoIndex).href, '1440,815');
     const vi = job.summary || `Mẫu website ${job.industry.toLowerCase()} giao diện máy tính và điện thoại.`;

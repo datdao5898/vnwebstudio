@@ -30,3 +30,21 @@
   .project-grid { grid-template-columns: minmax(0, 1fr); gap: 20px; }
   .project-details { padding: 20px; }
 }
+
+/* Hỏi đáp (FAQ) */
+.faq { background: #050b17; display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(40px, 7vw, 110px); align-items: start; }
+.faq-intro h2 { font-size: clamp(48px, 5.4vw, 76px); line-height: .97; margin: 0; }
+.faq-list { border-top: 1px solid rgba(118, 164, 255, .2); }
+.faq-item { border-bottom: 1px solid rgba(118, 164, 255, .2); }
+.faq-item summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px 0; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary h3 { margin: 0; font-size: 19px; letter-spacing: -.02em; }
+.faq-item summary span { flex: none; width: 30px; height: 30px; display: grid; place-items: center; border: 1px solid rgba(18, 223, 255, .5); border-radius: 50%; color: #12dfff; font-size: 18px; transition: .2s; }
+.faq-item[open] summary span { transform: rotate(45deg); background: #12dfff; color: #04122a; }
+.faq-item p { margin: 0 0 22px; max-width: 640px; color: #9fb0c8; font-size: 15px; line-height: 1.75; }
+.footer-contact { display: flex; flex-direction: column; gap: 4px; font-style: normal; font-size: 12px; color: #8fa0ba; }
+.footer-contact a { color: #cde9ff; font-weight: 700; }
+@media (max-width: 840px) {
+  .faq { grid-template-columns: minmax(0, 1fr); }
+  .faq-item summary h3 { font-size: 17px; }
+}

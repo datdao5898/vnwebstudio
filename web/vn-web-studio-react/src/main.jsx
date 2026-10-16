@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
-import { createRoot } from 'react-dom/client';
+import { createRoot, hydrateRoot } from 'react-dom/client';
 import './styles.css';
 import './portfolio-extra.css';
 import './review-fixes.css';
 import './library.css';
 import demos from './demos.json';
+import faq from './faq.json';
 
 const copy = {
   en: {
@@ -17,7 +18,7 @@ const copy = {
   },
   vi: {
     availability: 'Đang nhận dự án mới', nav: ['Dịch vụ', 'Dự án', 'Quy trình'], start: 'Bắt đầu dự án',
-    eyebrow: 'Digital design studio · Việt Nam', heroTitle: <>Website giúp<br /><em>doanh nghiệp</em><br />tiến xa hơn.</>, heroText: 'Thiết kế, tối ưu và quản lý website chuyên nghiệp — dành cho những thương hiệu muốn khác biệt, hiệu quả hơn và phát triển bền vững trên nền tảng số.', heroCta: 'Cùng làm website', workCta: 'Xem dự án nổi bật', trusted: 'Được 50+ thương hiệu\ntin tưởng', stats: ['Dự án ra mắt', 'Năm kinh nghiệm', 'Chăm sóc & hỗ trợ'], trust: 'Đồng hành cùng những thương hiệu nghiêm túc với digital',
+    eyebrow: 'Thiết kế website chuyên nghiệp · Việt Nam', heroTitle: <>Website giúp<br /><em>doanh nghiệp</em><br />tiến xa hơn.</>, heroText: 'Thiết kế, tối ưu và quản lý website chuyên nghiệp — dành cho những thương hiệu muốn khác biệt, hiệu quả hơn và phát triển bền vững trên nền tảng số.', heroCta: 'Cùng làm website', workCta: 'Xem dự án nổi bật', trusted: 'Được 50+ thương hiệu\ntin tưởng', stats: ['Dự án ra mắt', 'Năm kinh nghiệm', 'Chăm sóc & hỗ trợ'], trust: 'Đồng hành cùng những thương hiệu nghiêm túc với digital',
     servicesEyebrow: 'Chúng tôi làm gì', servicesTitle: <>Sinh ra để<br /><em>nổi bật.</em></>, servicesText: 'Từ cú cuộn đầu tiên đến cú nhấp cuối cùng, mỗi chi tiết đều có một mục tiêu: giúp thương hiệu được nhớ đến và khách hàng biết bước tiếp theo cần làm.', serviceButton: 'Khám phá dịch vụ',
     workEyebrow: 'Dự án nổi bật', workTitle: <>Những dự án<br /><em>mới nhất.</em></>, workText: 'Ba lĩnh vực khác nhau. Một mục tiêu chung: tạo dấu ấn trực tuyến đúng với thương hiệu.', view: 'Xem dự án',
     processEyebrow: 'Quy trình rõ ràng', processTitle: <>Rõ ràng ngay<br />từ <em>đầu.</em></>, testimonialEyebrow: 'Khách hàng chia sẻ', quote: 'VN Web Studio đã giúp thương hiệu của chúng tôi trông đúng như tiềm năng vốn có. Quy trình rõ ràng, hợp tác sát sao và cực kỳ mượt mà.', quoteRole: 'Founder, thương hiệu lifestyle địa phương',
@@ -31,21 +32,21 @@ const localized = {
 };
 
 const projectMedia = [
-  ['assets/hotel-sample.png','demos/hotel/index.html','gold'],
-  ['assets/milk-tea-sample.png','demos/milk-tea/index.html','pink'],
-  ['assets/tutor-sample.png','demos/tutor/index.html','mint'],
-  ['assets/construction-sample.png','demos/construction/index.html','oxide'],
-  ['assets/travel-sample.png','demos/travel/index.html','travel'],
-  ['demos/office/assets/office-hero.png','demos/office/index.html','office'],
-  ['assets/portfolio-luxury-photographer-sample.png','demos/portfolio-01/index.html','portfolio-luxury'],
-  ['assets/portfolio-wedding-event-mc-sample.png','demos/portfolio-02/index.html','portfolio-mc'],
-  ['assets/driving-sample.png','demos/driving/index.html','driving'],
+  ['assets/hotel-sample.jpg','demos/hotel/index.html','gold'],
+  ['assets/milk-tea-sample.jpg','demos/milk-tea/index.html','pink'],
+  ['assets/tutor-sample.jpg','demos/tutor/index.html','mint'],
+  ['assets/construction-sample.jpg','demos/construction/index.html','oxide'],
+  ['assets/travel-sample.jpg','demos/travel/index.html','travel'],
+  ['assets/office-sample.jpg','demos/office/index.html','office'],
+  ['assets/portfolio-luxury-photographer-sample.jpg','demos/portfolio-01/index.html','portfolio-luxury'],
+  ['assets/portfolio-wedding-event-mc-sample.jpg','demos/portfolio-02/index.html','portfolio-mc'],
+  ['assets/driving-sample.jpg','demos/driving/index.html','driving'],
   // Mẫu thêm từ src/demos.json (job đăng bài hằng ngày tự ghi thêm vào file này)
   ...demos.map(({ slug }) => [`assets/${slug}-sample.png`, `demos/${slug}/index.html`, slug])
 ];
 
 function App() {
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState('vi');
   const [open, setOpen] = useState(false);
   const [sent, setSent] = useState('');
   const [showAll, setShowAll] = useState(false);
@@ -68,7 +69,7 @@ function App() {
   const tech = language === 'en'
     ? { eyebrow: 'Built for your next edit', title: <>A website you can<br /><em>actually run.</em></>, text: 'We build on practical, easy-to-manage foundations — so everyday content changes do not need a developer.', items: [['01', 'Easy content updates', 'Change copy, photos, menus and offers whenever your business needs it.'], ['02', 'Fast, reliable foundation', 'Responsive, SEO-ready and structured to grow with your next campaign.']], rush: 'Launch Today', rushTitle: <>Need it<br />today?</>, rushText: 'A focused landing page for a campaign, event or offer — designed and launched within one working day.', rushButton: 'Ask about one-day launch' }
     : { eyebrow: 'Xây để bạn tự chủ động', title: <>Website dễ quản lý,<br /><em>không phụ thuộc.</em></>, text: 'Website được xây trên nền tảng thực tế, dễ sử dụng để các cập nhật thường ngày không cần gọi lập trình viên.', items: [['01', 'Tự cập nhật nội dung', 'Thay đổi chữ, ảnh, menu và ưu đãi bất cứ khi nào doanh nghiệp cần.'], ['02', 'Nền tảng nhanh & ổn định', 'Responsive, sẵn sàng SEO và đủ linh hoạt cho chiến dịch tiếp theo.']], rush: 'Launch Today', rushTitle: <>Cần website<br />trong ngày?</>, rushText: 'Một landing page tập trung cho chiến dịch, sự kiện hoặc ưu đãi — thiết kế và ra mắt trong một ngày làm việc.', rushButton: 'Tư vấn gói làm nhanh' };
-  const navigation = language === 'en' ? ['Services', 'UI library', 'Process'] : ['Dịch vụ', 'Kho giao diện', 'Quy trình'];
+  const navigation = language === 'en' ? ['Services', 'UI library', 'Process', 'FAQ'] : ['Dịch vụ', 'Kho giao diện', 'Quy trình', 'Hỏi đáp'];
   const library = language === 'en'
     ? { eyebrow: 'UI library', title: <>Interface<br /><em>experiments.</em></>, text: 'A growing collection of visual directions for different industries. Open any demo to explore its full experience.', view: 'Open demo', consult: 'Free consultation', count: 'templates', latest: 'New', more: (n) => `Show ${n} more templates`, less: 'Show less' }
     : { eyebrow: 'Kho giao diện demo', title: <>Những giao diện<br /><em>để khám phá.</em></>, text: 'Bộ sưu tập các hướng thiết kế cho nhiều ngành nghề. Mở từng demo để xem trọn vẹn trải nghiệm.', view: 'Mở demo', consult: 'Tư vấn miễn phí', count: 'mẫu giao diện', latest: 'Mới', more: (n) => `Xem thêm ${n} mẫu`, less: 'Thu gọn' };
@@ -88,12 +89,12 @@ function App() {
     document.documentElement.lang = language;
     document.title = language === 'en'
       ? 'VN Web Studio — Design. Optimize. Grow.'
-      : 'VN Web Studio — Thiết kế, tối ưu và quản lý website';
+      : 'Thiết kế website chuyên nghiệp & landing page | VN Web Studio';
     document.querySelector('meta[name="description"]')?.setAttribute(
       'content',
       language === 'en'
         ? 'Professional website design, optimization, and management by VN Web Studio.'
-        : 'Dịch vụ thiết kế, tối ưu và quản lý website chuyên nghiệp tại VN Web Studio.'
+        : 'Thiết kế website chuyên nghiệp, landing page ra mắt trong 1 ngày, tối ưu tốc độ & SEO và chăm sóc website cho doanh nghiệp Việt Nam. Tư vấn miễn phí.'
     );
   }, [language]);
 
@@ -129,24 +130,32 @@ function App() {
   return <>
     <div className="top-line"><span>VN Web Studio</span><span>Design · Optimize · Grow</span><span>{t.availability}</span></div>
     <header className={open ? 'header menu-open' : 'header'}>
-      <button className="brand" onClick={() => scrollTo('#home')} aria-label="Back to home"><img src="assets/vn-logo.png" alt="VN Web Studio logo" /><span>VN Web Studio<small>Design · Optimize · Grow</small></span></button>
-      <nav className={open ? 'nav open' : 'nav'}><button onClick={() => scrollTo('#services')}>{navigation[0]}</button><button onClick={() => scrollTo('#work')}>{navigation[1]}</button><button onClick={() => scrollTo('#process')}>{navigation[2]}</button><div className="mobile-nav-actions"><button className="nav-cta" onClick={toggleLanguage} aria-label="Change language">{language === 'en' ? 'VI' : 'EN'}</button><button className="nav-cta" onClick={() => scrollTo('#contact')}>{t.start} <span>↗</span></button></div></nav>
+      <button className="brand" onClick={() => scrollTo('#home')} aria-label="Back to home"><img src="assets/vn-logo-256.png" width="40" height="40" alt="VN Web Studio logo" /><span>VN Web Studio<small>Design · Optimize · Grow</small></span></button>
+      <nav className={open ? 'nav open' : 'nav'}><button onClick={() => scrollTo('#services')}>{navigation[0]}</button><button onClick={() => scrollTo('#work')}>{navigation[1]}</button><button onClick={() => scrollTo('#process')}>{navigation[2]}</button><button onClick={() => scrollTo('#faq')}>{navigation[3]}</button><div className="mobile-nav-actions"><button className="nav-cta" onClick={toggleLanguage} aria-label="Change language">{language === 'en' ? 'VI' : 'EN'}</button><button className="nav-cta" onClick={() => scrollTo('#contact')}>{t.start} <span>↗</span></button></div></nav>
       <div className="desktop-nav-actions"><button className="nav-cta" onClick={toggleLanguage} aria-label="Change language">{language === 'en' ? 'VI' : 'EN'}</button><button className="nav-cta" onClick={() => scrollTo('#contact')}>{t.start} <span>↗</span></button></div>
       <button className="mobile-menu" onClick={() => setOpen(!open)} aria-label="Toggle navigation">{open ? '×' : '☰'}</button>
     </header>
 
     <main>
-      <section className="hero" id="home"><div className="hero-grid"></div><div className="orb orb-one"></div><div className="orb orb-two"></div><div className="hero-content reveal"><p className="eyebrow"><i></i> {t.eyebrow}</p><h1>{t.heroTitle}</h1><p className="hero-copy">{t.heroText}</p><div className="hero-actions"><button className="primary-button" onClick={() => scrollTo('#contact')}>{t.heroCta} <span>→</span></button><button className="play-button" onClick={() => scrollTo('#work')}><b>▶</b> {library.eyebrow}</button></div></div><div className="hero-art reveal"><div className="hero-panel"><img src="assets/hero-user-banner.png" alt="VN Web Studio banner artwork" /></div><div className="metric-card"><span>Site health</span><strong>98<small>/100</small></strong><b>● Excellent score</b></div><div className="code-card"><span>&lt;/&gt;</span><code>strategy.<br />design.<br /><i>growth.</i></code></div></div><div className="hero-stats"><div><strong>50<span>+</span></strong><p>{t.stats[0]}</p></div><div><strong>6<span>+</span></strong><p>{t.stats[1]}</p></div><div><strong>FREE</strong><p>{library.consult}</p></div></div></section>
+      <section className="hero" id="home"><div className="hero-grid"></div><div className="orb orb-one"></div><div className="orb orb-two"></div><div className="hero-content reveal"><p className="eyebrow"><i></i> {t.eyebrow}</p><h1>{t.heroTitle}</h1><p className="hero-copy">{t.heroText}</p><div className="hero-actions"><button className="primary-button" onClick={() => scrollTo('#contact')}>{t.heroCta} <span>→</span></button><button className="play-button" onClick={() => scrollTo('#work')}><b>▶</b> {library.eyebrow}</button></div></div><div className="hero-art reveal"><div className="hero-panel"><img src="assets/hero-user-banner.jpg" width="1600" height="900" fetchPriority="high" alt="VN Web Studio — thiết kế website chuyên nghiệp" /></div><div className="metric-card"><span>Site health</span><strong>98<small>/100</small></strong><b>● Excellent score</b></div><div className="code-card"><span>&lt;/&gt;</span><code>strategy.<br />design.<br /><i>growth.</i></code></div></div><div className="hero-stats"><div><strong>50<span>+</span></strong><p>{t.stats[0]}</p></div><div><strong>6<span>+</span></strong><p>{t.stats[1]}</p></div><div><strong>FREE</strong><p>{library.consult}</p></div></div></section>
       <section className="trust"><span>{t.trust}</span><div><b>STARTUP</b><b>HOSPITALITY</b><b>LOCAL BUSINESS</b><b>CREATORS</b><b>RETAIL</b></div></section>
       <section className="services section" id="services"><div className="section-intro reveal"><p className="eyebrow"><i></i> {t.servicesEyebrow}</p><h2>{t.servicesTitle}</h2><p>{t.servicesText}</p></div><div className="service-list">{data.services.map(([number,title,text]) => <article className="service-card reveal" key={number}><span>{number}</span><div className="service-icon">{number === '01' ? '✦' : number === '02' ? '◫' : '↗'}</div><h3>{title}</h3><p>{text}</p><button onClick={() => scrollTo('#contact')}>{t.serviceButton} <i>→</i></button></article>)}</div></section>
       <section className="tech-section" id="tech"><div className="tech-main"><p className="eyebrow"><i></i> {tech.eyebrow}</p><h2>{tech.title}</h2><p>{tech.text}</p><div className="tech-list">{tech.items.map(([number, title, text]) => <article className="reveal" key={number}><span>{number}</span><div><h3>{title}</h3><p>{text}</p></div></article>)}</div></div><aside className="rush-card reveal"><span>{tech.rush}</span><div className="rush-orbit">24H</div><h3>{tech.rushTitle}</h3><p>{tech.rushText}</p><button onClick={() => scrollTo('#contact')}>{tech.rushButton} <b>↗</b></button></aside></section>
       <section className="work section" id="work"><div className="work-heading reveal"><div><p className="eyebrow"><i></i> {library.eyebrow}</p><h2>{library.title}</h2></div><div className="work-meta"><p>{library.text}</p><strong>{libraryItems.length} <small>{library.count}</small></strong></div></div><div className="project-grid">{visibleItems.map(([[type, name, description], [image, href, tone]], index) => <article className={`project-card ${tone} reveal`} key={name}><a className="project-image" href={href} target="_blank" rel="noreferrer"><img src={image} alt={`${name} website concept`} loading="lazy" /><span>{type}</span>{index === 0 && <b className="project-new">{library.latest}</b>}</a><div className="project-details"><h3>{name}</h3><p>{description}</p><a href={href} target="_blank" rel="noreferrer">{library.view} <i>↗</i></a></div></article>)}</div>{libraryItems.length > 9 && <div className="project-more"><button onClick={() => setShowAll(!showAll)}>{showAll ? library.less : library.more(libraryItems.length - 9)}</button></div>}</section>
       <section className="process" id="process"><div className="process-intro reveal"><p className="eyebrow"><i></i> {t.processEyebrow}</p><h2>{t.processTitle}</h2></div><div className="process-steps">{data.process.map(([number,title,text]) => <div className="process-step reveal" key={number}><span>{number}</span><h3>{title}</h3><p>{text}</p></div>)}</div></section>
       <section className="testimonial section"><div className="quote-mark">“</div><p className="eyebrow reveal"><i></i> {t.testimonialEyebrow}</p><blockquote className="reveal">{t.quote}</blockquote><div className="quote-by reveal"><span>TM</span><p><strong>Thảo Minh</strong><small>{t.quoteRole}</small></p></div></section>
+      <section className="faq section" id="faq"><div className="faq-intro reveal"><p className="eyebrow"><i></i> {language === 'en' ? 'FAQ' : 'Câu hỏi thường gặp'}</p><h2>{language === 'en' ? <>Questions,<br /><em>answered.</em></> : <>Hỏi nhanh,<br /><em>đáp rõ.</em></>}</h2></div><div className="faq-list">{faq[language].map(([question, answer], index) => <details className="faq-item reveal" key={question} open={index === 0}><summary><h3>{question}</h3><span aria-hidden="true">+</span></summary><p>{answer}</p></details>)}</div></section>
       <section className="contact" id="contact"><div className="contact-glow"></div><div className="contact-copy reveal"><p className="eyebrow"><i></i> {t.contactEyebrow}</p><h2>{t.contactTitle}</h2><p>{t.contactText}</p><div className="contact-socials"><a href="https://t.me/daviddao98" target="_blank" rel="noreferrer" aria-label="Telegram"><span className="social-icon telegram">➤</span><small>Telegram</small></a><a href="https://zalo.me/0944190237" target="_blank" rel="noreferrer" aria-label="Zalo"><span className="social-icon zalo">Z</span><small>Zalo</small></a><a href="https://www.facebook.com/profile.php?id=61592644081779" target="_blank" rel="noreferrer" aria-label="Facebook"><span className="social-icon facebook">f</span><small>Facebook</small></a></div></div><form className="contact-form reveal" onSubmit={submitForm}><label>{t.name}<input required name="name" placeholder={t.namePlaceholder} /></label><label>{t.email}<input required type="email" name="email" placeholder={t.emailPlaceholder} /></label><label>{t.need}<select name="service"><option>{language === 'en' ? 'A new website' : 'Website mới'}</option><option>{language === 'en' ? 'Landing page design' : 'Thiết kế landing page'}</option><option>{language === 'en' ? 'Website refresh' : 'Làm mới website'}</option><option>{language === 'en' ? 'Not sure yet' : 'Chưa chắc chắn'}</option></select></label><label>{t.note}<textarea name="message" rows="3" placeholder={t.notePlaceholder}></textarea></label><button className="primary-button" type="submit">{t.send} <span>→</span></button>{sent && <p className="success" role="status">{sent}</p>}</form></section>
     </main>
-    <footer><div className="footer-brand"><img src="assets/vn-logo.png" alt="" /><p>VN Web Studio<br /><small>Design · Optimize · Grow</small></p></div><p>© 2026 VN Web Studio. {t.footer}</p><div className="footer-links"><a href="https://t.me/daviddao98" target="_blank" rel="noreferrer" aria-label="Telegram">TG</a><a href="https://zalo.me/0944190237" target="_blank" rel="noreferrer" aria-label="Zalo">Zalo</a><a href="https://www.facebook.com/profile.php?id=61592644081779" target="_blank" rel="noreferrer" aria-label="Facebook">fb</a></div></footer>
+    <footer><div className="footer-brand"><img src="assets/vn-logo-256.png" width="40" height="40" alt="" /><p>VN Web Studio<br /><small>Design · Optimize · Grow</small></p></div><address className="footer-contact"><span>{language === 'en' ? 'Website design studio · Vietnam' : 'Studio thiết kế website · Việt Nam'}</span><a href="tel:+84944190237">0944 190 237</a></address><p>© 2026 VN Web Studio. {t.footer}</p><div className="footer-links"><a href="https://t.me/daviddao98" target="_blank" rel="noreferrer" aria-label="Telegram">TG</a><a href="https://zalo.me/0944190237" target="_blank" rel="noreferrer" aria-label="Zalo">Zalo</a><a href="https://www.facebook.com/profile.php?id=61592644081779" target="_blank" rel="noreferrer" aria-label="Facebook">fb</a></div></footer>
   </>;
 }
 
-createRoot(document.getElementById('root')).render(<App />);
+export default App;
+
+// Bản build có HTML dựng sẵn (scripts/prerender.mjs) thì hydrate, còn lúc dev thì render bình thường.
+if (!import.meta.env.SSR) {
+  const root = document.getElementById('root');
+  if (root.hasChildNodes()) hydrateRoot(root, <App />);
+  else createRoot(root).render(<App />);
+}
