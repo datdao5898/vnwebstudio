@@ -59,8 +59,28 @@ try {
   }
 } catch (err) { console.error('Không thêm được vào trang chủ:', err.message); }
 
+// Đẩy toàn bộ thay đổi lên GitHub; GitHub Actions sẽ build lại trang chủ trên GitHub Pages.
+function pushRepo(message) {
+  const git = (...args) => execFileSync('git', args, { cwd: path.resolve('..'), encoding: 'utf8', env: { ...process.env, GIT_TERMINAL_PROMPT: '0' } });
+  try {
+    git('add', '-A');
+    if (!git('status', '--porcelain').trim()) return;
+    git('commit', '-q', '-m', message);
+    git('push', '-q', 'origin', 'main');
+    console.log('Đã đẩy lên GitHub:', message);
+  } catch (err) { console.error('Đẩy lên GitHub thất bại:', err.message); }
+}
+
 if (job.facebookPostId) { console.log('Hôm nay đã đăng rồi:', job.facebookPostId); process.exit(0); }
 if (!job.caption?.trim()) throw new Error('Caption trống.');
+pushRepo(`Mẫu website ngày ${date}: ${job.brand}`);
+
+// Chèn link demo + trang chủ vào caption, trước dòng hashtag.
+const homeUrl = process.env.SITE_URL || 'https://datdao5898.github.io/vnwebstudio/';
+const links = `👉 Xem demo: ${homeUrl}demos/${base}/\n🌐 Trang chủ VN Web Studio: ${homeUrl}`;
+const parts = job.caption.trim().split(/\n\s*\n/);
+if (parts.length > 1 && parts.at(-1).trim().startsWith('#')) parts.splice(-1, 0, links); else parts.push(links);
+const caption = parts.join('\n\n');
 const siteUrl = pathToFileURL(siteIndex).href;
 
 function shot(file, url, size) {
@@ -100,6 +120,7 @@ const images = [
 console.log('Đã chụp:', images.join(', '));
 
 const draft = String(process.env.DAILY_POST_DRAFT ?? 'true').toLowerCase() !== 'false';
-const result = await publishDirectPost({ title: `Mẫu website ${job.industry} – ${job.brand}`, content: job.caption.trim(), draft, images });
-fs.writeFileSync(outFile, JSON.stringify({ ...job, images, draft, postId: result.id, facebookPostId: result.facebookPostId, dryRun: result.dryRun }, null, 2));
+const result = await publishDirectPost({ title: `Mẫu website ${job.industry} – ${job.brand}`, content: caption, draft, images });
+fs.writeFileSync(outFile, JSON.stringify({ ...job, images, draft, postedCaption: caption, postId: result.id, facebookPostId: result.facebookPostId, dryRun: result.dryRun }, null, 2));
 console.log(draft ? 'Đã lưu nháp trên Page:' : 'Đã đăng lên Page:', result.facebookPostId, result.dryRun ? '(DRY_RUN)' : '');
+pushRepo(`Ghi kết quả đăng bài ngày ${date}`);
