@@ -28,6 +28,10 @@ CREATE TABLE IF NOT EXISTS logs (
   created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 `);
+// Dự án của bài (vnwebstudio, topkhoahoc…), thêm sau nên phải bổ sung cột cho database cũ.
+if (!db.prepare('PRAGMA table_info(posts)').all().some(col => col.name === 'project')) {
+  db.exec(`ALTER TABLE posts ADD COLUMN project TEXT NOT NULL DEFAULT 'vnwebstudio'`);
+}
 
 export function log(level, message, meta = {}) {
   db.prepare('INSERT INTO logs(level, message, meta_json) VALUES (?, ?, ?)')

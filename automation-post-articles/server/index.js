@@ -8,6 +8,7 @@ import { connectFacebookPage, getFacebookAuthorizationUrl, getFacebookConnection
 import { publishDirectPost, publishStoredDraft } from './services/direct-post.js';
 import fs from 'fs';
 import { imagesDir, listImages } from './images.js';
+import { connectedPages, listProjects, setProjectPage } from './projects.js';
 
 const app = express();
 // Chỉ cho phép dashboard của chính app gọi API, chặn trang web lạ đăng bài thay anh.
@@ -45,6 +46,17 @@ app.get('/api/posts', (req, res) => {
   res.json(posts);
 });
 
+app.get('/api/projects', (req, res) => res.json({ projects: listProjects(), pages: connectedPages() }));
+
+app.post('/api/projects/:id/page', (req, res) => {
+  try {
+    const { token, ...project } = setProjectPage(req.params.id, req.body.pageId);
+    res.json(project);
+  } catch (err) {
+    res.status(400).json({ error: err.message });
+  }
+});
+
 app.get('/api/logs', (req, res) => {
   const logs = db.prepare('SELECT * FROM logs ORDER BY id DESC LIMIT 100').all();
   res.json(logs);
@@ -52,7 +64,7 @@ app.get('/api/logs', (req, res) => {
 
 app.post('/api/direct-post', async (req, res) => {
   try {
-    res.json(await publishDirectPost({ title: req.body.title, content: req.body.content, draft: req.body.draft === true, images: req.body.images || [] }));
+    res.json(await publishDirectPost({ project: req.body.project || undefined, title: req.body.title, content: req.body.content, draft: req.body.draft === true, images: req.body.images || [], link: req.body.link || undefined }));
   } catch (err) {
     res.status(500).json({ error: err.message });
   }

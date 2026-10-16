@@ -1,0 +1,27 @@
+// Cho dự án khác (vd. topkhoahoc) đăng bài qua tool này mà không cần mở server. Chạy từ thư mục automation-post-articles:
+//   node server/scripts/post.mjs --project topkhoahoc --message-file bai.txt [--link https://...] [--title "..."] [--draft]
+// In ra một dòng JSON kết quả: {"id":..,"facebookPostId":"..",...}
+import fs from 'fs';
+import { publishDirectPost } from '../services/direct-post.js';
+
+const args = process.argv.slice(2);
+const opt = name => { const i = args.indexOf(`--${name}`); return i >= 0 ? args[i + 1] : undefined; };
+const messageFile = opt('message-file');
+if (!opt('project') || !messageFile) {
+  console.error('Cách dùng: node server/scripts/post.mjs --project <id> --message-file <file> [--link <url>] [--title <tiêu đề>] [--draft]');
+  process.exit(1);
+}
+
+try {
+  const result = await publishDirectPost({
+    project: opt('project'),
+    title: opt('title') || '',
+    content: fs.readFileSync(messageFile, 'utf8'),
+    link: opt('link'),
+    draft: args.includes('--draft')
+  });
+  console.log(JSON.stringify(result));
+} catch (err) {
+  console.error(`Đăng bài thất bại: ${err.message}`);
+  process.exit(1);
+}

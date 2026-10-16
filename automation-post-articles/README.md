@@ -65,13 +65,29 @@ FACEBOOK_GRAPH_VERSION=v20.0
 1. Trong Meta App, thêm `http://localhost:8655/auth/facebook/callback` vào **Facebook Login → Settings → Valid OAuth Redirect URIs**.
 2. Chạy ứng dụng và mở `http://localhost:8655`.
 3. Bấm **Kết nối Facebook Page**, đăng nhập bằng tài khoản có toàn quyền trên Page và đồng ý các quyền được hỏi.
-4. Ứng dụng tự lưu Page Access Token vào `.env`; không hiển thị token trên dashboard hoặc log.
+4. Ứng dụng tự lưu token của các Page vào `data/pages.json` (token Page VN Web Studio vẫn ghi vào `.env`); không hiển thị token trên dashboard hoặc log.
 
 Khi đã sẵn sàng đăng thật, đổi:
 
 ```env
 DRY_RUN=false
 ```
+
+## Nhiều dự án (VN Web Studio, TopKhoaHoc…)
+
+Mỗi dự án đăng lên Facebook Page riêng và tự kèm link trang web riêng ở cuối bài, trước dòng hashtag. Danh sách dự án nằm trong `server/projects.js`.
+
+1. Trên dashboard bấm **Kết nối / xác thực lại Facebook**. Khi Facebook hỏi, tích chọn **tất cả** Page cần dùng.
+2. Tool lưu token của mọi Page vào `data/pages.json` (không commit, token dài hạn).
+3. Ở mục **Dự án & Facebook Page**, chọn Page cho từng dự án. Lựa chọn lưu ở `data/projects.json`.
+
+Dự án khác đăng bài qua dòng lệnh, không cần mở server:
+
+```bash
+node server/scripts/post.mjs --project topkhoahoc --message-file bai.txt --link https://topkhoahoc.online/thuat-ngu/aura
+```
+
+Job hằng ngày của TopKhoaHoc (`topkhoahoc/scripts/facebook-post.mjs`) gọi lệnh này sau khi đăng thuật ngữ lên web.
 
 ## Kiểm thử nhanh không cần token thật
 
@@ -88,6 +104,9 @@ Trên dashboard bấm “Tạo bài demo”, chờ đến giờ đã chọn ho�
 - `GET /api/health`: kiểm tra cấu hình.
 - `GET /api/posts`: danh sách lịch đăng.
 - `GET /api/logs`: log gần đây.
+- `GET /api/projects`: các dự án và Page đã kết nối.
+- `POST /api/projects/:id/page`: chọn Page cho dự án (`{ "pageId": "..." }`).
+- `POST /api/direct-post`: đăng ngay (`project`, `content`, `title`, `images`, `link`, `draft`).
 - `POST /api/sync`: đồng bộ Lark Base thủ công.
 - `POST /api/publish-due`: đăng các bài đến hạn thủ công.
 - `POST /api/posts/demo`: tạo bài demo.

@@ -4,6 +4,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { config } from '../config.js';
+import { savePages } from '../projects.js';
 
 const states = new Map();
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -14,7 +15,6 @@ function assertOAuthConfig() {
   const missing = [];
   if (!config.facebook.appId) missing.push('FACEBOOK_APP_ID');
   if (!config.facebook.appSecret) missing.push('FACEBOOK_APP_SECRET');
-  if (!config.facebook.pageId) missing.push('FACEBOOK_PAGE_ID');
   if (missing.length) throw new Error(`Thiếu cấu hình: ${missing.join(', ')}`);
 }
 
@@ -64,8 +64,13 @@ export async function connectFacebookPage({ code, state }) {
       code
     }
   });
-  const userAccessToken = tokenResponse.data?.access_token;
-  if (!userAccessToken) throw new Error('Facebook không trả user access token.');
+  const shortToken = tokenResponse.data?.access_token;
+  if (!shortToken) throw new Error('Facebook không trả user access token.');
+  // Đổi sang token dài hạn: token Page lấy từ token dài hạn sẽ không hết hạn.
+  const longResponse = await axios.get(`${base}/oauth/access_token`, {
+    params: { grant_type: 'fb_exchange_token', client_id: config.facebook.appId, client_secret: config.facebook.appSecret, fb_exchange_token: shortToken }
+  }).catch(() => null);
+  const userAccessToken = longResponse?.data?.access_token || shortToken;
 
   const pagesResponse = await axios.get(`${base}/me/accounts`, {
     params: {
@@ -73,18 +78,17 @@ export async function connectFacebookPage({ code, state }) {
       access_token: userAccessToken
     }
   });
-  const availablePages = pagesResponse.data?.data || [];
-  const page = availablePages.find(item => String(item.id) === String(config.facebook.pageId));
-  if (!page?.access_token) {
-    const returnedPages = availablePages
-      .map(item => `${item.name || 'Không tên'} (ID: ${item.id}; quyền: ${(item.tasks || []).join(', ') || 'không rõ'})`)
-      .join(' | ') || 'Không có Page nào được Meta trả về cho tài khoản này';
-    throw new Error(`Không tìm thấy Page ID ${config.facebook.pageId} trong danh sách Meta trả về. Danh sách: ${returnedPages}. Hãy kiểm tra FACEBOOK_PAGE_ID hoặc quyền Full control của đúng tài khoản Facebook.`);
-  }
+  const availablePages = (pagesResponse.data?.data || []).filter(item => item.access_token);
+  if (!availablePages.length) throw new Error('Meta không trả về Page nào. Hãy chọn đủ các Page (VN Web Studio, TopKhoaHoc…) khi Facebook hỏi cấp quyền.');
+  // Lưu token của mọi Page được cấp quyền, để mỗi dự án chọn Page riêng trên dashboard.
+  savePages(availablePages.map(item => ({ id: String(item.id), name: item.name || 'Facebook Page', token: item.access_token })));
 
-  await saveEnvValue('FACEBOOK_PAGE_ACCESS_TOKEN', page.access_token);
-  config.facebook.pageAccessToken = page.access_token;
-  return { pageId: page.id, pageName: page.name || 'Facebook Page', connected: true };
+  const page = availablePages.find(item => String(item.id) === String(config.facebook.pageId));
+  if (page) {
+    await saveEnvValue('FACEBOOK_PAGE_ACCESS_TOKEN', page.access_token);
+    config.facebook.pageAccessToken = page.access_token;
+  }
+  return { pageId: availablePages.map(item => item.id).join(', '), pageName: availablePages.map(item => item.name).join(', '), connected: true };
 }
 
 export function getFacebookConnectionStatus() {
