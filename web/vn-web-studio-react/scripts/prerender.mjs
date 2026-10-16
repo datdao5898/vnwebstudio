@@ -31,9 +31,9 @@ const org = {
   slogan: 'Design · Optimize · Grow',
   description: 'Studio thiết kế website tại Việt Nam: thiết kế website và landing page, tối ưu tốc độ & SEO, quản lý và chăm sóc website cho doanh nghiệp, cửa hàng và thương hiệu cá nhân.',
   logo: `${site}assets/vn-logo-256.png`, image: `${site}assets/og-image.jpg`,
-  telephone: '+84944190237', areaServed: { '@type': 'Country', name: 'Việt Nam' },
+  telephone: '+84348644071', areaServed: { '@type': 'Country', name: 'Việt Nam' },
   address: { '@type': 'PostalAddress', addressCountry: 'VN' }, knowsLanguage: ['vi', 'en'],
-  contactPoint: { '@type': 'ContactPoint', telephone: '+84944190237', contactType: 'customer service', availableLanguage: ['Vietnamese', 'English'] },
+  contactPoint: { '@type': 'ContactPoint', telephone: '+84348644071', contactType: 'customer service', availableLanguage: ['Vietnamese', 'English'] },
   sameAs: ['https://www.facebook.com/profile.php?id=61592644081779', 'https://zalo.me/0944190237', 'https://t.me/daviddao98', 'https://github.com/datdao5898/vnwebstudio'],
   hasOfferCatalog: { '@type': 'OfferCatalog', name: 'Dịch vụ website', itemListElement: services.map(([name, description]) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name, description } })) }
 };
@@ -67,7 +67,8 @@ fs.writeFileSync(path.join(dist, 'llms.txt'), `# VN Web Studio
 > Studio thiết kế website tại Việt Nam. Thiết kế website và landing page, tối ưu tốc độ & SEO, quản lý và chăm sóc website cho doanh nghiệp, cửa hàng và thương hiệu cá nhân. Landing page có thể ra mắt trong một ngày làm việc. Tư vấn miễn phí.
 
 - Trang chủ: ${site}
-- Điện thoại / Zalo: 0944 190 237
+- Điện thoại: 0348 644 071
+- Zalo: https://zalo.me/0944190237
 - Telegram: https://t.me/daviddao98
 - Facebook: https://www.facebook.com/profile.php?id=61592644081779
 
