@@ -82,5 +82,17 @@
       "en": "Phin coffee shop template: tabbed menu, live drink builder preview and order-ahead pickup.",
       "vi": "Mẫu quán cà phê phin: thực đơn theo tab, tự pha ly xem trước trực tiếp, đặt trước mang đi."
     }
+  },
+  {
+    "slug": "interior-design",
+    "name": "Ô Cửa Interior",
+    "type": {
+      "en": "Interior Design",
+      "vi": "Thiết kế nội thất"
+    },
+    "description": {
+      "en": "Interior design firm template: live style-switching room preview, per-m² cost estimator and site survey booking.",
+      "vi": "Mẫu công ty nội thất: đổi phong cách xem phòng mẫu trực tiếp, dự toán theo m², đặt lịch khảo sát."
+    }
   }
 ]

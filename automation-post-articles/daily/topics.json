@@ -2,7 +2,7 @@
   { "slug": "spa", "industry": "Spa & chăm sóc da", "done": "2026-10-15" },
   { "slug": "dental-clinic", "industry": "Phòng khám nha khoa", "done": "2026-10-16" },
   { "slug": "coffee-shop", "industry": "Quán cà phê", "done": "2026-10-17" },
-  { "slug": "interior-design", "industry": "Thiết kế nội thất", "done": null },
+  { "slug": "interior-design", "industry": "Thiết kế nội thất", "done": "2026-10-18" },
   { "slug": "real-estate", "industry": "Dự án bất động sản", "done": null },
   { "slug": "kindergarten", "industry": "Trường mầm non", "done": null },
   { "slug": "vet-clinic", "industry": "Phòng khám thú y & pet shop", "done": null },
