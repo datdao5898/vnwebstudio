@@ -94,5 +94,17 @@
       "en": "Interior design firm template: live style-switching room preview, per-m² cost estimator and site survey booking.",
       "vi": "Mẫu công ty nội thất: đổi phong cách xem phòng mẫu trực tiếp, dự toán theo m², đặt lịch khảo sát."
     }
+  },
+  {
+    "slug": "real-estate",
+    "name": "Lam Giang Residence",
+    "type": {
+      "en": "Real Estate Project",
+      "vi": "Dự án bất động sản"
+    },
+    "description": {
+      "en": "Apartment project template: floor plans with price by floor and view, mortgage calculator and show-flat booking.",
+      "vi": "Mẫu dự án căn hộ: xem mặt bằng và giá theo tầng, view; tính khoản vay ngân hàng; đặt lịch xem nhà mẫu."
+    }
   }
 ]
