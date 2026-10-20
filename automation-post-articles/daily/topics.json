@@ -4,7 +4,7 @@
   { "slug": "coffee-shop", "industry": "Quán cà phê", "done": "2026-10-17" },
   { "slug": "interior-design", "industry": "Thiết kế nội thất", "done": "2026-10-18" },
   { "slug": "real-estate", "industry": "Dự án bất động sản", "done": "2026-10-19" },
-  { "slug": "kindergarten", "industry": "Trường mầm non", "done": null },
+  { "slug": "kindergarten", "industry": "Trường mầm non", "done": "2026-10-20" },
   { "slug": "vet-clinic", "industry": "Phòng khám thú y & pet shop", "done": null },
   { "slug": "bakery", "industry": "Tiệm bánh", "done": null },
   { "slug": "wedding-studio", "industry": "Studio ảnh cưới", "done": null },
