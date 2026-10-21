@@ -118,5 +118,17 @@
       "en": "Kindergarten template: classes by age, tuition calculator with meals, a child's daily schedule and school visit booking.",
       "vi": "Mẫu trường mầm non: lớp học theo độ tuổi, tính học phí kèm tiền ăn, lịch một ngày của bé và đặt lịch tham quan."
     }
+  },
+  {
+    "slug": "vet-clinic",
+    "name": "Thú Y Bạn Bốn Chân",
+    "type": {
+      "en": "Vet Clinic & Pet Shop",
+      "vi": "Phòng khám thú y & pet shop"
+    },
+    "description": {
+      "en": "Vet clinic template: dog/cat price list, vaccine schedule by birth date and hourly appointment booking.",
+      "vi": "Mẫu phòng khám thú y: bảng giá theo chó/mèo, tra lịch tiêm phòng theo ngày sinh và đặt lịch khám theo giờ."
+    }
   }
 ]
