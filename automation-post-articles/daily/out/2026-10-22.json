@@ -5,5 +5,15 @@
   "industryEn": "Bakery",
   "summary": "Mẫu tiệm bánh: thực đơn theo giờ ra lò, tự ráp bánh kem xem trước hình và giá, giữ bánh tại quầy.",
   "summaryEn": "Bakery template: menu with bake times, custom cake builder with live preview and price, in-store pastry hold.",
-  "caption": "🎂 Mẫu website tiệm bánh – Tiệm Bánh Mây\n\nKhách đặt bánh kem hay nhắn hỏi cỡ nào đủ cho mấy người, thêm dâu thì bao nhiêu tiền, còn người mua bánh mì chỉ muốn biết mấy giờ có mẻ nóng. Website trả lời sẵn hết, tiệm chỉ việc nhận đơn.\n\n✔ Tự ráp bánh kem: chọn cỡ, cốt, kem, topping, xem hình bánh và giá ngay\n✔ Thực đơn theo tab, mỗi món ghi giờ ra lò và mẻ kế tiếp\n✔ Giữ bánh tại quầy trước khi ghé lấy\n✔ Đặt bánh trước 24 giờ, chọn ngày nhận, lấy tại tiệm hoặc giao tận nơi\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n#thietkeweb #websitetiembanh #banhkem #vnwebstudio"
+  "caption": "🎂 Mẫu website tiệm bánh – Tiệm Bánh Mây\n\nKhách đặt bánh kem hay nhắn hỏi cỡ nào đủ cho mấy người, thêm dâu thì bao nhiêu tiền, còn người mua bánh mì chỉ muốn biết mấy giờ có mẻ nóng. Website trả lời sẵn hết, tiệm chỉ việc nhận đơn.\n\n✔ Tự ráp bánh kem: chọn cỡ, cốt, kem, topping, xem hình bánh và giá ngay\n✔ Thực đơn theo tab, mỗi món ghi giờ ra lò và mẻ kế tiếp\n✔ Giữ bánh tại quầy trước khi ghé lấy\n✔ Đặt bánh trước 24 giờ, chọn ngày nhận, lấy tại tiệm hoặc giao tận nơi\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n#thietkeweb #websitetiembanh #banhkem #vnwebstudio",
+  "images": [
+    "bakery-01-tong-quan.png",
+    "bakery-02-trang-chu.png",
+    "bakery-03-dien-thoai.png"
+  ],
+  "draft": false,
+  "postedCaption": "🎂 Mẫu website tiệm bánh – Tiệm Bánh Mây\n\nKhách đặt bánh kem hay nhắn hỏi cỡ nào đủ cho mấy người, thêm dâu thì bao nhiêu tiền, còn người mua bánh mì chỉ muốn biết mấy giờ có mẻ nóng. Website trả lời sẵn hết, tiệm chỉ việc nhận đơn.\n\n✔ Tự ráp bánh kem: chọn cỡ, cốt, kem, topping, xem hình bánh và giá ngay\n✔ Thực đơn theo tab, mỗi món ghi giờ ra lò và mẻ kế tiếp\n✔ Giữ bánh tại quầy trước khi ghé lấy\n✔ Đặt bánh trước 24 giờ, chọn ngày nhận, lấy tại tiệm hoặc giao tận nơi\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n👉 Xem demo: https://datdao5898.github.io/vnwebstudio/demos/bakery/?utm_source=facebook&utm_campaign=2026-10-22\n🌐 Trang chủ VN Web Studio: https://datdao5898.github.io/vnwebstudio/?utm_source=facebook&utm_campaign=2026-10-22\n\n#thietkeweb #websitetiembanh #banhkem #vnwebstudio",
+  "postId": 36,
+  "facebookPostId": "1220847914452015_122123948067421469",
+  "dryRun": false
 }
