@@ -130,5 +130,17 @@
       "en": "Vet clinic template: dog/cat price list, vaccine schedule by birth date and hourly appointment booking.",
       "vi": "Mẫu phòng khám thú y: bảng giá theo chó/mèo, tra lịch tiêm phòng theo ngày sinh và đặt lịch khám theo giờ."
     }
+  },
+  {
+    "slug": "bakery",
+    "name": "Tiệm Bánh Mây",
+    "type": {
+      "en": "Bakery",
+      "vi": "Tiệm bánh"
+    },
+    "description": {
+      "en": "Bakery template: menu with bake times, custom cake builder with live preview and price, in-store pastry hold.",
+      "vi": "Mẫu tiệm bánh: thực đơn theo giờ ra lò, tự ráp bánh kem xem trước hình và giá, giữ bánh tại quầy."
+    }
   }
 ]

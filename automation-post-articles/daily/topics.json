@@ -6,7 +6,7 @@
   { "slug": "real-estate", "industry": "Dự án bất động sản", "done": "2026-10-19" },
   { "slug": "kindergarten", "industry": "Trường mầm non", "done": "2026-10-20" },
   { "slug": "vet-clinic", "industry": "Phòng khám thú y & pet shop", "done": "2026-10-21" },
-  { "slug": "bakery", "industry": "Tiệm bánh", "done": null },
+  { "slug": "bakery", "industry": "Tiệm bánh", "done": "2026-10-22" },
   { "slug": "wedding-studio", "industry": "Studio ảnh cưới", "done": null },
   { "slug": "yoga-studio", "industry": "Phòng tập yoga", "done": null },
   { "slug": "english-center", "industry": "Trung tâm tiếng Anh", "done": null },
