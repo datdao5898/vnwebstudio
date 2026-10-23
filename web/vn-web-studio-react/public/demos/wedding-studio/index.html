@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Hẹn Ước Studio — chụp ảnh cưới studio, phim trường và ngoại cảnh Đà Lạt, Hội An, Phú Quốc. Báo giá trọn gói, giao album sau 21 ngày." />
+  <title>Hẹn Ước Studio — Ảnh cưới trọn gói, rõ giá từ đầu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script data-goatcounter="https://vnwebstudio.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  <meta name="robots" content="noindex, follow">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="logo" href="#top"><span class="ring" aria-hidden="true"></span>Hẹn Ước <small>Studio</small></a>
+      <nav class="nav" aria-label="Điều hướng">
+        <a href="#packages">Bảng giá</a><a href="#estimate">Dự toán</a><a href="#process">Quy trình</a><a href="#stories">Cặp đôi</a>
+      </nav>
+      <a class="btn small primary" href="#estimate">Đặt lịch tư vấn</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-copy">
+          <div class="eyebrow">Studio ảnh cưới · Quận 1, TP. Hồ Chí Minh</div>
+          <h1>Ảnh cưới đẹp như ngày hẹn ước, <em>giá rõ từ buổi đầu.</em></h1>
+          <p>Chụp studio, phim trường hay ngoại cảnh Đà Lạt, Hội An, Phú Quốc. Báo giá trọn gói gồm váy, vest, make-up và album, không phát sinh ngày chụp.</p>
+          <div class="cta">
+            <a class="btn primary" href="#estimate">Tính chi phí gói cưới</a>
+            <a class="btn ghost" href="#packages">Xem bảng giá</a>
+          </div>
+        </div>
+        <div class="frames" id="heroFrames" aria-hidden="true"></div>
+        <div class="hero-facts">
+          <div><strong>1.800+</strong>cặp đôi đã chụp</div>
+          <div><strong>21 ngày</strong>nhận album hoàn thiện</div>
+          <div><strong>4,9/5</strong>trên 620 đánh giá Google</div>
+          <div><strong>0₫</strong>phát sinh ngày chụp</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="packages">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <span class="kicker">Bảng giá 2026</span>
+            <h2>Chọn gói theo kiểu chụp</h2>
+          </div>
+          <p>Giá trọn gói đã gồm thuế. Đặt cọc 30% để giữ lịch, phần còn lại thanh toán khi nhận ảnh.</p>
+        </div>
+        <div class="tabs" role="tablist" id="tabs"></div>
+        <div class="pk-grid" id="pkGrid"></div>
+        <p class="pk-note">Gói ngoại cảnh đã gồm đi lại, lưu trú của ê-kíp và phí địa điểm. Vé máy bay, khách sạn của cô dâu chú rể tự túc hoặc nhờ studio đặt giúp.</p>
+      </div>
+    </section>
+
+    <section id="estimate" class="estimate">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <span class="kicker">Dự toán trong 1 phút</span>
+            <h2>Gói cưới của hai bạn hết bao nhiêu?</h2>
+          </div>
+          <p>Chọn gói chụp, thêm dịch vụ cần dùng. Giá cập nhật ngay, kèm số tiền cọc và ngày nhận album.</p>
+        </div>
+        <div class="calc">
+          <div class="calc-left">
+            <h3>1. Gói chụp pre-wedding</h3>
+            <div class="opts" id="baseOpts"></div>
+            <h3>2. Thêm dịch vụ</h3>
+            <div class="addons" id="addons"></div>
+          </div>
+          <aside class="bill" aria-live="polite">
+            <div class="bill-art" id="billArt"></div>
+            <div id="billLines"></div>
+            <form class="book" id="book">
+              <div class="two">
+                <label>Tên cô dâu & chú rể<input id="f-name" required value="Ngọc Anh & Minh Khoa" /></label>
+                <label>Số điện thoại<input id="f-phone" required inputmode="tel" value="0938 214 667" /></label>
+              </div>
+              <label>Ngày muốn chụp<input id="f-date" type="date" required /></label>
+              <button class="btn primary full" type="submit">Giữ lịch tư vấn</button>
+            </form>
+            <div class="ok" id="ok" hidden></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <span class="kicker">Quy trình</span>
+            <h2>Từ buổi cà phê đầu tiên đến cuốn album</h2>
+          </div>
+        </div>
+        <ol class="timeline">
+          <li><span class="day">Ngày 0</span><h3>Tư vấn & chọn concept</h3><p>Gặp tại studio hoặc gọi video. Xem album mẫu, chốt địa điểm, số trang phục và tông màu.</p></li>
+          <li><span class="day">Tuần 1</span><h3>Thử váy, chốt lịch</h3><p>Thử 3 váy và 2 vest trong kho hơn 300 mẫu. Đặt cọc 30%, nhận lịch trình chụp chi tiết qua Zalo.</p></li>
+          <li><span class="day">Ngày chụp</span><h3>Make-up & chụp</h3><p>Make-up từ 5h sáng để bắt nắng đẹp. Ê-kíp gồm nhiếp ảnh, trợ lý ánh sáng, make-up đi theo cả buổi.</p></li>
+          <li><span class="day">+7 ngày</span><h3>Chọn ảnh</h3><p>Nhận toàn bộ file gốc qua Google Drive, đánh dấu ảnh thích. Được đổi ảnh chỉnh 1 lần miễn phí.</p></li>
+          <li><span class="day">+21 ngày</span><h3>Nhận album</h3><p>Album in giấy lụa Fuji, ảnh phóng gỗ và file chỉnh màu độ phân giải cao. Giao tận nhà nội thành.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="stories" class="stories">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <span class="kicker">Cặp đôi nói gì</span>
+            <h2>Những lời hẹn ước đã thành ảnh</h2>
+          </div>
+        </div>
+        <div class="quotes">
+          <figure>
+            <blockquote>“Chụp Đà Lạt 2 ngày mà không phải lo gì. Ê-kíp đặt sẵn xe, canh giờ sương ở hồ Tuyền Lâm, mẹ mình xem album khóc luôn.”</blockquote>
+            <figcaption><b>Thảo Vy & Đức Huy</b>Gói Ngoại cảnh Đà Lạt · 03/2026</figcaption>
+          </figure>
+          <figure>
+            <blockquote>“Báo giá ghi rõ từng món ngay từ đầu, ngày chụp không phát sinh đồng nào. Album về đúng 21 ngày như hẹn.”</blockquote>
+            <figcaption><b>Lan Phương & Quốc Bảo</b>Gói Phim trường + Phóng sự cưới · 07/2026</figcaption>
+          </figure>
+          <figure>
+            <blockquote>“Mình hơi ngại máy ảnh nhưng anh nhiếp ảnh hướng dẫn tạo dáng rất nhẹ nhàng. Ảnh tự nhiên, không bị cứng.”</blockquote>
+            <figcaption><b>Mỹ Duyên & Thành Nam</b>Gói Studio Tinh Khôi · 09/2026</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <div class="band">
+      <div class="wrap">
+        <div>
+          <h2>Ưu đãi mùa cưới: tặng ảnh cổng 120×180 cho cặp đôi cọc trước 30/11.</h2>
+          <p>Áp dụng cho mọi gói pre-wedding từ 9.500.000₫.</p>
+        </div>
+        <a class="btn light" href="#estimate">Nhận ưu đãi</a>
+      </div>
+    </div>
+  </main>
+
+  <footer id="contact">
+    <div class="wrap">
+      <div>
+        <a class="logo" href="#top"><span class="ring" aria-hidden="true"></span>Hẹn Ước <small>Studio</small></a>
+        <p>86 Trần Quang Khải, Phường Tân Định, Quận 1, TP.HCM<br />Chi nhánh: 14 Nguyễn Văn Linh, Hải Châu, Đà Nẵng</p>
+        <p class="copy">© 2026 Hẹn Ước Studio</p>
+      </div>
+      <div><strong>Hotline / Zalo</strong><div class="phone">0901 868 246</div>hello@henuocstudio.vn</div>
+      <div><strong>Giờ mở cửa</strong>8:30 – 20:30, cả tuần<br />Tư vấn tối đến 21:30 qua hẹn trước</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
