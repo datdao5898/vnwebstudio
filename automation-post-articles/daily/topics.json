@@ -8,7 +8,7 @@
   { "slug": "vet-clinic", "industry": "Phòng khám thú y & pet shop", "done": "2026-10-21" },
   { "slug": "bakery", "industry": "Tiệm bánh", "done": "2026-10-22" },
   { "slug": "wedding-studio", "industry": "Studio ảnh cưới", "done": "2026-10-23" },
-  { "slug": "yoga-studio", "industry": "Phòng tập yoga", "done": null },
+  { "slug": "yoga-studio", "industry": "Phòng tập yoga", "done": "2026-10-24" },
   { "slug": "english-center", "industry": "Trung tâm tiếng Anh", "done": null },
   { "slug": "dermatology-clinic", "industry": "Phòng khám da liễu", "done": null },
   { "slug": "car-garage", "industry": "Garage sửa chữa ô tô", "done": null },

@@ -154,5 +154,17 @@
       "en": "Wedding studio template: tabbed price list, wedding package cost estimator with deposit, consultation booking.",
       "vi": "Mẫu studio ảnh cưới: bảng giá theo tab, tự tính chi phí gói cưới kèm tiền cọc, giữ lịch tư vấn."
     }
+  },
+  {
+    "slug": "yoga-studio",
+    "name": "Nhịp Thở Yoga",
+    "type": {
+      "en": "Yoga Studio",
+      "vi": "Phòng tập yoga"
+    },
+    "description": {
+      "en": "Yoga studio template: daily class timetable with level filter, live spot booking, 1–12 month membership pricing.",
+      "vi": "Mẫu phòng tập yoga: lịch lớp theo ngày có lọc trình độ, giữ chỗ còn trống, bảng giá gói 1–12 tháng."
+    }
   }
 ]
