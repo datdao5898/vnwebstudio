@@ -166,5 +166,17 @@
       "en": "Yoga studio template: daily class timetable with level filter, live spot booking, 1–12 month membership pricing.",
       "vi": "Mẫu phòng tập yoga: lịch lớp theo ngày có lọc trình độ, giữ chỗ còn trống, bảng giá gói 1–12 tháng."
     }
+  },
+  {
+    "slug": "english-center",
+    "name": "Tầm Xa English",
+    "type": {
+      "en": "English Center",
+      "vi": "Trung tâm tiếng Anh"
+    },
+    "description": {
+      "en": "English center template: tuition tabs by age group, placement quiz with course suggestions, free trial sign-up.",
+      "vi": "Mẫu trung tâm tiếng Anh: học phí theo tab độ tuổi, bài kiểm tra trình độ gợi ý khóa, đăng ký học thử."
+    }
   }
 ]
