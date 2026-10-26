@@ -1,5 +1,6 @@
 // Cho dự án khác (vd. topkhoahoc) đăng bài qua tool này mà không cần mở server. Chạy từ thư mục automation-post-articles:
 //   node server/scripts/post.mjs --project topkhoahoc --message-file bai.txt [--link https://...] [--title "..."] [--draft]
+// Đăng video dọc thành Reel: thêm --video <file.mp4> (bỏ qua --link).
 // In ra một dòng JSON kết quả: {"id":..,"facebookPostId":"..",...}
 import fs from 'fs';
 import { publishDirectPost } from '../services/direct-post.js';
@@ -8,7 +9,7 @@ const args = process.argv.slice(2);
 const opt = name => { const i = args.indexOf(`--${name}`); return i >= 0 ? args[i + 1] : undefined; };
 const messageFile = opt('message-file');
 if (!opt('project') || !messageFile) {
-  console.error('Cách dùng: node server/scripts/post.mjs --project <id> --message-file <file> [--link <url>] [--title <tiêu đề>] [--draft]');
+  console.error('Cách dùng: node server/scripts/post.mjs --project <id> --message-file <file> [--link <url>] [--video <file.mp4>] [--title <tiêu đề>] [--draft]');
   process.exit(1);
 }
 
@@ -18,6 +19,7 @@ try {
     title: opt('title') || '',
     content: fs.readFileSync(messageFile, 'utf8'),
     link: opt('link'),
+    video: opt('video'),
     draft: args.includes('--draft')
   });
   console.log(JSON.stringify(result));

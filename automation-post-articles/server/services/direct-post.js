@@ -1,21 +1,27 @@
 import { db, log } from '../db.js';
-import { publishFacebookPost, publishDraftPost, resolveTarget } from './facebook.js';
+import fs from 'fs';
+import path from 'path';
+import { publishFacebookPost, publishFacebookReel, publishDraftPost, resolveTarget } from './facebook.js';
 import { resolveImages } from '../images.js';
 
-export async function publishDirectPost({ project = 'vnwebstudio', title = '', content, draft = false, images = [], link }) {
+// video: đường dẫn file .mp4 dọc, đăng thành Reel (không kèm ảnh hay link xem trước).
+export async function publishDirectPost({ project = 'vnwebstudio', title = '', content, draft = false, images = [], link, video }) {
   const message = String(content || '').trim();
   if (!message) throw new Error('Nội dung bài đăng không được để trống.');
-  const imageFiles = resolveImages(images);
+  if (video && !fs.existsSync(video)) throw new Error(`Không tìm thấy video: ${video}`);
+  const imageFiles = video ? [] : resolveImages(images);
   const { pageId } = resolveTarget({ project });
 
   const directId = `direct_${Date.now()}_${Math.random().toString(16).slice(2, 8)}`;
   const result = db.prepare(`
     INSERT INTO posts(lark_record_id, title, content, facebook_page_id, schedule_at, status, raw_json, project)
     VALUES (?, ?, ?, ?, ?, 'publishing', ?, ?)
-  `).run(directId, String(title || '').trim(), message, pageId, new Date().toISOString(), JSON.stringify({ source: 'direct_chat', draft, link, images: imageFiles.map(image => image.name) }), project);
+  `).run(directId, String(title || '').trim(), message, pageId, new Date().toISOString(), JSON.stringify({ source: 'direct_chat', draft, link, images: imageFiles.map(image => image.name), video: video ? path.basename(video) : undefined }), project);
 
   try {
-    const facebook = await publishFacebookPost({ project, message, draft, images: imageFiles, link });
+    const facebook = video
+      ? await publishFacebookReel({ project, message, draft, videoPath: video })
+      : await publishFacebookPost({ project, message, draft, images: imageFiles, link });
     const status = draft ? 'draft' : 'published';
     db.prepare(`UPDATE posts SET status=?, facebook_post_id=?, last_error=NULL, updated_at=CURRENT_TIMESTAMP WHERE id=?`)
       .run(status, facebook.id, result.lastInsertRowid);

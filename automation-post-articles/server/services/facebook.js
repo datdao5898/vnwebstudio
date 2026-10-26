@@ -71,6 +71,49 @@ export async function publishFacebookPost({ project, pageId, message, draft = fa
   }
 }
 
+// Đăng video dọc thành Reel: start lấy video_id, tải file lên rupload, rồi finish kèm mô tả.
+// draft=true để Reel ở trạng thái nháp (video_state=DRAFT), không ai thấy.
+// Facebook xử lý video thêm vài phút sau khi finish, nên Reel có thể chưa hiện ngay.
+export async function publishFacebookReel({ project, pageId, message, videoPath, draft = false }) {
+  const target = resolveTarget({ project, pageId });
+  const description = withSiteLink(message, target.project);
+  if (config.dryRun && !draft) {
+    return { id: `dry_run_${Date.now()}`, dryRun: true, pageId: target.pageId, message: description };
+  }
+  try {
+    const start = await axios.post(graphUrl(`${target.pageId}/video_reels`), null, {
+      params: { upload_phase: 'start', access_token: target.token }
+    });
+    const { video_id: videoId, upload_url: uploadUrl } = start.data || {};
+    if (!videoId || !uploadUrl) throw new Error(`Facebook không trả video_id: ${JSON.stringify(start.data)}`);
+
+    const file = await fs.readFile(videoPath);
+    const upload = await fetch(uploadUrl, {
+      method: 'POST',
+      headers: { Authorization: `OAuth ${target.token}`, offset: '0', file_size: String(file.length) },
+      body: file
+    });
+    const uploaded = await upload.json().catch(() => ({}));
+    if (!upload.ok || !uploaded.success) {
+      throw new Error(`Facebook (tải video): ${uploaded.debug_info?.message || uploaded.error?.message || upload.status}`);
+    }
+
+    const finish = await axios.post(graphUrl(`${target.pageId}/video_reels`), null, {
+      params: {
+        upload_phase: 'finish',
+        video_id: videoId,
+        video_state: draft ? 'DRAFT' : 'PUBLISHED',
+        description,
+        access_token: target.token
+      }
+    });
+    if (!finish.data?.success) throw new Error(`Facebook không xác nhận đăng Reel: ${JSON.stringify(finish.data)}`);
+    return { id: videoId, draft, pageId: target.pageId, reel: true };
+  } catch (err) {
+    throw graphError(err);
+  }
+}
+
 // Đăng công khai một bài đang ở trạng thái chưa đăng.
 export async function publishDraftPost(facebookPostId) {
   if (config.dryRun) {
