@@ -190,5 +190,17 @@
       "en": "Dermatology clinic template: tabbed treatment price list, booking by doctor and open time slot, doctor profiles.",
       "vi": "Mẫu phòng khám da liễu: bảng giá theo tab điều trị, đặt lịch chọn bác sĩ và giờ trống, giới thiệu đội ngũ."
     }
+  },
+  {
+    "slug": "car-garage",
+    "name": "Gara Đức Thịnh Auto",
+    "type": {
+      "en": "Car Repair Garage",
+      "vi": "Garage sửa chữa ô tô"
+    },
+    "description": {
+      "en": "Car garage template: maintenance cost estimator by mileage and car type, booking with quote, service price list.",
+      "vi": "Mẫu garage ô tô: tính chi phí bảo dưỡng theo số km và loại xe, đặt lịch kèm báo giá, bảng giá dịch vụ."
+    }
   }
 ]

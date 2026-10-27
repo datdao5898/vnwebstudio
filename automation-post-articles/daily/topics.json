@@ -11,7 +11,7 @@
   { "slug": "yoga-studio", "industry": "Phòng tập yoga", "done": "2026-10-24" },
   { "slug": "english-center", "industry": "Trung tâm tiếng Anh", "done": "2026-10-25" },
   { "slug": "dermatology-clinic", "industry": "Phòng khám da liễu", "done": "2026-10-26" },
-  { "slug": "car-garage", "industry": "Garage sửa chữa ô tô", "done": null },
+  { "slug": "car-garage", "industry": "Garage sửa chữa ô tô", "done": "2026-10-27" },
   { "slug": "phone-store", "industry": "Cửa hàng điện thoại", "done": null },
   { "slug": "women-fashion", "industry": "Thời trang nữ", "done": null },
   { "slug": "cosmetics-store", "industry": "Cửa hàng mỹ phẩm", "done": null },
