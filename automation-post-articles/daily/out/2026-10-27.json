@@ -5,5 +5,15 @@
   "industryEn": "Car Repair Garage",
   "summary": "Mẫu garage ô tô: tính chi phí bảo dưỡng theo số km và loại xe, đặt lịch kèm báo giá, bảng giá dịch vụ.",
   "summaryEn": "Car garage template: maintenance cost estimator by mileage and car type, booking with quote, service price list.",
-  "caption": "🔧 Mẫu website garage ô tô – Gara Đức Thịnh Auto\n\nChủ xe ngại vào gara nhất là không biết sửa hết bao nhiêu, sợ bị “vẽ” thêm việc. Website cho khách tự xem giá, tự tính chi phí trước khi mang xe đến, gara nhận lịch hẹn kèm sẵn biển số và hạng mục cần làm.\n\n✔ Tính chi phí bảo dưỡng: chọn loại xe, kéo số km, tự gợi ý đúng cấp bảo dưỡng\n✔ Phiếu báo giá tạm tính, cộng thêm hạng mục và thời gian chờ lấy xe\n✔ Đặt lịch theo ngày, khung giờ, biển số xe\n✔ Bảng giá 6 nhóm dịch vụ, quy trình 5 bước báo giá qua Zalo\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n#thietkeweb #websitegara #suachuaoto #vnwebstudio"
+  "caption": "🔧 Mẫu website garage ô tô – Gara Đức Thịnh Auto\n\nChủ xe ngại vào gara nhất là không biết sửa hết bao nhiêu, sợ bị “vẽ” thêm việc. Website cho khách tự xem giá, tự tính chi phí trước khi mang xe đến, gara nhận lịch hẹn kèm sẵn biển số và hạng mục cần làm.\n\n✔ Tính chi phí bảo dưỡng: chọn loại xe, kéo số km, tự gợi ý đúng cấp bảo dưỡng\n✔ Phiếu báo giá tạm tính, cộng thêm hạng mục và thời gian chờ lấy xe\n✔ Đặt lịch theo ngày, khung giờ, biển số xe\n✔ Bảng giá 6 nhóm dịch vụ, quy trình 5 bước báo giá qua Zalo\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n#thietkeweb #websitegara #suachuaoto #vnwebstudio",
+  "images": [
+    "car-garage-01-tong-quan.png",
+    "car-garage-02-trang-chu.png",
+    "car-garage-03-dien-thoai.png"
+  ],
+  "draft": false,
+  "postedCaption": "🔧 Mẫu website garage ô tô – Gara Đức Thịnh Auto\n\nChủ xe ngại vào gara nhất là không biết sửa hết bao nhiêu, sợ bị “vẽ” thêm việc. Website cho khách tự xem giá, tự tính chi phí trước khi mang xe đến, gara nhận lịch hẹn kèm sẵn biển số và hạng mục cần làm.\n\n✔ Tính chi phí bảo dưỡng: chọn loại xe, kéo số km, tự gợi ý đúng cấp bảo dưỡng\n✔ Phiếu báo giá tạm tính, cộng thêm hạng mục và thời gian chờ lấy xe\n✔ Đặt lịch theo ngày, khung giờ, biển số xe\n✔ Bảng giá 6 nhóm dịch vụ, quy trình 5 bước báo giá qua Zalo\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n👉 Xem demo: https://datdao5898.github.io/vnwebstudio/demos/car-garage/?utm_source=facebook&utm_campaign=2026-10-27\n🌐 Trang chủ VN Web Studio: https://datdao5898.github.io/vnwebstudio/?utm_source=facebook&utm_campaign=2026-10-27\n\n#thietkeweb #websitegara #suachuaoto #vnwebstudio",
+  "postId": 51,
+  "facebookPostId": "1220847914452015_122124840801421469",
+  "dryRun": false
 }
