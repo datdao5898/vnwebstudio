@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Minh Phát Mobile — điện thoại chính hãng, thu cũ lên đời, trả góp 0% tại Hà Nội." />
+  <title>Minh Phát Mobile — Điện thoại chính hãng, lên đời góp 0%</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script data-goatcounter="https://vnwebstudio.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  <meta name="robots" content="noindex, follow">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="logo" href="#top" aria-label="Minh Phát Mobile">
+        <span class="mark" aria-hidden="true">MP</span>
+        <span>Minh Phát<small>Mobile · từ 2014</small></span>
+      </a>
+      <nav class="nav" aria-label="Điều hướng">
+        <a href="#may">Điện thoại</a><a href="#len-doi">Thu cũ & trả góp</a><a href="#quy-trinh">Bảo hành</a><a href="#cua-hang">Cửa hàng</a>
+      </nav>
+      <a class="hotline" href="#giu-may">Giữ máy</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <div class="wrap">
+        <div class="copy">
+          <div class="eyebrow"><i></i>Đại lý ủy quyền Apple · Samsung · Xiaomi · OPPO</div>
+          <h1>Máy chính hãng. Giá chốt rõ. <mark>Góp 0%.</mark></h1>
+          <p>Hai cửa hàng ở Thái Hà và Xuân Thủy. Mang máy cũ đến, định giá trong 15 phút, trừ thẳng vào máy mới. Phần còn lại góp qua thẻ hoặc chỉ cần CCCD.</p>
+          <div class="cta">
+            <a class="btn primary" href="#may">Xem máy & giá</a>
+            <a class="btn ghost" href="#len-doi">Tính tiền lên đời</a>
+          </div>
+          <dl class="facts">
+            <div><dt>12 tháng</dt><dd>bảo hành, 1 đổi 1 trong 30 ngày</dd></div>
+            <div><dt>15 phút</dt><dd>định giá máy cũ, duyệt góp</dd></div>
+            <div><dt>0₫</dt><dd>trả trước khi góp qua thẻ</dd></div>
+          </dl>
+        </div>
+        <div class="stage" id="heroArt">
+          <div class="float f-trade"><span>Thu iPhone 14 Pro</span><strong>+11.500.000₫</strong></div>
+          <div class="float f-month"><span>iPhone 17 Pro Max · góp 12 tháng</span><strong>2.125.000₫<small>/tháng</small></strong></div>
+          <div class="float f-seal">Nguyên seal<br />VN/A</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="track">
+        <span>Apple</span><span>Samsung</span><span>Xiaomi</span><span>OPPO</span><span>Thu cũ trợ giá đến 1.000.000₫</span><span>Dán cường lực miễn phí</span><span>Giao nội thành Hà Nội 2 giờ</span>
+        <span>Apple</span><span>Samsung</span><span>Xiaomi</span><span>OPPO</span><span>Thu cũ trợ giá đến 1.000.000₫</span><span>Dán cường lực miễn phí</span><span>Giao nội thành Hà Nội 2 giờ</span>
+      </div>
+    </div>
+
+    <section id="may">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <span class="kicker">01 · Máy đang bán</span>
+            <h2>Chọn màu, chọn dung lượng, giá hiện ngay</h2>
+          </div>
+          <div class="tools">
+            <select id="seg" aria-label="Mức giá">
+              <option value="all">Mọi mức giá</option>
+              <option value="lo">Dưới 10 triệu</option>
+              <option value="mid">10 – 20 triệu</option>
+              <option value="hi">Trên 20 triệu</option>
+            </select>
+            <select id="sort" aria-label="Sắp xếp">
+              <option value="pop">Bán chạy</option>
+              <option value="asc">Giá thấp → cao</option>
+              <option value="desc">Giá cao → thấp</option>
+            </select>
+          </div>
+        </div>
+        <div class="chips" id="chips"></div>
+        <div class="grid" id="grid"></div>
+        <p class="note">Giá đã gồm VAT, áp dụng đến 31/10/2026. Máy nguyên seal, kích hoạt tại cửa hàng trước mặt khách.</p>
+      </div>
+    </section>
+
+    <section id="len-doi" class="calc-sec">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <span class="kicker">02 · Thu cũ đổi mới</span>
+            <h2>Lên đời hết bao nhiêu mỗi tháng?</h2>
+          </div>
+          <p>Chọn máy mới, máy cũ và cách góp. Số tiền tính theo bảng giá thu hôm nay.</p>
+        </div>
+        <div class="calc">
+          <form class="calc-form" id="calc" onsubmit="return false">
+            <label class="fld">Máy muốn lên<select id="c-new"></select></label>
+            <label class="fld">Máy cũ mang đến<select id="c-old"></select></label>
+            <div class="fld" id="condWrap"><span>Tình trạng máy cũ</span><div class="seg" id="c-cond"></div><small id="condNote"></small></div>
+            <div class="fld"><span>Hình thức trả góp</span><div class="seg" id="c-method"></div><small id="methodNote"></small></div>
+            <div class="fld"><span>Trả trước <b id="preOut">0%</b></span><input type="range" id="c-pre" min="0" max="70" step="10" value="0" /></div>
+            <div class="fld"><span>Kỳ hạn</span><div class="seg" id="c-term"></div></div>
+          </form>
+          <aside class="receipt" aria-live="polite">
+            <div class="r-head"><span>Phiếu tạm tính</span><span id="rDate"></span></div>
+            <div class="r-model" id="rModel"></div>
+            <div class="r-rows" id="rRows"></div>
+            <div class="r-big"><span>Góp mỗi tháng</span><strong id="rMonth"></strong><small id="rTerm"></small></div>
+            <a class="btn lime" href="#giu-may" id="takeDeal">Giữ máy với gói này</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="quy-trinh">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <span class="kicker">03 · Tại cửa hàng</span>
+            <h2>Đến tay không, về với máy mới trong 30 phút</h2>
+          </div>
+        </div>
+        <ol class="steps">
+          <li><b>01</b><h3>Kiểm tra máy cũ</h3><p>Kỹ thuật viên chạy 32 điểm kiểm tra: màn, pin, Face ID, camera, iCloud. Báo giá thu trên phiếu in, không ép bán.</p><em>15 phút</em></li>
+          <li><b>02</b><h3>Chọn máy & duyệt góp</h3><p>Góp thẻ tín dụng tại 26 ngân hàng hoặc qua Home Credit, FE Credit bằng CCCD gắn chip. Không cần chứng minh thu nhập.</p><em>10 phút</em></li>
+          <li><b>03</b><h3>Bóc seal, chuyển dữ liệu</h3><p>Khui hộp trước mặt bạn, kích hoạt bảo hành điện tử, chuyển danh bạ, ảnh, Zalo sang máy mới. Dán cường lực miễn phí.</p><em>5 phút</em></li>
+          <li><b>04</b><h3>Bảo hành tận nơi</h3><p>12 tháng chính hãng, 1 đổi 1 trong 30 ngày nếu lỗi phần cứng. Máy cần sửa có máy mượn dùng tạm.</p><em>365 ngày</em></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="danh-gia" class="proof">
+      <div class="wrap">
+        <div class="bento">
+          <div class="tile big"><strong>48.000+</strong><span>máy đã bán từ năm 2014</span></div>
+          <div class="tile lime"><strong>4,9/5</strong><span>2.300 đánh giá trên Google Maps</span></div>
+          <div class="tile"><strong>9.600</strong><span>máy cũ đã thu đổi trong năm 2025</span></div>
+          <div class="tile dark"><strong>0</strong><span>khoản phí ẩn khi trả góp</span></div>
+          <blockquote class="quote">
+            <p>“Mang con 13 cũ ra được 6,8 triệu, góp thêm 2,1 triệu một tháng là lên 17 Pro Max. Bạn nhân viên chuyển hết ảnh với Zalo giúp mình luôn.”</p>
+            <footer><i>HT</i>Chị Hà Trang · Cầu Giấy</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>“Đặt giữ máy trên web buổi trưa, tối qua lấy là có sẵn màu cam. Giá đúng như phiếu tính, không phát sinh đồng nào.”</p>
+            <footer><i>QM</i>Anh Quang Minh · Đống Đa</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>“Mua cho bố con Galaxy A56, chỉ cần CCCD là duyệt góp 6 tháng 0%. Máy lỗi loa ngày thứ 9 được đổi máy mới ngay.”</p>
+            <footer><i>TL</i>Bạn Thùy Linh · Hà Đông</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="giu-may" class="reserve">
+      <div class="wrap">
+        <div class="r-copy">
+          <span class="kicker">04 · Giữ máy trước</span>
+          <h2>Giữ máy 24 giờ, không cần đặt cọc.</h2>
+          <p>Điền tên và số điện thoại, cửa hàng gọi lại trong 10 phút để xác nhận màu và dung lượng. Muốn giao tận nhà thì báo nhân viên, nội thành Hà Nội nhận máy trong 2 giờ.</p>
+        </div>
+        <form class="r-form" id="reserve">
+          <div class="two">
+            <label>Họ tên<input id="r-name" required value="Nguyễn Hoàng Nam" /></label>
+            <label>Số điện thoại<input id="r-phone" required inputmode="tel" value="0983 456 712" /></label>
+          </div>
+          <label>Máy cần giữ<input id="r-model" required /></label>
+          <label>Lấy máy tại<select id="r-store"><option>189 Thái Hà, Đống Đa</option><option>245 Xuân Thủy, Cầu Giấy</option><option>Giao tận nhà (nội thành)</option></select></label>
+          <button class="btn primary" type="submit">Giữ máy cho tôi</button>
+          <div class="ok" id="okMsg" hidden></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer id="cua-hang">
+    <div class="wrap">
+      <div class="f-brand">
+        <a class="logo" href="#top"><span class="mark" aria-hidden="true">MP</span><span>Minh Phát<small>Mobile · từ 2014</small></span></a>
+        <p>Công ty TNHH Thương mại Minh Phát Mobile · MST 0106 482 917</p>
+        <p>© 2026 Minh Phát Mobile</p>
+      </div>
+      <div><strong>Cửa hàng</strong>189 Thái Hà, Phường Đống Đa, Hà Nội<br />245 Xuân Thủy, Phường Cầu Giấy, Hà Nội</div>
+      <div><strong>Mở cửa</strong>8:30 – 21:30, cả tuần<br />Kỹ thuật bảo hành đến 20:00</div>
+      <div><strong>Hotline / Zalo</strong><span class="phone">0968 189 189</span></div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" hidden></div>
+  <script src="script.js"></script>
+</body>
+</html>

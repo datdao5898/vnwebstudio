@@ -202,5 +202,17 @@
       "en": "Car garage template: maintenance cost estimator by mileage and car type, booking with quote, service price list.",
       "vi": "Mẫu garage ô tô: tính chi phí bảo dưỡng theo số km và loại xe, đặt lịch kèm báo giá, bảng giá dịch vụ."
     }
+  },
+  {
+    "slug": "phone-store",
+    "name": "Minh Phát Mobile",
+    "type": {
+      "en": "Phone Store",
+      "vi": "Cửa hàng điện thoại"
+    },
+    "description": {
+      "en": "Phone store template: filter by brand and price, switch colors and storage, trade-in and installment calculator.",
+      "vi": "Mẫu cửa hàng điện thoại: lọc máy theo hãng và giá, đổi màu dung lượng, tính thu cũ lên đời và trả góp."
+    }
   }
 ]
