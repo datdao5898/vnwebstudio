@@ -5,5 +5,15 @@
   "industryEn": "Phone Store",
   "summary": "Mẫu cửa hàng điện thoại: lọc máy theo hãng và giá, đổi màu dung lượng, tính thu cũ lên đời và trả góp.",
   "summaryEn": "Phone store template: filter by brand and price, switch colors and storage, trade-in and installment calculator.",
-  "caption": "📱 Mẫu website cửa hàng điện thoại – Minh Phát Mobile\n\nKhách mua điện thoại hay nhắn hỏi đi hỏi lại: máy cũ thu bao nhiêu, góp mỗi tháng hết bao nhiêu, màu này còn không. Website trả lời sẵn mấy câu đó để khách tự tính rồi đến thẳng cửa hàng chốt máy.\n\n✔ Lọc máy theo hãng, mức giá; bấm đổi màu, dung lượng là giá cập nhật ngay\n✔ Tính tiền lên đời: chọn máy cũ, tình trạng, trừ thẳng tiền thu và trợ giá\n✔ Tính trả góp qua thẻ 0% hoặc CCCD, ra số tiền mỗi tháng theo kỳ hạn\n✔ Form giữ máy 24 giờ, điền sẵn gói khách vừa tính\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n#thietkeweb #websitedienthoai #cuahangdienthoai #vnwebstudio"
+  "caption": "📱 Mẫu website cửa hàng điện thoại – Minh Phát Mobile\n\nKhách mua điện thoại hay nhắn hỏi đi hỏi lại: máy cũ thu bao nhiêu, góp mỗi tháng hết bao nhiêu, màu này còn không. Website trả lời sẵn mấy câu đó để khách tự tính rồi đến thẳng cửa hàng chốt máy.\n\n✔ Lọc máy theo hãng, mức giá; bấm đổi màu, dung lượng là giá cập nhật ngay\n✔ Tính tiền lên đời: chọn máy cũ, tình trạng, trừ thẳng tiền thu và trợ giá\n✔ Tính trả góp qua thẻ 0% hoặc CCCD, ra số tiền mỗi tháng theo kỳ hạn\n✔ Form giữ máy 24 giờ, điền sẵn gói khách vừa tính\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n#thietkeweb #websitedienthoai #cuahangdienthoai #vnwebstudio",
+  "images": [
+    "phone-store-01-tong-quan.png",
+    "phone-store-02-trang-chu.png",
+    "phone-store-03-dien-thoai.png"
+  ],
+  "draft": false,
+  "postedCaption": "📱 Mẫu website cửa hàng điện thoại – Minh Phát Mobile\n\nKhách mua điện thoại hay nhắn hỏi đi hỏi lại: máy cũ thu bao nhiêu, góp mỗi tháng hết bao nhiêu, màu này còn không. Website trả lời sẵn mấy câu đó để khách tự tính rồi đến thẳng cửa hàng chốt máy.\n\n✔ Lọc máy theo hãng, mức giá; bấm đổi màu, dung lượng là giá cập nhật ngay\n✔ Tính tiền lên đời: chọn máy cũ, tình trạng, trừ thẳng tiền thu và trợ giá\n✔ Tính trả góp qua thẻ 0% hoặc CCCD, ra số tiền mỗi tháng theo kỳ hạn\n✔ Form giữ máy 24 giờ, điền sẵn gói khách vừa tính\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n👉 Xem demo: https://datdao5898.github.io/vnwebstudio/demos/phone-store/?utm_source=facebook&utm_campaign=2026-10-28\n🌐 Trang chủ VN Web Studio: https://datdao5898.github.io/vnwebstudio/?utm_source=facebook&utm_campaign=2026-10-28\n\n#thietkeweb #websitedienthoai #cuahangdienthoai #vnwebstudio",
+  "postId": 72,
+  "facebookPostId": "1220847914452015_122125111503421469",
+  "dryRun": false
 }
