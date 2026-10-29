@@ -73,8 +73,9 @@ export async function publishFacebookPost({ project, pageId, message, draft = fa
 
 // Đăng video dọc thành Reel: start lấy video_id, tải file lên rupload, rồi finish kèm mô tả.
 // draft=true để Reel ở trạng thái nháp (video_state=DRAFT), không ai thấy.
+// scheduleAt (Date) để Facebook tự đăng vào giờ đó (video_state=SCHEDULED), máy không cần bật lúc đăng.
 // Facebook xử lý video thêm vài phút sau khi finish, nên Reel có thể chưa hiện ngay.
-export async function publishFacebookReel({ project, pageId, message, videoPath, draft = false }) {
+export async function publishFacebookReel({ project, pageId, message, videoPath, draft = false, scheduleAt }) {
   const target = resolveTarget({ project, pageId });
   const description = withSiteLink(message, target.project);
   if (config.dryRun && !draft) {
@@ -102,13 +103,14 @@ export async function publishFacebookReel({ project, pageId, message, videoPath,
       params: {
         upload_phase: 'finish',
         video_id: videoId,
-        video_state: draft ? 'DRAFT' : 'PUBLISHED',
+        video_state: draft ? 'DRAFT' : scheduleAt ? 'SCHEDULED' : 'PUBLISHED',
+        ...(scheduleAt && !draft ? { scheduled_publish_time: Math.floor(scheduleAt.getTime() / 1000) } : {}),
         description,
         access_token: target.token
       }
     });
     if (!finish.data?.success) throw new Error(`Facebook không xác nhận đăng Reel: ${JSON.stringify(finish.data)}`);
-    return { id: videoId, draft, pageId: target.pageId, reel: true };
+    return { id: videoId, draft, pageId: target.pageId, reel: true, scheduledFor: scheduleAt && !draft ? scheduleAt.toISOString() : undefined };
   } catch (err) {
     throw graphError(err);
   }

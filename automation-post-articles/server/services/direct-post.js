@@ -5,10 +5,15 @@ import { publishFacebookPost, publishFacebookReel, publishDraftPost, resolveTarg
 import { resolveImages } from '../images.js';
 
 // video: đường dẫn file .mp4 dọc, đăng thành Reel (không kèm ảnh hay link xem trước).
-export async function publishDirectPost({ project = 'vnwebstudio', title = '', content, draft = false, images = [], link, video }) {
+// scheduleAt: chỉ cho Reel, Facebook tự đăng vào giờ đó; bài ghi status 'fb_scheduled' (khác 'scheduled' của lịch Lark).
+export async function publishDirectPost({ project = 'vnwebstudio', title = '', content, draft = false, images = [], link, video, scheduleAt }) {
   const message = String(content || '').trim();
   if (!message) throw new Error('Nội dung bài đăng không được để trống.');
   if (video && !fs.existsSync(video)) throw new Error(`Không tìm thấy video: ${video}`);
+  if (scheduleAt && !video) throw new Error('Hiện chỉ lên lịch được Reel (cần --video).');
+  if (scheduleAt && (Number.isNaN(scheduleAt.getTime()) || scheduleAt.getTime() < Date.now() + 15 * 60 * 1000)) {
+    throw new Error('Giờ lên lịch phải hợp lệ và sau hiện tại ít nhất 15 phút.');
+  }
   const imageFiles = video ? [] : resolveImages(images);
   const { pageId } = resolveTarget({ project });
 
@@ -16,17 +21,17 @@ export async function publishDirectPost({ project = 'vnwebstudio', title = '', c
   const result = db.prepare(`
     INSERT INTO posts(lark_record_id, title, content, facebook_page_id, schedule_at, status, raw_json, project)
     VALUES (?, ?, ?, ?, ?, 'publishing', ?, ?)
-  `).run(directId, String(title || '').trim(), message, pageId, new Date().toISOString(), JSON.stringify({ source: 'direct_chat', draft, link, images: imageFiles.map(image => image.name), video: video ? path.basename(video) : undefined }), project);
+  `).run(directId, String(title || '').trim(), message, pageId, (scheduleAt || new Date()).toISOString(), JSON.stringify({ source: 'direct_chat', draft, link, images: imageFiles.map(image => image.name), video: video ? path.basename(video) : undefined }), project);
 
   try {
     const facebook = video
-      ? await publishFacebookReel({ project, message, draft, videoPath: video })
+      ? await publishFacebookReel({ project, message, draft, videoPath: video, scheduleAt })
       : await publishFacebookPost({ project, message, draft, images: imageFiles, link });
-    const status = draft ? 'draft' : 'published';
+    const status = draft ? 'draft' : facebook.scheduledFor ? 'fb_scheduled' : 'published';
     db.prepare(`UPDATE posts SET status=?, facebook_post_id=?, last_error=NULL, updated_at=CURRENT_TIMESTAMP WHERE id=?`)
       .run(status, facebook.id, result.lastInsertRowid);
-    log('info', draft ? 'Đã lưu bài chưa đăng lên Facebook Page' : 'Đã đăng bài trực tiếp lên Facebook', { project, postId: result.lastInsertRowid, facebookPostId: facebook.id, images: imageFiles.length, dryRun: Boolean(facebook.dryRun) });
-    return { id: result.lastInsertRowid, project, facebookPostId: facebook.id, draft, images: imageFiles.length, dryRun: Boolean(facebook.dryRun) };
+    log('info', draft ? 'Đã lưu bài chưa đăng lên Facebook Page' : facebook.scheduledFor ? 'Đã lên lịch Reel trên Facebook' : 'Đã đăng bài trực tiếp lên Facebook', { project, postId: result.lastInsertRowid, facebookPostId: facebook.id, images: imageFiles.length, scheduledFor: facebook.scheduledFor, dryRun: Boolean(facebook.dryRun) });
+    return { id: result.lastInsertRowid, project, facebookPostId: facebook.id, draft, images: imageFiles.length, scheduledFor: facebook.scheduledFor, dryRun: Boolean(facebook.dryRun) };
   } catch (err) {
     db.prepare(`UPDATE posts SET status='failed', last_error=?, updated_at=CURRENT_TIMESTAMP WHERE id=?`)
       .run(err.message, result.lastInsertRowid);
