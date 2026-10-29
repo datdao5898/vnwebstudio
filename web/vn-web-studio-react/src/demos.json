@@ -214,5 +214,17 @@
       "en": "Phone store template: filter by brand and price, switch colors and storage, trade-in and installment calculator.",
       "vi": "Mẫu cửa hàng điện thoại: lọc máy theo hãng và giá, đổi màu dung lượng, tính thu cũ lên đời và trả góp."
     }
+  },
+  {
+    "slug": "women-fashion",
+    "name": "Hạ Lam Atelier",
+    "type": {
+      "en": "Women's Fashion",
+      "vi": "Thời trang nữ"
+    },
+    "description": {
+      "en": "Women's fashion template: filter by category, switch colors and sizes, size advisor by measurements, hold items to try in store.",
+      "vi": "Mẫu shop thời trang nữ: lọc theo loại, đổi màu và size từng món, gợi ý size theo số đo, giữ đồ thử tại showroom."
+    }
   }
 ]

@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Hạ Lam — thời trang nữ công sở thiết kế tại Hà Nội, may theo số đo người Việt, đổi size trong 7 ngày." />
+  <title>Hạ Lam — Thời trang nữ công sở, chuẩn size người Việt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Prata&family=Encode+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script data-goatcounter="https://vnwebstudio.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  <meta name="robots" content="noindex, follow">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="logo" href="#top">HẠ LAM<span>atelier</span></a>
+      <nav class="nav" aria-label="Điều hướng">
+        <a href="#shop">Bộ sưu tập</a><a href="#size">Chọn size</a><a href="#how">Thử tại cửa hàng</a><a href="#contact">Showroom</a>
+      </nav>
+      <a class="bag-btn" href="#booking" aria-label="Túi đồ đã chọn">Túi đồ <b id="count">0</b></a>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <div class="wrap">
+        <div class="hero-copy">
+          <div class="eyebrow"><span></span>BST Thu Đông 2026 · Thiết kế tại Hà Nội</div>
+          <h1>Mặc đẹp đi làm,<br /><em>không cần nghĩ nhiều.</em></h1>
+          <p>Đầm, sơ mi, blazer may theo bảng số đo của phụ nữ Việt. Chọn trên web, giữ đồ miễn phí 48 giờ, ghé showroom thử rồi mới trả tiền.</p>
+          <div class="cta">
+            <a class="btn primary" href="#shop">Xem bộ sưu tập</a>
+            <a class="btn ghost" href="#size">Tìm size của bạn</a>
+          </div>
+          <div class="facts">
+            <div><strong>S – XXL</strong>size theo dáng Việt</div>
+            <div><strong>7 ngày</strong>đổi size tận nhà</div>
+            <div><strong>499.000₫</strong>miễn phí giao từ</div>
+          </div>
+        </div>
+        <div class="look" id="look">
+          <div class="panel p1" data-g="dress"></div>
+          <div class="panel p2" data-g="blazer"></div>
+          <div class="panel p3" data-g="skirt"></div>
+          <div class="look-tag"><span>Look 07 · Đi làm thứ Hai</span><strong>Blazer Phố + Chân váy Mây</strong>1.600.000₫</div>
+          <div class="look-num">No.<b>07</b></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ticker" aria-hidden="true">
+      <div>Vải lụa Hàn, linen Nhật · Đường may 5 kim · Giữ đồ 48 giờ · Đổi size 7 ngày · Giao nội thành 2 giờ · Vải lụa Hàn, linen Nhật · Đường may 5 kim · Giữ đồ 48 giờ · Đổi size 7 ngày · Giao nội thành 2 giờ ·</div>
+    </div>
+
+    <section id="shop">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <span class="kicker">01 — Bộ sưu tập</span>
+            <h2>Thu Đông 2026</h2>
+            <p>Bấm vào ô màu để xem món đồ ở màu khác. Mọi mẫu có sẵn size S đến XXL.</p>
+          </div>
+          <label class="sort-wrap"><span class="meta">Sắp xếp</span>
+            <select class="sort" id="sort">
+              <option value="pop">Bán chạy</option>
+              <option value="new">Mới về</option>
+              <option value="asc">Giá thấp → cao</option>
+              <option value="desc">Giá cao → thấp</option>
+            </select>
+          </label>
+        </div>
+        <div class="tabs" id="tabs" role="toolbar" aria-label="Lọc theo loại"></div>
+        <div class="grid" id="grid"></div>
+      </div>
+    </section>
+
+    <section id="size" class="size">
+      <div class="wrap">
+        <div class="size-form">
+          <span class="kicker">02 — Chọn size</span>
+          <h2>Không chắc mặc size gì?</h2>
+          <p class="lead">Nhập chiều cao, cân nặng và kiểu mặc bạn thích. Bảng size Hạ Lam đo trên hơn 3.000 khách nữ ở Hà Nội và TP.HCM.</p>
+          <form id="sizeForm">
+            <label>Chiều cao <output id="hOut">158 cm</output>
+              <input type="range" id="h" min="145" max="180" value="158" />
+            </label>
+            <label>Cân nặng <output id="wOut">50 kg</output>
+              <input type="range" id="w" min="38" max="80" value="50" />
+            </label>
+            <fieldset>
+              <legend>Kiểu mặc</legend>
+              <div class="seg" id="fit">
+                <button type="button" data-f="-1" aria-pressed="false">Ôm dáng</button>
+                <button type="button" data-f="0" aria-pressed="true">Vừa vặn</button>
+                <button type="button" data-f="1" aria-pressed="false">Rộng thoải mái</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="size-result">
+          <div class="big">
+            <span>Size gợi ý</span>
+            <strong id="sizeOut">M</strong>
+            <p id="sizeNote">Hợp với đầm, sơ mi và chân váy. Blazer nên thử thêm size L nếu bạn hay mặc áo len bên trong.</p>
+          </div>
+          <table class="chart">
+            <thead><tr><th>Size</th><th>Ngực</th><th>Eo</th><th>Mông</th><th>Cân nặng</th></tr></thead>
+            <tbody id="chart"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="wrap">
+        <div class="sec-head"><div><span class="kicker">03 — Mua thế nào</span><h2>Chọn online, thử tận tay</h2></div></div>
+        <ol class="steps">
+          <li><h3>Thêm vào túi đồ</h3><p>Chọn mẫu, màu và size gợi ý. Không cần trả tiền trước.</p></li>
+          <li><h3>Giữ đồ 48 giờ</h3><p>Điền tên, số điện thoại và showroom muốn ghé. Nhân viên treo sẵn đồ trong phòng thử.</p></li>
+          <li><h3>Thử và chỉnh</h3><p>Lên gấu, bóp eo miễn phí trong 30 phút với đầm và quần âu.</p></li>
+          <li><h3>Đổi size 7 ngày</h3><p>Mặc về thấy chưa vừa thì nhắn Zalo, shipper mang size mới đến và lấy món cũ.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="proof">
+      <div class="wrap">
+        <div class="stats">
+          <div><strong>38.000+</strong>khách đã mua</div>
+          <div><strong>4,9/5</strong>từ 2.300 đánh giá</div>
+          <div><strong>92%</strong>mặc vừa ngay lần đầu</div>
+          <div><strong>2</strong>showroom tại Hà Nội</div>
+        </div>
+        <div class="quotes">
+          <blockquote><p>“Mình cao 1m52, mua đầm chỗ khác toàn phải đi sửa. Đầm Sương size S ở Hạ Lam mặc vừa luôn, không phải lên gấu.”</p><cite>Chị Thu Hà · kế toán, Cầu Giấy</cite></blockquote>
+          <blockquote><p>“Giữ đồ trên web, tan làm ghé thử 15 phút là xong. Blazer vải dày, đứng form, giặt máy vẫn không xù.”</p><cite>Chị Minh Ngọc · trưởng phòng nhân sự</cite></blockquote>
+          <blockquote><p>“Đổi size trong ngày, shipper mang đến tận văn phòng. Lần sau mình mua online luôn không cần ra cửa hàng.”</p><cite>Chị Phương Anh · giáo viên, Long Biên</cite></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking" class="booking">
+      <div class="wrap">
+        <div>
+          <span class="kicker light">04 — Giữ đồ</span>
+          <h2>Giữ đồ thử tại showroom</h2>
+          <p>Đồ sẽ được treo sẵn trong phòng thử, giữ 48 giờ. Bạn chỉ trả tiền món mặc vừa.</p>
+          <div class="bag" id="bag"></div>
+        </div>
+        <form class="book" id="book">
+          <div class="two">
+            <label>Họ tên<input id="f-name" required value="Nguyễn Thu Trang" /></label>
+            <label>Số điện thoại<input id="f-phone" required inputmode="tel" value="0912 345 678" /></label>
+          </div>
+          <label>Showroom
+            <select id="f-store">
+              <option>56 Hàng Bông, Hoàn Kiếm</option>
+              <option>112 Trần Duy Hưng, Cầu Giấy</option>
+            </select>
+          </label>
+          <div class="two">
+            <label>Ngày ghé<input id="f-date" type="date" required /></label>
+            <label>Khung giờ
+              <select id="f-slot"><option>10:00 – 12:00</option><option>14:00 – 17:00</option><option selected>17:30 – 19:30</option><option>19:30 – 21:30</option></select>
+            </label>
+          </div>
+          <button class="btn primary" type="submit">Giữ đồ cho tôi</button>
+          <div class="ok" id="ok" hidden></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="wrap">
+      <div>
+        <a class="logo" href="#top">HẠ LAM<span>atelier</span></a>
+        <p>Thời trang nữ công sở, thiết kế và may tại xưởng Thanh Trì, Hà Nội.</p>
+        <div>© 2026 Hạ Lam Atelier</div>
+      </div>
+      <div><strong>Showroom</strong>56 Hàng Bông, Hoàn Kiếm<br />112 Trần Duy Hưng, Cầu Giấy</div>
+      <div><strong>Giờ mở cửa</strong>9:00 – 21:30, cả tuần<br />Đơn online xử lý đến 20:00</div>
+      <div><strong>Hotline / Zalo</strong><div class="phone">0904 268 135</div></div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" hidden></div>
+  <script src="script.js"></script>
+</body>
+</html>
