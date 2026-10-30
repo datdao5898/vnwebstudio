@@ -226,5 +226,17 @@
       "en": "Women's fashion template: filter by category, switch colors and sizes, size advisor by measurements, hold items to try in store.",
       "vi": "Mẫu shop thời trang nữ: lọc theo loại, đổi màu và size từng món, gợi ý size theo số đo, giữ đồ thử tại showroom."
     }
+  },
+  {
+    "slug": "cosmetics-store",
+    "name": "Sương Beauty",
+    "type": {
+      "en": "Cosmetics Store",
+      "vi": "Cửa hàng mỹ phẩm"
+    },
+    "description": {
+      "en": "Cosmetics store template: filter by skincare step, routine finder by skin type and concern, cart with checkout form.",
+      "vi": "Mẫu shop mỹ phẩm: lọc theo bước skincare, tìm routine theo loại da và vấn đề da, giỏ hàng có form đặt."
+    }
   }
 ]

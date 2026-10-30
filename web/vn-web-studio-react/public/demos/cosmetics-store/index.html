@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Sương Beauty — mỹ phẩm chính hãng có tem phụ, dược sĩ tư vấn routine theo loại da, giao nhanh tại Hà Nội." />
+  <title>Sương Beauty — Mỹ phẩm chính hãng, routine đúng loại da</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,700;0,800;1,700;1,800&family=Lexend+Deca:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script data-goatcounter="https://vnwebstudio.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  <meta name="robots" content="noindex, follow">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="logo" href="#top"><span class="drop" aria-hidden="true"></span>Sương<small>beauty</small></a>
+      <nav class="nav" aria-label="Điều hướng">
+        <a href="#shop">Sản phẩm</a><a href="#routine">Tìm routine</a><a href="#why">Cam kết</a><a href="#reviews">Đánh giá</a><a href="#contact">Cửa hàng</a>
+      </nav>
+      <button class="cart-btn" id="openCart" aria-label="Mở giỏ hàng">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8Z M9 8V6a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        Giỏ <b id="count">0</b>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <div class="wrap">
+        <div class="hero-copy">
+          <span class="pill"><i></i>Chính hãng 100% · có tem phụ nhập khẩu</span>
+          <h1>Da khỏe hơn từ <em>đúng</em> chai đầu tiên.</h1>
+          <p>Hơn 600 sản phẩm skincare từ La Roche-Posay, Cerave, Klairs, Anessa, Cocoon… Dược sĩ của Sương soi loại da, lên routine vừa túi tiền, giao trong 2 giờ nội thành Hà Nội.</p>
+          <div class="cta">
+            <a class="btn primary" href="#routine">Tìm routine cho da tôi</a>
+            <a class="btn ghost" href="#shop">Xem sản phẩm</a>
+          </div>
+          <div class="concerns" aria-label="Tìm nhanh theo vấn đề da">
+            <span>Da bạn đang:</span>
+            <a href="#routine" data-c="mun">Mụn, lỗ chân lông to</a>
+            <a href="#routine" data-c="tham">Thâm, xỉn màu</a>
+            <a href="#routine" data-c="am">Khô, bong tróc</a>
+            <a href="#routine" data-c="do">Đỏ, kích ứng</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="stage" id="heroArt"></div>
+          <div class="float f1"><b>4,9★</b><span>12.800 đánh giá trên Shopee & Google</span></div>
+          <div class="float f2"><span class="check">✓</span><div><b>Quét mã là biết thật giả</b><span>Mỗi đơn kèm hóa đơn VAT</span></div></div>
+          <div class="float f3"><b>pH 5.5</b><span>dịu nhẹ</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="trust">
+      <div class="wrap">
+        <div><strong>Nhập trực tiếp</strong>từ nhà phân phối, đủ giấy tờ</div>
+        <div><strong>Hoàn tiền 200%</strong>nếu phát hiện hàng giả</div>
+        <div><strong>Giao 2 giờ</strong>nội thành, đơn từ 399.000₫ miễn ship</div>
+        <div><strong>Dược sĩ tư vấn</strong>miễn phí qua Zalo, 8:30 – 22:00</div>
+      </div>
+    </div>
+
+    <section id="shop">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <span class="kicker">Kệ hàng</span>
+            <h2>Bán chạy tuần này</h2>
+            <p>Giá đã gồm VAT. Hạn dùng còn tối thiểu 18 tháng.</p>
+          </div>
+          <label class="sort-wrap"><span class="meta">Sắp xếp</span>
+            <select class="sort" id="sort">
+              <option value="pop">Bán chạy</option>
+              <option value="asc">Giá thấp → cao</option>
+              <option value="desc">Giá cao → thấp</option>
+            </select>
+          </label>
+        </div>
+        <div class="chips" id="chips"></div>
+        <div class="grid" id="grid"></div>
+      </div>
+    </section>
+
+    <section id="routine" class="routine">
+      <div class="wrap">
+        <div class="panel">
+          <div class="quiz">
+            <span class="kicker">Tư vấn 30 giây</span>
+            <h2>Routine nào hợp với da bạn?</h2>
+            <p class="lead">Chọn ba câu dưới đây, Sương ghép sẵn các bước theo thứ tự dùng. Mua cả routine được tặng bộ mẫu thử 5 món.</p>
+            <fieldset>
+              <legend>1. Loại da</legend>
+              <div class="opts" data-k="skin">
+                <button type="button" data-v="dau" aria-pressed="true">Da dầu</button>
+                <button type="button" data-v="kho">Da khô</button>
+                <button type="button" data-v="honhop">Hỗn hợp</button>
+                <button type="button" data-v="nhaycam">Nhạy cảm</button>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>2. Điều bạn lo nhất</legend>
+              <div class="opts" data-k="concern">
+                <button type="button" data-v="mun" aria-pressed="true">Mụn & lỗ chân lông</button>
+                <button type="button" data-v="tham">Thâm, xỉn màu</button>
+                <button type="button" data-v="am">Thiếu ẩm</button>
+                <button type="button" data-v="do">Đỏ, kích ứng</button>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>3. Bạn muốn routine</legend>
+              <div class="opts" data-k="level">
+                <button type="button" data-v="3" aria-pressed="true">3 bước cơ bản</button>
+                <button type="button" data-v="5">5 bước đầy đủ</button>
+              </div>
+            </fieldset>
+          </div>
+          <div class="result" aria-live="polite">
+            <div class="result-head">
+              <span>Routine gợi ý</span>
+              <b id="rTitle"></b>
+            </div>
+            <ol class="r-list" id="rList"></ol>
+            <div class="r-foot">
+              <div><span class="meta">Tổng routine</span><strong id="rTotal"></strong><span class="meta" id="rDays"></span></div>
+              <button class="btn primary" id="rAdd" type="button">Thêm cả routine vào giỏ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why">
+      <div class="wrap why">
+        <div class="why-copy">
+          <span class="kicker">Vì sao chọn Sương</span>
+          <h2>Mua mỹ phẩm không phải đoán.</h2>
+          <p>Mỗi lô hàng về kho đều được đối chiếu số lô, hạn dùng và tem phụ trước khi lên kệ. Bạn được tư vấn bởi dược sĩ, không phải nhân viên chạy doanh số.</p>
+          <div class="stats">
+            <div><strong>38.000+</strong>khách mua lại</div>
+            <div><strong>7 năm</strong>bán lẻ tại Hà Nội</div>
+            <div><strong>3 dược sĩ</strong>trực tư vấn mỗi ngày</div>
+          </div>
+        </div>
+        <ol class="steps">
+          <li><b>01</b><div><h3>Soi da miễn phí</h3><p>Ghé cửa hàng soi da bằng máy, hoặc gửi ảnh mặt mộc qua Zalo lúc ánh sáng tự nhiên.</p></div></li>
+          <li><b>02</b><div><h3>Lên routine theo ngân sách</h3><p>Ưu tiên bước làm sạch, dưỡng ẩm và chống nắng. Đặc trị thêm khi da đã ổn định.</p></div></li>
+          <li><b>03</b><div><h3>Theo dõi sau 14 ngày</h3><p>Dược sĩ nhắn hỏi tình trạng da, chỉnh tần suất dùng BHA hay retinol nếu bị kích ứng.</p></div></li>
+          <li><b>04</b><div><h3>Đổi trả trong 7 ngày</h3><p>Sản phẩm còn nguyên seal được đổi sang món khác, kể cả khi bạn chỉ đổi ý.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="reviews" class="reviews">
+      <div class="wrap">
+        <div class="sec-head"><div><span class="kicker">Khách nói gì</span><h2>Da thay đổi, khách quay lại.</h2></div></div>
+        <div class="rv-grid">
+          <figure><blockquote>“Da dầu mụn ẩn, dùng routine 3 bước Sương lên cho được 5 tuần thì mụn ẩn vùng trán giảm hẳn. Chị dược sĩ nhắn hỏi thăm đều, dặn mình giảm BHA còn cách ngày.”</blockquote><figcaption><span class="av" style="--c:#ff5a76">T</span><b>Thu Trang</b>Cầu Giấy · da dầu</figcaption></figure>
+          <figure><blockquote>“Mình hay bị đỏ hai bên má. Được khuyên bỏ toner có cồn, chuyển sang B5 và kem chống nắng vật lý. Giờ ra nắng không còn rát nữa.”</blockquote><figcaption><span class="av" style="--c:#13a89e">H</span><b>Minh Hằng</b>Hai Bà Trưng · da nhạy cảm</figcaption></figure>
+          <figure><blockquote>“Đặt 9 giờ tối mà 10 giờ đã có hàng. Hộp nào cũng có tem phụ, quét mã ra đúng số lô. Mua ở đây yên tâm hơn trên sàn.”</blockquote><figcaption><span class="av" style="--c:#7b9a12">Q</span><b>Quốc Anh</b>Đống Đa · da hỗn hợp</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap">
+        <div>
+          <h2>Nhận voucher 50.000₫ cho đơn đầu tiên</h2>
+          <p>Để lại số Zalo, dược sĩ gửi mã kèm lời khuyên cho loại da của bạn trong vòng 15 phút.</p>
+        </div>
+        <form class="sub" id="sub">
+          <label class="sr" for="subPhone">Số điện thoại Zalo</label>
+          <input id="subPhone" required inputmode="tel" placeholder="Số Zalo của bạn" />
+          <button class="btn" type="submit">Nhận mã</button>
+          <p class="sub-msg" id="subMsg" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="wrap">
+      <div>
+        <a class="logo" href="#top"><span class="drop" aria-hidden="true"></span>Sương<small>beauty</small></a>
+        <p>Mỹ phẩm chính hãng & tư vấn da bởi dược sĩ.<br />Công ty TNHH Sương Beauty · MST 0109 482 316</p>
+      </div>
+      <div><strong>Cửa hàng</strong>112 Chùa Bộc, Quang Trung, Đống Đa, Hà Nội<br />45 Xuân Thủy, Dịch Vọng Hậu, Cầu Giấy, Hà Nội</div>
+      <div><strong>Giờ mở cửa</strong>8:30 – 22:00, cả tuần<br />Giao 2 giờ cho đơn trước 20:00</div>
+      <div><strong>Hotline / Zalo</strong><span class="phone">0968 225 118</span></div>
+    </div>
+    <div class="wrap legal">© 2026 Sương Beauty. Website mẫu do VN Web Studio thiết kế.</div>
+  </footer>
+
+  <div class="scrim" id="scrim" hidden></div>
+  <aside class="drawer" id="drawer" aria-label="Giỏ hàng" aria-hidden="true">
+    <header><h2>Giỏ hàng</h2><button class="x" id="closeCart" aria-label="Đóng">×</button></header>
+    <div class="items" id="items"></div>
+    <div id="checkout"></div>
+  </aside>
+  <div class="toast" id="toast" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
