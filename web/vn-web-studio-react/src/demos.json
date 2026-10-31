@@ -238,5 +238,17 @@
       "en": "Cosmetics store template: filter by skincare step, routine finder by skin type and concern, cart with checkout form.",
       "vi": "Mẫu shop mỹ phẩm: lọc theo bước skincare, tìm routine theo loại da và vấn đề da, giỏ hàng có form đặt."
     }
+  },
+  {
+    "slug": "nail-salon",
+    "name": "Mơ Nail Room",
+    "type": {
+      "en": "Nail Salon",
+      "vi": "Tiệm nail"
+    },
+    "description": {
+      "en": "Nail salon template: try shapes, colors and stones with live pricing, tabbed price list, booking with open time slots.",
+      "vi": "Mẫu tiệm nail: phối thử dáng, màu, đá và thấy giá ngay, bảng giá theo tab, đặt lịch chọn khung giờ trống."
+    }
   }
 ]

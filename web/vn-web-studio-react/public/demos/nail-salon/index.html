@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Mơ Nail Room — tiệm nail ở Hà Nội: sơn gel giữ màu 3 tuần, nối móng, vẽ nghệ thuật, dụng cụ hấp tiệt trùng cho từng khách." />
+  <title>Mơ Nail Room — Bộ móng đẹp, giữ màu 3 tuần</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Alegreya+Sans:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script data-goatcounter="https://vnwebstudio.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  <meta name="robots" content="noindex, follow">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="logo" href="#top" aria-label="Mơ Nail Room">
+        <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path d="M9 28V14a7 7 0 0 1 14 0v14" fill="#f6cdb6"/><path d="M11 17V11.5a5 5 0 0 1 10 0V17q-5 3-10 0z" fill="#e8457a"/><ellipse cx="14" cy="11.5" rx="1.2" ry="3" fill="#fff" opacity=".7"/></svg>
+        <span>Mơ <b>Nail Room</b></span>
+      </a>
+      <nav class="nav" aria-label="Điều hướng">
+        <a href="#menu">Bảng giá</a><a href="#studio">Phối móng</a><a href="#why">Vệ sinh</a><a href="#reviews">Khách nói</a>
+      </nav>
+      <a class="btn small primary" href="#book">Đặt lịch</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-text">
+          <div class="eyebrow"><span class="dot"></span>Đang nhận khách · 41 Trần Quốc Toản, Hà Nội</div>
+          <h1>Bộ móng đẹp, <em>giữ màu 3&nbsp;tuần.</em></h1>
+          <p>Sơn gel Hàn Quốc, nối móng, vẽ hoa nhí và đính đá. Mỗi khách một túi dụng cụ riêng đã hấp tiệt trùng. Đặt giờ trước, đến là làm, không phải ngồi chờ.</p>
+          <div class="cta">
+            <a class="btn primary" href="#book">Đặt lịch trong 30 giây</a>
+            <a class="btn ghost" href="#studio">Phối thử bộ móng</a>
+          </div>
+          <div class="facts">
+            <div><strong>121°C</strong>hấp dụng cụ mỗi ca</div>
+            <div><strong>3 tuần</strong>gel giữ màu bóng</div>
+            <div><strong>7 ngày</strong>bong tróc làm lại miễn phí</div>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="art-card">
+            <svg id="heroHand" viewBox="0 0 400 400" role="img" aria-label="Bàn tay với bộ móng mẫu"></svg>
+            <div class="art-note"><strong id="heroName">Hồng Mơ</strong><span id="heroInfo">Gel nối úp · hoa nhí · 4 đá — 450.000₫</span></div>
+          </div>
+          <div class="hero-swatches" id="heroSwatches" aria-label="Đổi màu móng mẫu"></div>
+          <div class="sticker">Màu mới<br /><b>thu 2026</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <span class="kicker">Bảng giá</span>
+            <h2>Giá niêm yết, không phát sinh</h2>
+          </div>
+          <p>Giá đã gồm cắt da, dũa form và dưỡng viền móng. Phá gel cũ ở tiệm khác tính 30.000₫.</p>
+        </div>
+        <div class="tabs" role="tablist" id="tabs"></div>
+        <div class="price-list" id="priceList" role="tabpanel"></div>
+      </div>
+    </section>
+
+    <section id="studio">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <span class="kicker">Phối móng</span>
+            <h2>Chọn dáng, chọn màu, thấy giá ngay</h2>
+          </div>
+          <p>Phối thử trước khi đến. Bấm “Đặt bộ này” để gửi kèm mẫu cho thợ chuẩn bị màu.</p>
+        </div>
+        <div class="studio">
+          <div class="preview">
+            <svg id="studioHand" viewBox="0 0 400 400" role="img" aria-label="Xem trước bộ móng"></svg>
+            <div class="preview-meta">
+              <div><span>Tạm tính</span><strong id="total">0₫</strong></div>
+              <div><span>Thời gian</span><strong id="duration">0 phút</strong></div>
+            </div>
+          </div>
+          <div class="controls">
+            <fieldset>
+              <legend>Dáng móng</legend>
+              <div class="opts" id="optShape"></div>
+            </fieldset>
+            <fieldset>
+              <legend>Độ dài</legend>
+              <div class="opts" id="optLength"></div>
+            </fieldset>
+            <fieldset>
+              <legend>Màu sơn <span class="meta" id="colorName"></span></legend>
+              <div class="swatches" id="optColor"></div>
+            </fieldset>
+            <fieldset>
+              <legend>Hiệu ứng</legend>
+              <div class="opts" id="optFinish"></div>
+            </fieldset>
+            <fieldset>
+              <legend>Trang trí</legend>
+              <div class="opts" id="optArt"></div>
+            </fieldset>
+            <fieldset>
+              <legend>Đính đá <span class="meta"><b id="stoneCount">0</b> viên · 10.000₫/viên</span></legend>
+              <input type="range" id="stones" min="0" max="20" step="1" value="0" aria-label="Số viên đá" />
+            </fieldset>
+            <div class="summary" id="summary"></div>
+            <a class="btn primary wide" href="#book" id="useSet">Đặt bộ này</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <span class="kicker">Một ca làm móng ở Mơ</span>
+            <h2>Sạch từ dụng cụ đến bàn ngồi</h2>
+          </div>
+        </div>
+        <ol class="steps">
+          <li><span class="n">01</span><h3>Mở túi dụng cụ trước mặt khách</h3><p>Kềm, cây đẩy da hấp 121°C trong 30 phút, đóng túi niêm phong. Dũa và buffer dùng một lần.</p></li>
+          <li><span class="n">02</span><h3>Soi móng, tư vấn form</h3><p>Thợ xem độ dày móng thật, gợi ý dáng hợp ngón tay. Móng yếu sẽ được phủ base phục hồi.</p></li>
+          <li><span class="n">03</span><h3>Sơn gel 3 lớp, hơ đèn LED</h3><p>Base – màu – top, mỗi lớp hơ 60 giây. Sơn nhập chính hãng, có hóa đơn, không mùi hắc.</p></li>
+          <li><span class="n">04</span><h3>Dưỡng viền, hẹn lịch dặm</h3><p>Thoa tinh dầu viền móng, chụp ảnh lưu mẫu. Zalo nhắc lịch dặm sau 3 tuần.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <div class="wrap">
+        <div class="stats">
+          <div><strong>12.400+</strong><span>bộ móng đã làm từ 2021</span></div>
+          <div><strong>4,9/5</strong><span>từ 860 đánh giá Google</span></div>
+          <div><strong>68%</strong><span>khách quay lại trong 2 tháng</span></div>
+          <div><strong>9 thợ</strong><span>có chứng chỉ, ít nhất 3 năm nghề</span></div>
+        </div>
+        <div class="quotes">
+          <figure>
+            <blockquote>“Làm gel mắt mèo xong đi công tác 3 tuần vẫn bóng, không bong mép nào. Thích nhất là thấy chị thợ mở túi dụng cụ mới.”</blockquote>
+            <figcaption><b>Ngọc Anh</b> · nhân viên ngân hàng, Ba Đình</figcaption>
+          </figure>
+          <figure>
+            <blockquote>“Mình đặt combo cô dâu, gửi trước ảnh váy cưới. Đến nơi thợ đã pha sẵn màu nude hợp tông, làm 2 tiếng là xong cả tay chân.”</blockquote>
+            <figcaption><b>Thu Trang</b> · cô dâu tháng 9</figcaption>
+          </figure>
+          <figure>
+            <blockquote>“Đặt lịch 19h trên web, đến đúng giờ là được làm luôn. Giá trên web y như lúc thanh toán.”</blockquote>
+            <figcaption><b>Minh Châu</b> · sinh viên, Hai Bà Trưng</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="book">
+      <div class="wrap book">
+        <div class="book-intro">
+          <span class="kicker">Đặt lịch</span>
+          <h2>Giữ chỗ trước, đến là làm</h2>
+          <p>Chọn ngày và khung giờ còn trống. Tiệm gọi xác nhận trong 10 phút, không cần đặt cọc.</p>
+          <ul class="perks">
+            <li>Khách mới giảm 10% dịch vụ đầu tiên</li>
+            <li>Đi nhóm từ 3 người tặng dưỡng tay paraffin</li>
+            <li>Đến muộn quá 15 phút tiệm sẽ gọi dời giờ</li>
+          </ul>
+        </div>
+        <form class="book-form" id="bookForm" novalidate>
+          <div class="row">
+            <label>Họ tên<input name="name" required placeholder="Nguyễn Thu Hà" autocomplete="name" /></label>
+            <label>Số điện thoại<input name="phone" required inputmode="tel" placeholder="0912 345 678" autocomplete="tel" /></label>
+          </div>
+          <div class="row">
+            <label>Ngày<input type="date" name="date" id="date" required /></label>
+            <label>Thợ
+              <select name="tech">
+                <option>Thợ nào rảnh cũng được</option>
+                <option>Chị Thảo — vẽ nghệ thuật, 8 năm</option>
+                <option>Linh — nối móng, đắp gel</option>
+                <option>Vy — chăm sóc & sơn chân</option>
+              </select>
+            </label>
+          </div>
+          <div class="field">
+            <span class="label">Khung giờ</span>
+            <div class="slots" id="slots"></div>
+          </div>
+          <label>Dịch vụ / ghi chú<textarea name="note" id="note" rows="3" placeholder="VD: sơn gel tay màu nude, phá gel cũ"></textarea></label>
+          <button class="btn primary wide" type="submit">Gửi yêu cầu đặt lịch</button>
+          <p class="form-msg" id="formMsg" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="wrap">
+      <div>
+        <a class="logo" href="#top"><span>Mơ <b>Nail Room</b></span></a>
+        <p>41 Trần Quốc Toản, Phường Cửa Nam, Hà Nội<br />Gửi xe máy miễn phí trước cửa</p>
+      </div>
+      <div><strong>Hotline / Zalo</strong><p class="phone">0968 214 579</p></div>
+      <div><strong>Giờ mở cửa</strong><p>9:00 – 21:00, cả tuần<br />Nhận khách cuối lúc 20:00</p></div>
+      <div class="copy">© 2026 Mơ Nail Room. Mẫu website demo bởi VN Web Studio.</div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" hidden></div>
+  <script src="script.js"></script>
+</body>
+</html>
