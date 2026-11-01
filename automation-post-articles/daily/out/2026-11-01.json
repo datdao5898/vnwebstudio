@@ -15,5 +15,36 @@
   "postedCaption": "🌲 Mẫu website homestay Đà Lạt – Đồi Thông Nhỏ\n\nChủ homestay mùa cao điểm nhắn tin không ngớt: cuối tuần giá bao nhiêu, đi 6 người ở phòng nào, có BBQ với lửa trại không. Website trả lời sẵn để khách tự chọn phòng, xem tổng tiền rồi gửi yêu cầu giữ phòng luôn.\n\n✔ Lọc phòng theo cặp đôi, gia đình, nhóm bạn, glamping, ghi rõ giá ngày thường và cuối tuần\n✔ Tính tiền theo ngày nhận/trả: tự tách đêm cuối tuần, phụ thu khách thêm, ưu đãi ở từ 3 đêm, hiện tiền cọc 30%\n✔ Chọn thêm BBQ, lửa trại, thuê xe máy, đón sân bay Liên Khương\n✔ Lịch trình một ngày ở homestay và đánh giá của khách để tạo niềm tin\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n👉 Xem demo: https://datdao5898.github.io/vnwebstudio/demos/homestay/?utm_source=facebook&utm_campaign=2026-11-01\n🌐 Trang chủ VN Web Studio: https://datdao5898.github.io/vnwebstudio/?utm_source=facebook&utm_campaign=2026-11-01\n\n#thietkeweb #websitehomestay #homestaydalat #vnwebstudio",
   "postId": 86,
   "facebookPostId": "1220847914452015_122125812129421469",
-  "dryRun": false
+  "dryRun": false,
+  "reel": {
+    "hook": "Khách hỏi giá phòng cả ngày? Để website trả lời.",
+    "hookSay": "Mùa cao điểm, chủ homestay trả lời tin nhắn hỏi giá cả ngày không xuể. Đây là mẫu website giúp khách tự chọn phòng và xem giá.",
+    "features": [
+      {
+        "title": "Lọc phòng theo nhóm khách",
+        "say": "Khách chọn cặp đôi, gia đình hay nhóm bạn, website hiện đúng phòng phù hợp, kèm giá ngày thường và cuối tuần.",
+        "section": "#rooms"
+      },
+      {
+        "title": "Tự tính tiền theo đêm",
+        "say": "Chọn ngày nhận, ngày trả, website tự tách đêm cuối tuần, cộng phụ thu, trừ ưu đãi và báo luôn tiền cọc.",
+        "section": "#book"
+      },
+      {
+        "title": "Thêm BBQ, lửa trại, xe đón",
+        "say": "Khách tick thêm BBQ, lửa trại, thuê xe máy hay đón sân bay, tổng tiền cập nhật ngay.",
+        "section": "#book"
+      },
+      {
+        "title": "Đánh giá thật từ khách",
+        "say": "Lịch trình một ngày ở homestay và đánh giá của khách cũ giúp khách mới yên tâm đặt phòng.",
+        "section": "#reviews"
+      }
+    ],
+    "desktopSay": "Trên máy tính, giao diện vẫn rõ ràng và sang như trên điện thoại.",
+    "outroSay": "Muốn có website như vậy cho homestay của mình? Inbox VN Web Studio để nhận bản demo nhé."
+  },
+  "reelPostId": "1078500048552484",
+  "reelScheduledFor": "2026-11-01T12:30:00.000Z",
+  "reelCaption": "🌲 Mẫu website homestay Đà Lạt – Đồi Thông Nhỏ\n\nMùa cao điểm, chủ homestay trả lời tin nhắn hỏi giá cả ngày không xuể. Đây là mẫu website giúp khách tự chọn phòng và xem giá.\n\n👉 Xem demo: https://datdao5898.github.io/vnwebstudio/demos/homestay/?utm_source=facebook&utm_medium=reel&utm_campaign=2026-11-01\n💬 Inbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n#thietkeweb #websitehomestay #homestaydalat #vnwebstudio #reels"
 }
