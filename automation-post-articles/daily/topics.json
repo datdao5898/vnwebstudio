@@ -16,7 +16,7 @@
   { "slug": "women-fashion", "industry": "Thời trang nữ", "done": "2026-10-29" },
   { "slug": "cosmetics-store", "industry": "Cửa hàng mỹ phẩm", "done": "2026-10-30" },
   { "slug": "nail-salon", "industry": "Tiệm nail", "done": "2026-10-31" },
-  { "slug": "homestay", "industry": "Homestay Đà Lạt", "done": null },
+  { "slug": "homestay", "industry": "Homestay Đà Lạt", "done": "2026-11-01" },
   { "slug": "cleaning-service", "industry": "Dịch vụ vệ sinh công nghiệp", "done": null },
   { "slug": "moving-service", "industry": "Dịch vụ chuyển nhà", "done": null },
   { "slug": "law-firm", "industry": "Văn phòng luật", "done": null },

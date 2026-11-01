@@ -250,5 +250,17 @@
       "en": "Nail salon template: try shapes, colors and stones with live pricing, tabbed price list, booking with open time slots.",
       "vi": "Mẫu tiệm nail: phối thử dáng, màu, đá và thấy giá ngay, bảng giá theo tab, đặt lịch chọn khung giờ trống."
     }
+  },
+  {
+    "slug": "homestay",
+    "name": "Đồi Thông Nhỏ",
+    "type": {
+      "en": "Dalat Homestay",
+      "vi": "Homestay Đà Lạt"
+    },
+    "description": {
+      "en": "Dalat homestay template: filter rooms by guest type, price by weekday/weekend nights, add BBQ, campfire, pickup.",
+      "vi": "Mẫu homestay Đà Lạt: lọc phòng theo nhóm khách, tính tiền theo đêm thường/cuối tuần, chọn BBQ, lửa trại, xe đón."
+    }
   }
 ]
