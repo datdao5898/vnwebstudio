@@ -30,4 +30,13 @@ Write-Log 'Screenshots + Facebook post'
 $p = Start-Process -FilePath 'node' -ArgumentList @('daily/publish.mjs', $date) -WorkingDirectory $app -NoNewWindow -Wait -PassThru `
   -RedirectStandardOutput (Join-Path $daily "logs\$date-publish.out.txt") -RedirectStandardError (Join-Path $daily "logs\$date-publish.err.txt")
 Write-Log "publish exit code $($p.ExitCode)"
-exit $p.ExitCode
+$publishExit = $p.ExitCode
+
+# Reel: dựng video dọc và lên lịch đăng tối nay (REEL_AT, mặc định 19:30). Lỗi ở bước này không ảnh hưởng bài ảnh ở trên.
+if ($publishExit -eq 0) {
+  Write-Log 'Reel: dựng video + lên lịch đăng'
+  $r = Start-Process -FilePath 'node' -ArgumentList @('daily/reel.mjs', $date) -WorkingDirectory $app -NoNewWindow -Wait -PassThru `
+    -RedirectStandardOutput (Join-Path $daily "logs\$date-reel.out.txt") -RedirectStandardError (Join-Path $daily "logs\$date-reel.err.txt")
+  Write-Log "reel exit code $($r.ExitCode)"
+}
+exit $publishExit

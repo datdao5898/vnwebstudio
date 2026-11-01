@@ -13,7 +13,12 @@
     "preview": "vite preview --host 0.0.0.0 --port 4174",
     "test:config": "node server/scripts/check-config.js"
   },
-  "keywords": ["lark", "facebook", "automation", "scheduler"],
+  "keywords": [
+    "lark",
+    "facebook",
+    "automation",
+    "scheduler"
+  ],
   "author": "",
   "license": "MIT",
   "dependencies": {
@@ -24,6 +29,7 @@
     "dotenv": "latest",
     "express": "latest",
     "node-cron": "latest",
+    "puppeteer-core": "^24.43.1",
     "react": "latest",
     "react-dom": "latest",
     "vite": "latest"

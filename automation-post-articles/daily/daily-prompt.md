@@ -50,6 +50,24 @@ Caption viết theo giọng các bài trong `web/fanpage-content/noi-dung-dang-f
 - Thêm 3 đến 4 hashtag không dấu, có `#thietkeweb` và `#vnwebstudio`.
 - Độ dài dưới 900 ký tự.
 
+Thêm mục `"reel"` vào cùng file JSON. Đây là kịch bản Reel dọc khoảng 30–40 giây: điện thoại cuộn qua website, có giọng đọc tiếng Việt và phụ đề.
+
+```json
+"reel": {
+  "hook": "Chữ lớn ở khung đầu, dưới 60 ký tự, nói thẳng nỗi đau hoặc kết quả",
+  "hookSay": "1–2 câu đọc mở đầu, nói về nhu cầu thật của chủ doanh nghiệp ngành này (dưới 160 ký tự)",
+  "features": [
+    { "title": "Tên tính năng, tối đa 28 ký tự", "say": "1 câu đọc giải thích tính năng (dưới 140 ký tự)", "section": "#id-cua-section" }
+  ],
+  "desktopSay": "1 câu nói giao diện máy tính cũng đẹp, dễ dùng",
+  "outroSay": "1 câu mời inbox VN Web Studio để nhận bản demo"
+}
+```
+
+- `features` có đúng 3 hoặc 4 mục, theo đúng các tính năng `✔` trong caption.
+- `section` là selector CSS (thường là `#id`) của phần trên trang minh họa tính năng đó, phải tồn tại trong `index.html` bạn vừa làm.
+- Câu đọc viết như người nói, không dùng emoji, ký hiệu, dấu `/` hay chữ viết tắt. Viết số tiền và số liệu bằng chữ khi dễ đọc hơn.
+
 ## 4. Đánh dấu đã làm
 
 Trong `topics.json`, sửa `"done": null` của chủ đề vừa làm thành `"done": "DATE"`.
