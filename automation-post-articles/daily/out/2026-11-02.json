@@ -1,0 +1,37 @@
+{
+  "slug": "cleaning-service-landing",
+  "brand": "Sao Mai",
+  "industry": "Dịch vụ vệ sinh công nghiệp",
+  "industryEn": "Industrial Cleaning Service",
+  "summary": "Mẫu vệ sinh công nghiệp: kéo so sánh trước sau, bảng giá theo m², tính chi phí theo diện tích và ca đêm.",
+  "summaryEn": "Industrial cleaning template: drag-to-compare before and after, per-m² rates, cost calculator by area and night shift.",
+  "caption": "🧹 Mẫu website dịch vụ vệ sinh công nghiệp – Sao Mai\n\nChủ công ty vệ sinh báo giá cả ngày mà khách vẫn hỏi lại: bao nhiêu một mét vuông, làm ban đêm được không, có xuất hóa đơn không. Website trả lời sẵn để quản lý tòa nhà tự tính chi phí rồi đặt lịch khảo sát luôn.\n\n✔ Ảnh trước và sau kéo tay để so sánh ngay đầu trang\n✔ Bảng giá theo m² cho văn phòng, nhà xưởng, sau xây dựng, lau kính, đánh bóng sàn\n✔ Tính chi phí tức thì theo diện tích, tần suất, ca đêm, tự giảm theo quy mô và báo số nhân sự\n✔ Lịch ca đêm từng mốc giờ, checklist 42 hạng mục để khách yên tâm giao chìa khóa\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n#thietkeweb #websitevesinh #vesinhcongnghiep #vnwebstudio",
+  "reel": {
+    "hook": "Báo giá vệ sinh cả ngày? Để website tính giúp.",
+    "hookSay": "Chủ công ty vệ sinh công nghiệp báo giá cả ngày vẫn không xuể. Đây là mẫu website giúp khách tự xem giá và tự tính chi phí.",
+    "features": [
+      {
+        "title": "Kéo so sánh trước và sau",
+        "say": "Ngay đầu trang, khách kéo tay để thấy sảnh văn phòng trước và sau một ca làm, nhìn là hiểu chất lượng.",
+        "section": "#compare"
+      },
+      {
+        "title": "Bảng giá theo mét vuông",
+        "say": "Từng hạng mục ghi rõ giá mỗi mét vuông, từ văn phòng, nhà xưởng đến lau kính và đánh bóng sàn.",
+        "section": "#services"
+      },
+      {
+        "title": "Tự tính chi phí ngay",
+        "say": "Chọn diện tích, tần suất và ca làm, website tự trừ ưu đãi, báo tổng tiền và số nhân sự cần có.",
+        "section": "#quote"
+      },
+      {
+        "title": "Lịch ca đêm từng mốc giờ",
+        "say": "Từng mốc giờ trong ca đêm và bốn mươi hai hạng mục nghiệm thu giúp khách yên tâm giao chìa khóa.",
+        "section": "#shift"
+      }
+    ],
+    "desktopSay": "Trên máy tính, giao diện vẫn rõ ràng, chuyên nghiệp và rất dễ dùng.",
+    "outroSay": "Muốn có website như vậy cho công ty của mình? Inbox VN Web Studio để nhận bản demo nhé."
+  }
+}

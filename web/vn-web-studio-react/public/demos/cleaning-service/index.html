@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Sao Mai — vệ sinh công nghiệp ca đêm cho văn phòng, tòa nhà, nhà xưởng tại TP.HCM. Bàn giao trước 7 giờ sáng, có checklist nghiệm thu." />
+  <title>Sao Mai — Vệ sinh công nghiệp xong trước giờ làm</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Saira:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script data-goatcounter="https://vnwebstudio.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  <meta name="robots" content="noindex, follow">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="logo" href="#top" aria-label="Sao Mai, về đầu trang">
+        <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path d="M16 1 Q16 16 31 16 Q16 16 16 31 Q16 16 1 16 Q16 16 16 1Z" fill="#00a3ae" stroke="#00a3ae" stroke-width="2.4" stroke-linejoin="round"/></svg>
+        <span>Sao Mai<small>Vệ sinh công nghiệp</small></span>
+      </a>
+      <nav class="nav" aria-label="Điều hướng">
+        <a href="#services">Bảng giá</a>
+        <a href="#quote">Tính chi phí</a>
+        <a href="#shift">Ca đêm</a>
+        <a href="#reviews">Khách hàng</a>
+      </nav>
+      <a class="tel" href="tel:0909000168">0909 000 168</a>
+      <a class="btn lime small" href="#quote">Báo giá nhanh</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><i></i>Làm ca đêm tại TP.HCM và Đồng Nai</div>
+          <h1>Sạch bóng trước <mark>7 giờ sáng.</mark></h1>
+          <p>Đội Sao Mai vào làm khi tòa nhà đã tan ca và bàn giao trước khi nhân viên của bạn đến. Văn phòng, nhà xưởng, công trình mới xây đều có checklist nghiệm thu kèm ảnh.</p>
+          <div class="cta">
+            <a class="btn lime" href="#quote">Tính chi phí trong 1 phút</a>
+            <a class="btn ghost" href="#services">Xem bảng giá</a>
+          </div>
+          <dl class="facts">
+            <div><dt>7.000₫</dt><dd>giá từ, mỗi m²</dd></div>
+            <div><dt>42 hạng mục</dt><dd>checklist nghiệm thu</dd></div>
+            <div><dt>24 giờ</dt><dd>làm lại nếu chưa đạt</dd></div>
+          </dl>
+        </div>
+
+        <div class="compare" id="compare" tabindex="-1">
+          <div class="layer after" id="layerAfter"></div>
+          <div class="layer before" id="layerBefore"></div>
+          <span class="lbl l">Trước</span>
+          <span class="lbl r">Sau ca đêm</span>
+          <div class="handle" aria-hidden="true"><b>‹ ›</b></div>
+          <div class="signoff">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#c9f22e"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#06303a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span><strong>Bàn giao 06:15</strong>Đạt 42/42 hạng mục</span>
+          </div>
+          <input class="range" id="compareRange" type="range" min="0" max="100" value="50" aria-label="Kéo để so sánh trước và sau khi vệ sinh" />
+        </div>
+      </div>
+      <div class="strip">
+        <div class="wrap">
+          <span>Phục vụ</span>
+          <ul>
+            <li>Văn phòng</li><li>Tòa nhà cao tầng</li><li>Nhà xưởng</li><li>Showroom</li><li>Trường học</li><li>Công trình mới bàn giao</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <section id="services">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <h2>Bảng giá theo mét vuông</h2>
+            <p>Giá khởi điểm cho mỗi lần làm, đã gồm nhân công, máy móc và hóa chất. Chưa gồm VAT.</p>
+          </div>
+          <a class="link" href="#quote">Tính cho diện tích của bạn →</a>
+        </div>
+        <div class="rates" id="rates"></div>
+      </div>
+    </section>
+
+    <section id="quote">
+      <div class="wrap quote-grid">
+        <div class="calc">
+          <h2>Tính chi phí ngay</h2>
+          <p class="sub">Chọn thông số, ước tính cập nhật tức thì. Giá cuối chốt sau khi khảo sát miễn phí.</p>
+
+          <fieldset>
+            <legend>Hạng mục</legend>
+            <div class="chips" id="svcChips"></div>
+          </fieldset>
+
+          <fieldset>
+            <legend><label for="areaNum">Diện tích</label></legend>
+            <div class="area">
+              <input id="areaRange" type="range" min="100" max="10000" step="50" value="800" aria-label="Kéo chọn diện tích" />
+              <div class="area-num"><input id="areaNum" type="number" min="100" max="10000" step="50" value="800" inputmode="numeric" /><span>m²</span></div>
+            </div>
+            <div class="hint" id="scaleHint"></div>
+          </fieldset>
+
+          <div class="two">
+            <fieldset>
+              <legend>Tần suất</legend>
+              <div class="seg" id="freq"></div>
+            </fieldset>
+            <fieldset>
+              <legend>Thời gian làm</legend>
+              <div class="seg" id="slot"></div>
+            </fieldset>
+          </div>
+
+          <fieldset>
+            <legend>Làm thêm</legend>
+            <div class="addons" id="addons"></div>
+          </fieldset>
+        </div>
+
+        <aside class="ticket" aria-live="polite">
+          <div class="t-head"><span>Phiếu ước tính</span><strong id="tSvc"></strong></div>
+          <div class="t-price"><span id="tLabel">Mỗi lần làm</span><b id="tTotal"></b><em id="tMonth"></em></div>
+          <ul class="t-lines" id="tLines"></ul>
+          <div class="t-crew" id="tCrew"></div>
+          <form id="leadForm" class="lead">
+            <label>Tên công ty hoặc tòa nhà<input id="fCompany" required value="Tòa nhà Minh Long" /></label>
+            <div class="two-in">
+              <label>Người liên hệ<input id="fName" required value="Chị Thu Hà" /></label>
+              <label>Số điện thoại<input id="fPhone" required inputmode="tel" value="0912 345 678" /></label>
+            </div>
+            <button class="btn lime full" type="submit">Đặt lịch khảo sát miễn phí</button>
+          </form>
+          <div class="ok" id="leadOk" hidden></div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="shift">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <h2>Một ca đêm của Sao Mai</h2>
+            <p>Bạn khóa cửa ra về, sáng hôm sau mở cửa là sạch. Từng mốc giờ đều gửi báo cáo qua Zalo.</p>
+          </div>
+        </div>
+        <ol class="rail">
+          <li><time>21:45</time><h3>Nhận bàn giao</h3><p>Trưởng ca ký nhận chìa khóa, chụp hiện trạng khu vực làm.</p></li>
+          <li><time>22:00</time><h3>Hút bụi, đổ rác</h3><p>Làm từ trần xuống sàn. Máy hút lọc HEPA nên không phát tán bụi mịn.</p></li>
+          <li><time>00:30</time><h3>Lau và khử khuẩn</h3><p>Bàn, tay nắm, thang máy, pantry, nhà vệ sinh. Mỗi khu một màu khăn riêng.</p></li>
+          <li><time>02:30</time><h3>Chà sàn bằng máy</h3><p>Máy chà liên hợp vừa chà vừa hút khô, đi lại được ngay.</p></li>
+          <li><time>04:30</time><h3>Kiểm tra checklist</h3><p>Giám sát chấm 42 hạng mục và chụp ảnh. Điểm nào chưa đạt làm lại tại chỗ.</p></li>
+          <li><time>06:15</time><h3>Bàn giao</h3><p>Trả chìa khóa, gửi báo cáo ảnh cho quản lý tòa nhà.</p></li>
+        </ol>
+        <div class="why">
+          <div><strong>Bảo hiểm 5 tỷ đồng</strong>Trách nhiệm dân sự cho mọi công trình, hư hỏng có bồi thường.</div>
+          <div><strong>Nhân sự có hồ sơ</strong>Đồng phục, thẻ tên, lý lịch tư pháp. Ai vào tòa nhà đều có danh sách trước.</div>
+          <div><strong>Hóa chất an toàn</strong>Có phiếu an toàn hóa chất, đúng loại cho đá, gỗ, epoxy và kính.</div>
+          <div><strong>Xuất hóa đơn VAT</strong>Hợp đồng và nghiệm thu rõ ràng, kế toán nhà bạn dễ quyết toán.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <div class="wrap">
+        <div class="stats">
+          <div><b>1.240</b>công trình đã làm</div>
+          <div><b>96%</b>khách gia hạn hợp đồng</div>
+          <div><b>180</b>nhân sự chính thức</div>
+          <div><b>11 năm</b>trong nghề vệ sinh</div>
+        </div>
+        <div class="quotes">
+          <figure>
+            <blockquote>Ba năm nay chưa sáng nào nhân viên đến mà còn thấy đội vệ sinh. Báo cáo ảnh gửi đúng giờ nên tôi khỏi phải đi kiểm tra.</blockquote>
+            <figcaption><strong>Chị Thu Hà</strong>Quản lý tòa nhà văn phòng, Quận 3</figcaption>
+          </figure>
+          <figure>
+            <blockquote>Xưởng 4.000 m² sàn epoxy, Sao Mai làm trọn hai ngày nghỉ. Thứ Hai vào máy chạy bình thường, không còn vết dầu.</blockquote>
+            <figcaption><strong>Anh Quốc Bảo</strong>Trưởng xưởng cơ khí, Biên Hòa</figcaption>
+          </figure>
+          <figure>
+            <blockquote>Showroom mới xây đầy bụi sơn, hẹn thứ Sáu khai trương. Đội làm hai đêm, kính và sàn sạch đúng hạn, không phát sinh chi phí.</blockquote>
+            <figcaption><strong>Anh Minh Tuấn</strong>Chủ showroom nội thất, TP. Thủ Đức</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <div class="band">
+      <div class="wrap">
+        <div>
+          <h2>Khảo sát miễn phí trong 24 giờ</h2>
+          <p>Sao Mai đến tận nơi đo diện tích và gửi báo giá chi tiết từng hạng mục.</p>
+        </div>
+        <div class="band-cta">
+          <a class="btn dark" href="#quote">Đặt lịch khảo sát</a>
+          <a class="band-tel" href="tel:0909000168">Gọi 0909 000 168</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="contact">
+    <div class="wrap">
+      <div>
+        <strong>Công ty Vệ sinh Sao Mai</strong>
+        <div>68 Cộng Hòa, Phường Tân Bình, TP.HCM</div>
+        <div>© 2026 Sao Mai. Website mẫu do VN Web Studio thực hiện.</div>
+      </div>
+      <div><strong>Hotline, Zalo</strong><div class="phone">0909 000 168</div></div>
+      <div><strong>Giờ làm việc</strong>Văn phòng: 8:00 – 17:30, thứ Hai đến thứ Bảy<br />Đội ca đêm: 21:45 – 6:30, cả tuần</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

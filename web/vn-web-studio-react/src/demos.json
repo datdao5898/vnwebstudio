@@ -262,5 +262,17 @@
       "en": "Dalat homestay template: filter rooms by guest type, price by weekday/weekend nights, add BBQ, campfire, pickup.",
       "vi": "Mẫu homestay Đà Lạt: lọc phòng theo nhóm khách, tính tiền theo đêm thường/cuối tuần, chọn BBQ, lửa trại, xe đón."
     }
+  },
+  {
+    "slug": "cleaning-service",
+    "name": "Sao Mai",
+    "type": {
+      "en": "Industrial Cleaning Service",
+      "vi": "Dịch vụ vệ sinh công nghiệp"
+    },
+    "description": {
+      "en": "Industrial cleaning template: drag-to-compare before and after, per-m² rates, cost calculator by area and night shift.",
+      "vi": "Mẫu vệ sinh công nghiệp: kéo so sánh trước sau, bảng giá theo m², tính chi phí theo diện tích và ca đêm."
+    }
   }
 ]

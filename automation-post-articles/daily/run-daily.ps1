@@ -32,9 +32,10 @@ $p = Start-Process -FilePath 'node' -ArgumentList @('daily/publish.mjs', $date) 
 Write-Log "publish exit code $($p.ExitCode)"
 $publishExit = $p.ExitCode
 
-# Reel: dựng video dọc và lên lịch đăng tối nay (REEL_AT, mặc định 19:30). Lỗi ở bước này không ảnh hưởng bài ảnh ở trên.
+# Keep this file ASCII-only: PowerShell 5.1 reads BOM-less files as ANSI, and Vietnamese bytes can turn into quote characters and break parsing.
+# Reel: build the vertical video and schedule it for tonight (REEL_AT, default 19:30). A failure here does not affect the image post above.
 if ($publishExit -eq 0) {
-  Write-Log 'Reel: dựng video + lên lịch đăng'
+  Write-Log 'Reel: build video + schedule post'
   $r = Start-Process -FilePath 'node' -ArgumentList @('daily/reel.mjs', $date) -WorkingDirectory $app -NoNewWindow -Wait -PassThru `
     -RedirectStandardOutput (Join-Path $daily "logs\$date-reel.out.txt") -RedirectStandardError (Join-Path $daily "logs\$date-reel.err.txt")
   Write-Log "reel exit code $($r.ExitCode)"
