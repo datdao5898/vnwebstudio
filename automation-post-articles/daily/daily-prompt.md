@@ -19,12 +19,25 @@ Yêu cầu:
 - Đặt một thương hiệu giả, có tên tiếng Việt và hợp với ngành. Nội dung viết bằng tiếng Việt có dấu, cụ thể và thật: giá bằng ₫, địa chỉ ở Việt Nam, giờ mở cửa, quy trình, chi tiết riêng của ngành. Không dùng lorem ipsum.
 - `<title>` có dạng `Tên thương hiệu — câu giới thiệu ngắn`.
 - Trang có các phần: header, hero, dịch vụ hoặc sản phẩm (có giá), một tính năng tương tác hợp với ngành (ví dụ đặt lịch, bảng giá có tab, tính chi phí, lọc sản phẩm), quy trình hoặc lý do chọn, cảm nhận khách hàng hoặc con số, CTA và footer.
-- Không dùng ảnh bên ngoài hay file ảnh. Hình minh họa vẽ bằng SVG inline, CSS hoặc canvas cho đẹp và hợp ngành.
+- Dùng ảnh thật theo mục "Ảnh thật" bên dưới. Nếu không có ảnh dùng được thì vẽ minh họa bằng SVG inline, CSS hoặc canvas cho đẹp và hợp ngành. Không dùng link ảnh từ trang khác.
 - Font từ Google Fonts phải hỗ trợ tiếng Việt, ví dụ Be Vietnam Pro, Fraunces, Lora, Playfair Display, Montserrat, Nunito, Source Serif 4, Roboto Slab. Chọn cặp font khác với các mẫu trước.
 - Mỗi ngày dùng một bảng màu và bố cục khác. Đừng lặp lại mẫu hoa và tránh các mẫu AI quen thuộc như nền kem với chữ serif và màu đất nung, hoặc gradient tím xanh.
 - Giao diện sáng. Trang phải đẹp ở cả độ rộng 1440px và 390px, không bị tràn ngang. Header sticky thì thêm `scroll-margin-top` cho các section.
 - Phần hero phải đẹp trong khung 1440×900 vì đó là ảnh bìa bài đăng.
 - Form chỉ là demo: dùng `preventDefault` và hiện thông báo trên trang.
+
+### Ảnh thật
+
+Script đã tải sẵn ảnh ứng viên từ Pixabay vào `automation-post-articles/daily/photo-candidates/DATE/`. Danh sách nằm trong `manifest.json` ở thư mục đó. Nếu không có file này, hoặc `slug` trong đó khác chủ đề bạn đang làm, thì bỏ qua mục này và vẽ minh họa như trên.
+
+- Mở từng ảnh bằng công cụ Read để xem tận mắt rồi mới chọn. Đừng chọn chỉ dựa vào tag.
+- Chọn 3 đến 5 ảnh đúng ngành và hợp với nhau về màu sắc. Thiết kế bảng màu và bố cục theo ảnh đã chọn. Ảnh hero phải là ảnh đẹp nhất. Nếu không có ảnh nào đủ tốt cho một vị trí, dùng SVG hoặc CSS cho vị trí đó.
+- Bỏ ngay ảnh có logo, tên thương hiệu, sản phẩm nhận ra được hãng, chữ nước ngoài lộ rõ, hoặc có dấu hiệu lỗi do AI tạo ra.
+- Tránh ảnh thấy rõ mặt người. Không bao giờ gắn ảnh người vào phần cảm nhận khách hàng, đội ngũ hay bác sĩ/chuyên gia, vì thương hiệu là giả. Phần cảm nhận khách hàng chỉ dùng chữ hoặc chữ cái đầu của tên.
+- Trong HTML và CSS, trỏ tới ảnh bằng đường dẫn `images/<tên-file>.jpg` với tên file tiếng Anh không dấu, ví dụ `images/hero.jpg`. Bạn không chép được file ảnh, script sẽ tự chép sau khi bạn xong.
+- Mỗi `<img>` có `alt` tiếng Việt, `width`, `height` và `object-fit: cover`. Ảnh tối đa rộng 1280px nên đừng để hero tràn toàn màn hình ở 1440px mà không có lớp phủ màu hoặc khung chứa.
+- Nếu chữ nằm đè lên ảnh, thêm lớp phủ để chữ luôn dễ đọc.
+- Footer có thêm dòng nhỏ `Ảnh: Pixabay`.
 
 ## 3. Viết nội dung bài đăng
 
@@ -38,9 +51,14 @@ Ghi file `automation-post-articles/daily/out/DATE.json` (JSON hợp lệ, UTF-8)
   "industryEn": "Industry in English, ngắn gọn (ví dụ: Dental Clinic)",
   "summary": "1 câu tiếng Việt (dưới 120 ký tự) giới thiệu mẫu và 2–3 tính năng nổi bật, dùng cho thẻ trên trang chủ VN Web Studio",
   "summaryEn": "Câu trên dịch sang tiếng Anh",
-  "caption": "Nội dung bài Facebook"
+  "caption": "Nội dung bài Facebook",
+  "photos": [
+    { "id": 1234567, "file": "hero.jpg" }
+  ]
 }
 ```
+
+`photos` liệt kê mọi ảnh trang đang dùng: `id` lấy từ `manifest.json`, `file` là tên file trong thư mục `images/`. Mọi đường dẫn `images/...` trong trang phải có mặt ở đây, nếu không bài sẽ không đăng được. Không dùng ảnh thật thì để `[]`.
 
 Caption viết theo giọng các bài trong `web/fanpage-content/noi-dung-dang-fanpage.md`:
 - Dòng đầu có một emoji hợp ngành, theo mẫu `Mẫu website <ngành> – <Thương hiệu>`.

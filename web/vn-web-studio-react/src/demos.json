@@ -274,5 +274,17 @@
       "en": "Industrial cleaning template: drag-to-compare before and after, per-m² rates, cost calculator by area and night shift.",
       "vi": "Mẫu vệ sinh công nghiệp: kéo so sánh trước sau, bảng giá theo m², tính chi phí theo diện tích và ca đêm."
     }
+  },
+  {
+    "slug": "moving-service",
+    "name": "Thùng Xanh",
+    "type": {
+      "en": "Moving Service",
+      "vi": "Dịch vụ chuyển nhà"
+    },
+    "description": {
+      "en": "Moving service template: load items onto a truck for an instant price, rates by truck size, item-by-item packing guide.",
+      "vi": "Mẫu chuyển nhà: xếp đồ lên xe để ra giá ngay, bảng giá theo cỡ xe, hướng dẫn đóng gói từng món đồ."
+    }
   }
 ]

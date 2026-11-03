@@ -13,6 +13,12 @@ $outFile = Join-Path $daily "out\$date.json"
 Write-Log "Start, root=$root"
 
 if (-not (Test-Path $outFile)) {
+  # Download candidate photos for Claude to choose from. On failure Claude falls back to SVG/CSS art.
+  Write-Log 'Downloading candidate photos'
+  $ph = Start-Process -FilePath 'node' -ArgumentList @('daily/photos.mjs', $date) -WorkingDirectory $app -NoNewWindow -Wait -PassThru `
+    -RedirectStandardOutput (Join-Path $daily "logs\$date-photos.out.txt") -RedirectStandardError (Join-Path $daily "logs\$date-photos.err.txt")
+  Write-Log "photos exit code $($ph.ExitCode)"
+
   $claude = Join-Path $env:USERPROFILE '.local\bin\claude.exe'
   $prompt = "Read automation-post-articles/daily/daily-prompt.md and follow it exactly. DATE=$date"
   $claudeArgs = @('-p', "`"$prompt`"", '--permission-mode', 'acceptEdits',

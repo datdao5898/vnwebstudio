@@ -6,6 +6,7 @@ import { execFileSync } from 'child_process';
 import { pathToFileURL } from 'url';
 import { publishDirectPost } from '../server/services/direct-post.js';
 import { imagesDir } from '../server/images.js';
+import { installPhotos } from './photos.mjs';
 
 const date = process.argv[2];
 if (!/^\d{4}-\d{2}-\d{2}$/.test(date || '')) throw new Error('Thiếu ngày dạng YYYY-MM-DD.');
@@ -19,6 +20,7 @@ if (job.skip) { console.log('Bỏ qua:', job.skip); process.exit(0); }
 const siteDir = path.resolve('..', 'web', job.slug);
 const siteIndex = path.join(siteDir, 'index.html');
 if (!fs.existsSync(siteIndex)) throw new Error(`Không thấy ${siteIndex}.`);
+installPhotos(job, siteDir, date);
 
 const browsers = [
   { exe: 'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe', headless: '--headless=old' },

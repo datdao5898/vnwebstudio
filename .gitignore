@@ -5,6 +5,7 @@
 *.db-journal
 automation-post-articles/data/
 automation-post-articles/daily/logs/
+automation-post-articles/daily/photo-candidates/
 
 # Dependencies, caches, builds
 node_modules/

@@ -1,0 +1,42 @@
+{
+  "slug": "moving-service-landing",
+  "brand": "Thùng Xanh",
+  "industry": "Dịch vụ chuyển nhà",
+  "industryEn": "Moving Service",
+  "summary": "Mẫu chuyển nhà: xếp đồ lên xe để ra giá ngay, bảng giá theo cỡ xe, hướng dẫn đóng gói từng món đồ.",
+  "summaryEn": "Moving service template: load items onto a truck for an instant price, rates by truck size, item-by-item packing guide.",
+  "caption": "🚚 Mẫu website dịch vụ chuyển nhà – Thùng Xanh\n\nChủ dịch vụ chuyển nhà ngày nào cũng trả lời cùng một câu: nhà tôi cần xe nào, hết bao nhiêu tiền, có phát sinh không. Website giúp khách tự kê đồ, biết ngay giá tạm tính rồi đặt lịch, đội ngũ chỉ cần gọi lại chốt phiếu.\n\n✔ Xếp đồ lên xe: bấm từng món, xe đầy dần, tự chọn cỡ xe và ra giá\n✔ Bảng giá theo 4 cỡ xe, ghi rõ số người bốc xếp và số thùng mượn\n✔ Hướng dẫn đóng gói theo từng món: bát đĩa, tivi, tủ lạnh, giường tủ\n✔ Lịch trình một ca chuyển theo từng mốc giờ, cam kết ghi rõ để khách yên tâm\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n#thietkeweb #websitechuyennha #chuyennhatrongoi #vnwebstudio",
+  "photos": [
+    { "id": 2481718, "file": "hero.jpg" },
+    { "id": 2507269, "file": "boxes.jpg" },
+    { "id": 550405, "file": "open-box.jpg" }
+  ],
+  "reel": {
+    "hook": "Khách hỏi giá chuyển nhà? Để website tính giúp.",
+    "hookSay": "Chủ dịch vụ chuyển nhà ngày nào cũng bị hỏi cần xe nào, hết bao nhiêu tiền. Đây là mẫu website giúp khách tự biết ngay.",
+    "features": [
+      {
+        "title": "Xếp đồ lên xe, ra giá ngay",
+        "say": "Khách bấm từng món đồ, chiếc xe đầy dần, website tự chọn cỡ xe và báo luôn giá tạm tính.",
+        "section": "#estimate"
+      },
+      {
+        "title": "Bảng giá theo bốn cỡ xe",
+        "say": "Mỗi cỡ xe ghi rõ giá tiền, số người bốc xếp và số thùng được mượn, khách nhìn là hiểu.",
+        "section": "#packages"
+      },
+      {
+        "title": "Đóng gói theo từng món",
+        "say": "Bát đĩa, ti vi, tủ lạnh hay giường tủ đều có cách gói riêng, cho thấy đội ngũ làm nghề rất kỹ.",
+        "section": "#packing"
+      },
+      {
+        "title": "Lịch trình từng mốc giờ",
+        "say": "Một ca chuyển được kể rõ từng mốc, từ lúc khảo sát đến khi nghiệm thu, nên khách yên tâm giao đồ.",
+        "section": "#process"
+      }
+    ],
+    "desktopSay": "Trên máy tính, giao diện vẫn rõ ràng, chuyên nghiệp và rất dễ dùng.",
+    "outroSay": "Muốn có website như vậy cho dịch vụ của mình? Inbox VN Web Studio để nhận bản demo nhé."
+  }
+}
