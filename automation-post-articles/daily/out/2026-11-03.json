@@ -7,9 +7,18 @@
   "summaryEn": "Moving service template: load items onto a truck for an instant price, rates by truck size, item-by-item packing guide.",
   "caption": "🚚 Mẫu website dịch vụ chuyển nhà – Thùng Xanh\n\nChủ dịch vụ chuyển nhà ngày nào cũng trả lời cùng một câu: nhà tôi cần xe nào, hết bao nhiêu tiền, có phát sinh không. Website giúp khách tự kê đồ, biết ngay giá tạm tính rồi đặt lịch, đội ngũ chỉ cần gọi lại chốt phiếu.\n\n✔ Xếp đồ lên xe: bấm từng món, xe đầy dần, tự chọn cỡ xe và ra giá\n✔ Bảng giá theo 4 cỡ xe, ghi rõ số người bốc xếp và số thùng mượn\n✔ Hướng dẫn đóng gói theo từng món: bát đĩa, tivi, tủ lạnh, giường tủ\n✔ Lịch trình một ca chuyển theo từng mốc giờ, cam kết ghi rõ để khách yên tâm\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n#thietkeweb #websitechuyennha #chuyennhatrongoi #vnwebstudio",
   "photos": [
-    { "id": 2481718, "file": "hero.jpg" },
-    { "id": 2507269, "file": "boxes.jpg" },
-    { "id": 550405, "file": "open-box.jpg" }
+    {
+      "id": 2481718,
+      "file": "hero.jpg"
+    },
+    {
+      "id": 2507269,
+      "file": "boxes.jpg"
+    },
+    {
+      "id": 550405,
+      "file": "open-box.jpg"
+    }
   ],
   "reel": {
     "hook": "Khách hỏi giá chuyển nhà? Để website tính giúp.",
@@ -38,5 +47,15 @@
     ],
     "desktopSay": "Trên máy tính, giao diện vẫn rõ ràng, chuyên nghiệp và rất dễ dùng.",
     "outroSay": "Muốn có website như vậy cho dịch vụ của mình? Inbox VN Web Studio để nhận bản demo nhé."
-  }
+  },
+  "images": [
+    "moving-service-01-tong-quan.png",
+    "moving-service-02-trang-chu.png",
+    "moving-service-03-dien-thoai.png"
+  ],
+  "draft": false,
+  "postedCaption": "🚚 Mẫu website dịch vụ chuyển nhà – Thùng Xanh\n\nChủ dịch vụ chuyển nhà ngày nào cũng trả lời cùng một câu: nhà tôi cần xe nào, hết bao nhiêu tiền, có phát sinh không. Website giúp khách tự kê đồ, biết ngay giá tạm tính rồi đặt lịch, đội ngũ chỉ cần gọi lại chốt phiếu.\n\n✔ Xếp đồ lên xe: bấm từng món, xe đầy dần, tự chọn cỡ xe và ra giá\n✔ Bảng giá theo 4 cỡ xe, ghi rõ số người bốc xếp và số thùng mượn\n✔ Hướng dẫn đóng gói theo từng món: bát đĩa, tivi, tủ lạnh, giường tủ\n✔ Lịch trình một ca chuyển theo từng mốc giờ, cam kết ghi rõ để khách yên tâm\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n👉 Xem demo: https://datdao5898.github.io/vnwebstudio/demos/moving-service/?utm_source=facebook&utm_campaign=2026-11-03\n🌐 Trang chủ VN Web Studio: https://datdao5898.github.io/vnwebstudio/?utm_source=facebook&utm_campaign=2026-11-03\n\n#thietkeweb #websitechuyennha #chuyennhatrongoi #vnwebstudio",
+  "postId": 114,
+  "facebookPostId": "1220847914452015_122126189175421469",
+  "dryRun": false
 }
