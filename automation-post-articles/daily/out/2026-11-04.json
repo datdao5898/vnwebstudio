@@ -1,0 +1,43 @@
+{
+  "slug": "law-firm-landing",
+  "brand": "Luật Sáng Tỏ",
+  "industry": "Văn phòng luật",
+  "industryEn": "Law Firm",
+  "summary": "Mẫu văn phòng luật: tra hồ sơ theo tình huống, bảng phí công khai, đặt lịch tư vấn theo hình thức.",
+  "summaryEn": "Law firm template: case-based document lookup, transparent fee list, consultation booking by format.",
+  "caption": "⚖️ Mẫu website văn phòng luật – Luật Sáng Tỏ\n\nNhiều người có việc cần luật sư nhưng ngại gọi vì không biết phải chuẩn bị gì và hết bao nhiêu tiền. Website giúp khách tự xem hồ sơ, thời gian và mức phí tham khảo, nên khi liên hệ họ đã sẵn sàng làm việc.\n\n✔ Tra hồ sơ theo tình huống: đất đai, hôn nhân, doanh nghiệp, lao động, thừa kế\n✔ Bảng phí công khai cho từng dịch vụ, ghi rõ khoản chưa bao gồm\n✔ Quy trình bốn bước, nói rõ cách báo phí và báo tiến độ\n✔ Đặt lịch tư vấn tại văn phòng, qua điện thoại hoặc video\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n#thietkeweb #websitevanphongluat #websiteluatsu #vnwebstudio",
+  "photos": [
+    { "id": 2458253, "file": "hero.jpg" },
+    { "id": 719066, "file": "gavel.jpg" },
+    { "id": 4781576, "file": "columns.jpg" },
+    { "id": 2597016, "file": "justice.jpg" }
+  ],
+  "reel": {
+    "hook": "Khách ngại gọi luật sư vì sợ không biết hết bao nhiêu?",
+    "hookSay": "Nhiều người cần luật sư nhưng ngại gọi vì không biết chuẩn bị gì, hết bao nhiêu tiền. Đây là mẫu website giúp khách yên tâm liên hệ.",
+    "features": [
+      {
+        "title": "Tra hồ sơ theo tình huống",
+        "say": "Khách chọn việc đang gặp, website hiện ngay giấy tờ cần có, thời gian dự kiến và phí tham khảo.",
+        "section": "#tinh-huong"
+      },
+      {
+        "title": "Bảng phí công khai",
+        "say": "Từng dịch vụ đều ghi rõ mức phí khởi điểm, nên khách không phải đoán trước khi gọi.",
+        "section": "#dich-vu"
+      },
+      {
+        "title": "Quy trình bốn bước rõ ràng",
+        "say": "Bốn bước làm việc được kể rõ, từ lúc đọc hồ sơ đến khi báo tiến độ, tạo cảm giác tin cậy.",
+        "section": "#quy-trinh"
+      },
+      {
+        "title": "Đặt lịch tư vấn ngay",
+        "say": "Khách chọn gặp tại văn phòng, gọi điện hay gọi video, rồi chọn ngày và khung giờ phù hợp.",
+        "section": "#dat-lich"
+      }
+    ],
+    "desktopSay": "Trên máy tính, giao diện vẫn trang trọng, rõ ràng và rất dễ dùng.",
+    "outroSay": "Muốn có website như vậy cho văn phòng của mình? Inbox VN Web Studio để nhận bản demo nhé."
+  }
+}

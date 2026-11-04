@@ -19,7 +19,7 @@
   { "slug": "homestay", "industry": "Homestay Đà Lạt", "done": "2026-11-01" },
   { "slug": "cleaning-service", "industry": "Dịch vụ vệ sinh công nghiệp", "done": "2026-11-02" },
   { "slug": "moving-service", "industry": "Dịch vụ chuyển nhà", "done": "2026-11-03", "photoQueries": ["moving boxes", "moving truck", "cardboard boxes apartment"] },
-  { "slug": "law-firm", "industry": "Văn phòng luật", "done": null, "photoQueries": ["law books", "scales of justice", "courthouse columns"] },
+  { "slug": "law-firm", "industry": "Văn phòng luật", "done": "2026-11-04", "photoQueries": ["law books", "scales of justice", "courthouse columns"] },
   { "slug": "accounting-service", "industry": "Dịch vụ kế toán thuế", "done": null, "photoQueries": ["calculator documents", "accounting paperwork", "tax forms"] },
   { "slug": "printing-shop", "industry": "Xưởng in ấn", "done": null, "photoQueries": ["printing press", "offset printing", "print shop paper"] },
   { "slug": "event-planner", "industry": "Tổ chức sự kiện", "done": null, "photoQueries": ["event decoration", "banquet hall", "conference stage"] },

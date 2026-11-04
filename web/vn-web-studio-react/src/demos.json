@@ -286,5 +286,17 @@
       "en": "Moving service template: load items onto a truck for an instant price, rates by truck size, item-by-item packing guide.",
       "vi": "Mẫu chuyển nhà: xếp đồ lên xe để ra giá ngay, bảng giá theo cỡ xe, hướng dẫn đóng gói từng món đồ."
     }
+  },
+  {
+    "slug": "law-firm",
+    "name": "Luật Sáng Tỏ",
+    "type": {
+      "en": "Law Firm",
+      "vi": "Văn phòng luật"
+    },
+    "description": {
+      "en": "Law firm template: case-based document lookup, transparent fee list, consultation booking by format.",
+      "vi": "Mẫu văn phòng luật: tra hồ sơ theo tình huống, bảng phí công khai, đặt lịch tư vấn theo hình thức."
+    }
   }
 ]
