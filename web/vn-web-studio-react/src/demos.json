@@ -298,5 +298,17 @@
       "en": "Law firm template: case-based document lookup, transparent fee list, consultation booking by format.",
       "vi": "Mẫu văn phòng luật: tra hồ sơ theo tình huống, bảng phí công khai, đặt lịch tư vấn theo hình thức."
     }
+  },
+  {
+    "slug": "accounting-service",
+    "name": "Kế toán Sổ Gọn",
+    "type": {
+      "en": "Accounting & Tax Service",
+      "vi": "Dịch vụ kế toán thuế"
+    },
+    "description": {
+      "en": "Accounting and tax service template: size-based fee calculator, itemized price list, tax deadline calendar by period.",
+      "vi": "Mẫu dịch vụ kế toán thuế: tính phí theo quy mô, bảng giá từng dịch vụ, lịch hạn nộp thuế theo kỳ."
+    }
   }
 ]

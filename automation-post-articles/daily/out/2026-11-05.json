@@ -1,0 +1,43 @@
+{
+  "slug": "accounting-service-landing",
+  "brand": "Kế toán Sổ Gọn",
+  "industry": "Dịch vụ kế toán thuế",
+  "industryEn": "Accounting & Tax Service",
+  "summary": "Mẫu dịch vụ kế toán thuế: tính phí theo quy mô, bảng giá từng dịch vụ, lịch hạn nộp thuế theo kỳ.",
+  "summaryEn": "Accounting and tax service template: size-based fee calculator, itemized price list, tax deadline calendar by period.",
+  "caption": "🧾 Mẫu website dịch vụ kế toán thuế – Kế toán Sổ Gọn\n\nChủ doanh nghiệp nhỏ thường sợ trễ hạn thuế nhưng lại ngại hỏi vì không biết thuê kế toán hết bao nhiêu. Website giúp khách tự tính phí và thấy rõ việc cần làm, nên khi liên hệ họ đã sẵn sàng bắt đầu.\n\n✔ Tính phí theo loại hình, số hóa đơn và số nhân viên\n✔ Bảng giá rõ từng dịch vụ, từ kê khai đến quyết toán\n✔ Lịch hạn nộp thuế theo tháng, quý và cuối năm\n✔ Form nhận rà sổ miễn phí, gửi kèm phiếu tạm tính\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n#thietkeweb #websiteketoan #dichvuketoan #vnwebstudio",
+  "photos": [
+    { "id": 1680905, "file": "hero.jpg" },
+    { "id": 1238598, "file": "calculator.jpg" },
+    { "id": 1428230, "file": "ledger.jpg" },
+    { "id": 7529921, "file": "review.jpg" }
+  ],
+  "reel": {
+    "hook": "Sợ trễ hạn thuế mà chưa biết thuê kế toán hết bao nhiêu?",
+    "hookSay": "Chủ doanh nghiệp nhỏ nào cũng sợ trễ hạn thuế, nhưng lại ngại hỏi giá kế toán. Đây là mẫu website giúp khách yên tâm liên hệ.",
+    "features": [
+      {
+        "title": "Tính phí theo quy mô",
+        "say": "Khách chọn loại hình, số hóa đơn và số nhân viên, website hiện ngay chi phí mỗi tháng.",
+        "section": "#tinh-phi"
+      },
+      {
+        "title": "Bảng giá từng dịch vụ",
+        "say": "Từ kê khai đến quyết toán cuối năm, dịch vụ nào cũng ghi rõ mức phí khởi điểm.",
+        "section": "#dich-vu"
+      },
+      {
+        "title": "Lịch hạn nộp thuế",
+        "say": "Lịch chia theo tháng, theo quý và cuối năm, nên chủ doanh nghiệp biết ngay ngày nào cần nộp gì.",
+        "section": "#lich-thue"
+      },
+      {
+        "title": "Nhận rà sổ miễn phí",
+        "say": "Khách để lại số điện thoại và gửi kèm phiếu tạm tính, nên kế toán gọi lại là vào việc được ngay.",
+        "section": "#lien-he"
+      }
+    ],
+    "desktopSay": "Trên máy tính, giao diện vẫn gọn gàng, rõ ràng và rất dễ dùng.",
+    "outroSay": "Muốn có website như vậy cho văn phòng kế toán của mình? Inbox VN Web Studio để nhận bản demo nhé."
+  }
+}
