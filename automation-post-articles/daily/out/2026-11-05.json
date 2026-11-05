@@ -7,10 +7,22 @@
   "summaryEn": "Accounting and tax service template: size-based fee calculator, itemized price list, tax deadline calendar by period.",
   "caption": "🧾 Mẫu website dịch vụ kế toán thuế – Kế toán Sổ Gọn\n\nChủ doanh nghiệp nhỏ thường sợ trễ hạn thuế nhưng lại ngại hỏi vì không biết thuê kế toán hết bao nhiêu. Website giúp khách tự tính phí và thấy rõ việc cần làm, nên khi liên hệ họ đã sẵn sàng bắt đầu.\n\n✔ Tính phí theo loại hình, số hóa đơn và số nhân viên\n✔ Bảng giá rõ từng dịch vụ, từ kê khai đến quyết toán\n✔ Lịch hạn nộp thuế theo tháng, quý và cuối năm\n✔ Form nhận rà sổ miễn phí, gửi kèm phiếu tạm tính\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n#thietkeweb #websiteketoan #dichvuketoan #vnwebstudio",
   "photos": [
-    { "id": 1680905, "file": "hero.jpg" },
-    { "id": 1238598, "file": "calculator.jpg" },
-    { "id": 1428230, "file": "ledger.jpg" },
-    { "id": 7529921, "file": "review.jpg" }
+    {
+      "id": 1680905,
+      "file": "hero.jpg"
+    },
+    {
+      "id": 1238598,
+      "file": "calculator.jpg"
+    },
+    {
+      "id": 1428230,
+      "file": "ledger.jpg"
+    },
+    {
+      "id": 7529921,
+      "file": "review.jpg"
+    }
   ],
   "reel": {
     "hook": "Sợ trễ hạn thuế mà chưa biết thuê kế toán hết bao nhiêu?",
@@ -39,5 +51,15 @@
     ],
     "desktopSay": "Trên máy tính, giao diện vẫn gọn gàng, rõ ràng và rất dễ dùng.",
     "outroSay": "Muốn có website như vậy cho văn phòng kế toán của mình? Inbox VN Web Studio để nhận bản demo nhé."
-  }
+  },
+  "images": [
+    "accounting-service-01-tong-quan.png",
+    "accounting-service-02-trang-chu.png",
+    "accounting-service-03-dien-thoai.png"
+  ],
+  "draft": false,
+  "postedCaption": "🧾 Mẫu website dịch vụ kế toán thuế – Kế toán Sổ Gọn\n\nChủ doanh nghiệp nhỏ thường sợ trễ hạn thuế nhưng lại ngại hỏi vì không biết thuê kế toán hết bao nhiêu. Website giúp khách tự tính phí và thấy rõ việc cần làm, nên khi liên hệ họ đã sẵn sàng bắt đầu.\n\n✔ Tính phí theo loại hình, số hóa đơn và số nhân viên\n✔ Bảng giá rõ từng dịch vụ, từ kê khai đến quyết toán\n✔ Lịch hạn nộp thuế theo tháng, quý và cuối năm\n✔ Form nhận rà sổ miễn phí, gửi kèm phiếu tạm tính\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n👉 Xem demo: https://datdao5898.github.io/vnwebstudio/demos/accounting-service/?utm_source=facebook&utm_campaign=2026-11-05\n🌐 Trang chủ VN Web Studio: https://datdao5898.github.io/vnwebstudio/?utm_source=facebook&utm_campaign=2026-11-05\n\n#thietkeweb #websiteketoan #dichvuketoan #vnwebstudio",
+  "postId": 122,
+  "facebookPostId": "1220847914452015_122126559531421469",
+  "dryRun": false
 }
