@@ -7,22 +7,63 @@
   "summaryEn": "Print shop template: price list by product group, instant print quote calculator and design file upload form.",
   "caption": "🖨️ Mẫu website xưởng in ấn – Xưởng In Chấm Màu\n\nKhách hỏi giá in là phải chờ sale tính, chờ lâu là họ hỏi xưởng khác. Một website báo giá ngay, nhận file ngay sẽ giúp xưởng in chốt đơn nhanh hơn.\n\n✔ Bảng giá danh thiếp, tờ rơi, catalogue, hộp giấy lọc theo nhóm\n✔ Tính giá in tức thì theo số lượng, loại giấy, gia công và in gấp\n✔ Quy trình 5 bước rõ ràng, có duyệt bản in thử trước khi chạy máy\n✔ Form gửi file thiết kế, tự điền sẵn đơn vừa tính giá\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n#thietkeweb #vnwebstudio #xuongin #inan",
   "photos": [
-    { "id": 3634411, "file": "hero.jpg" },
-    { "id": 1822209, "file": "swatches.jpg" },
-    { "id": 2159702, "file": "press-run.jpg" },
-    { "id": 1602900, "file": "inks.jpg" },
-    { "id": 617209, "file": "proof.jpg" }
+    {
+      "id": 3634411,
+      "file": "hero.jpg"
+    },
+    {
+      "id": 1822209,
+      "file": "swatches.jpg"
+    },
+    {
+      "id": 2159702,
+      "file": "press-run.jpg"
+    },
+    {
+      "id": 1602900,
+      "file": "inks.jpg"
+    },
+    {
+      "id": 617209,
+      "file": "proof.jpg"
+    }
   ],
   "reel": {
     "hook": "Khách hỏi giá in xong thì im luôn?",
     "hookSay": "Khách hỏi giá in mà phải chờ sale tính lại, chờ lâu là họ đặt xưởng khác. Website này giúp xưởng in báo giá ngay lập tức.",
     "features": [
-      { "title": "Bảng giá lọc theo nhóm", "say": "Danh thiếp, tờ rơi, catalogue, hộp giấy đều có giá rõ ràng, lọc theo văn phòng, quảng cáo hay bao bì.", "section": "#san-pham" },
-      { "title": "Tính giá in tức thì", "say": "Khách chọn số lượng, loại giấy, cán màng hay ép kim, giá tạm tính hiện ra ngay không cần chờ.", "section": "#bao-gia" },
-      { "title": "Quy trình năm bước", "say": "Từ gửi file, kiểm tra, duyệt bản in thử đến giao hàng, khách biết rõ đơn của mình đang ở đâu.", "section": "#quy-trinh" },
-      { "title": "Gửi file thiết kế", "say": "Bấm đặt in là thông tin đơn vừa tính được điền sẵn, khách chỉ cần đính kèm file và để lại số điện thoại.", "section": "#lien-he" }
+      {
+        "title": "Bảng giá lọc theo nhóm",
+        "say": "Danh thiếp, tờ rơi, catalogue, hộp giấy đều có giá rõ ràng, lọc theo văn phòng, quảng cáo hay bao bì.",
+        "section": "#san-pham"
+      },
+      {
+        "title": "Tính giá in tức thì",
+        "say": "Khách chọn số lượng, loại giấy, cán màng hay ép kim, giá tạm tính hiện ra ngay không cần chờ.",
+        "section": "#bao-gia"
+      },
+      {
+        "title": "Quy trình năm bước",
+        "say": "Từ gửi file, kiểm tra, duyệt bản in thử đến giao hàng, khách biết rõ đơn của mình đang ở đâu.",
+        "section": "#quy-trinh"
+      },
+      {
+        "title": "Gửi file thiết kế",
+        "say": "Bấm đặt in là thông tin đơn vừa tính được điền sẵn, khách chỉ cần đính kèm file và để lại số điện thoại.",
+        "section": "#lien-he"
+      }
     ],
     "desktopSay": "Trên máy tính, giao diện cũng rộng rãi, rõ ràng và dễ thao tác.",
     "outroSay": "Inbox VN Web Studio để nhận bản demo website xưởng in theo thương hiệu của bạn nhé."
-  }
+  },
+  "images": [
+    "printing-shop-01-tong-quan.png",
+    "printing-shop-02-trang-chu.png",
+    "printing-shop-03-dien-thoai.png"
+  ],
+  "draft": false,
+  "postedCaption": "🖨️ Mẫu website xưởng in ấn – Xưởng In Chấm Màu\n\nKhách hỏi giá in là phải chờ sale tính, chờ lâu là họ hỏi xưởng khác. Một website báo giá ngay, nhận file ngay sẽ giúp xưởng in chốt đơn nhanh hơn.\n\n✔ Bảng giá danh thiếp, tờ rơi, catalogue, hộp giấy lọc theo nhóm\n✔ Tính giá in tức thì theo số lượng, loại giấy, gia công và in gấp\n✔ Quy trình 5 bước rõ ràng, có duyệt bản in thử trước khi chạy máy\n✔ Form gửi file thiết kế, tự điền sẵn đơn vừa tính giá\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n👉 Xem demo: https://datdao5898.github.io/vnwebstudio/demos/printing-shop/?utm_source=facebook&utm_campaign=2026-11-06\n🌐 Trang chủ VN Web Studio: https://datdao5898.github.io/vnwebstudio/?utm_source=facebook&utm_campaign=2026-11-06\n\n#thietkeweb #vnwebstudio #xuongin #inan",
+  "postId": 126,
+  "facebookPostId": "1220847914452015_122126747853421469",
+  "dryRun": false
 }
