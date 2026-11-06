@@ -21,7 +21,7 @@
   { "slug": "moving-service", "industry": "Dịch vụ chuyển nhà", "done": "2026-11-03", "photoQueries": ["moving boxes", "moving truck", "cardboard boxes apartment"] },
   { "slug": "law-firm", "industry": "Văn phòng luật", "done": "2026-11-04", "photoQueries": ["law books", "scales of justice", "courthouse columns"] },
   { "slug": "accounting-service", "industry": "Dịch vụ kế toán thuế", "done": "2026-11-05", "photoQueries": ["calculator documents", "accounting paperwork", "tax forms"] },
-  { "slug": "printing-shop", "industry": "Xưởng in ấn", "done": null, "photoQueries": ["printing press", "offset printing", "print shop paper"] },
+  { "slug": "printing-shop", "industry": "Xưởng in ấn", "done": "2026-11-06", "photoQueries": ["printing press", "offset printing", "print shop paper"] },
   { "slug": "event-planner", "industry": "Tổ chức sự kiện", "done": null, "photoQueries": ["event decoration", "banquet hall", "conference stage"] },
   { "slug": "car-rental", "industry": "Cho thuê xe tự lái", "done": null, "photoQueries": ["car on road", "car keys", "suv road trip"] },
   { "slug": "organic-food", "industry": "Cửa hàng nông sản sạch", "done": null, "photoQueries": ["organic vegetables", "farmers market", "fresh produce"] },

@@ -310,5 +310,17 @@
       "en": "Accounting and tax service template: size-based fee calculator, itemized price list, tax deadline calendar by period.",
       "vi": "Mẫu dịch vụ kế toán thuế: tính phí theo quy mô, bảng giá từng dịch vụ, lịch hạn nộp thuế theo kỳ."
     }
+  },
+  {
+    "slug": "printing-shop",
+    "name": "Xưởng In Chấm Màu",
+    "type": {
+      "en": "Print Shop",
+      "vi": "Xưởng in ấn"
+    },
+    "description": {
+      "en": "Print shop template: price list by product group, instant print quote calculator and design file upload form.",
+      "vi": "Mẫu web xưởng in: bảng giá theo nhóm sản phẩm, tính giá in tức thì và form gửi file thiết kế."
+    }
   }
 ]
