@@ -7,11 +7,26 @@
   "summaryEn": "Event planner template: priced service packages, guest-based budget estimator and date booking form.",
   "caption": "🎉 Mẫu website tổ chức sự kiện – Sắc Hội Event\n\nKhách đặt tiệc cưới, hội nghị hay tất niên luôn hỏi câu đầu tiên: hết bao nhiêu tiền? Trả lời chậm hay mập mờ là họ tìm bên khác. Một website cho khách tự ước tính ngân sách và giữ ngày ngay sẽ giúp công ty sự kiện chốt hợp đồng nhanh hơn.\n\n✔ Bốn gói dịch vụ cưới, hội nghị, gala, tiệc riêng có giá khởi điểm rõ ràng\n✔ Tính ngân sách tức thì theo số khách, mức trang trí và hạng mục thêm\n✔ Quy trình đếm ngược từ 60 ngày đến ngày sự kiện\n✔ Form giữ ngày tự điền sẵn số khách và ngân sách vừa tính\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n#thietkeweb #vnwebstudio #tochucsukien #sukien",
   "photos": [
-    { "id": 2609526, "file": "hero.jpg" },
-    { "id": 1846114, "file": "wedding.jpg" },
-    { "id": 3926344, "file": "conference.jpg" },
-    { "id": 4765941, "file": "gala.jpg" },
-    { "id": 4705709, "file": "party-table.jpg" }
+    {
+      "id": 2609526,
+      "file": "hero.jpg"
+    },
+    {
+      "id": 1846114,
+      "file": "wedding.jpg"
+    },
+    {
+      "id": 3926344,
+      "file": "conference.jpg"
+    },
+    {
+      "id": 4765941,
+      "file": "gala.jpg"
+    },
+    {
+      "id": 4705709,
+      "file": "party-table.jpg"
+    }
   ],
   "reel": {
     "hook": "Khách hỏi giá tiệc xong rồi im luôn?",
@@ -40,5 +55,15 @@
     ],
     "desktopSay": "Trên máy tính, giao diện cũng rộng rãi, sinh động và dễ thao tác.",
     "outroSay": "Inbox VN Web Studio để nhận bản demo website tổ chức sự kiện theo thương hiệu của bạn nhé."
-  }
+  },
+  "images": [
+    "event-planner-01-tong-quan.png",
+    "event-planner-02-trang-chu.png",
+    "event-planner-03-dien-thoai.png"
+  ],
+  "draft": false,
+  "postedCaption": "🎉 Mẫu website tổ chức sự kiện – Sắc Hội Event\n\nKhách đặt tiệc cưới, hội nghị hay tất niên luôn hỏi câu đầu tiên: hết bao nhiêu tiền? Trả lời chậm hay mập mờ là họ tìm bên khác. Một website cho khách tự ước tính ngân sách và giữ ngày ngay sẽ giúp công ty sự kiện chốt hợp đồng nhanh hơn.\n\n✔ Bốn gói dịch vụ cưới, hội nghị, gala, tiệc riêng có giá khởi điểm rõ ràng\n✔ Tính ngân sách tức thì theo số khách, mức trang trí và hạng mục thêm\n✔ Quy trình đếm ngược từ 60 ngày đến ngày sự kiện\n✔ Form giữ ngày tự điền sẵn số khách và ngân sách vừa tính\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n👉 Xem demo: https://datdao5898.github.io/vnwebstudio/demos/event-planner/?utm_source=facebook&utm_campaign=2026-11-07\n🌐 Trang chủ VN Web Studio: https://datdao5898.github.io/vnwebstudio/?utm_source=facebook&utm_campaign=2026-11-07\n\n#thietkeweb #vnwebstudio #tochucsukien #sukien",
+  "postId": 130,
+  "facebookPostId": "1220847914452015_122126906313421469",
+  "dryRun": false
 }
