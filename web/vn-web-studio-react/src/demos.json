@@ -322,5 +322,17 @@
       "en": "Print shop template: price list by product group, instant print quote calculator and design file upload form.",
       "vi": "Mẫu web xưởng in: bảng giá theo nhóm sản phẩm, tính giá in tức thì và form gửi file thiết kế."
     }
+  },
+  {
+    "slug": "event-planner",
+    "name": "Sắc Hội Event",
+    "type": {
+      "en": "Event Planner",
+      "vi": "Tổ chức sự kiện"
+    },
+    "description": {
+      "en": "Event planner template: priced service packages, guest-based budget estimator and date booking form.",
+      "vi": "Mẫu web tổ chức sự kiện: gói dịch vụ có giá, tính ngân sách theo số khách và form giữ ngày."
+    }
   }
 ]

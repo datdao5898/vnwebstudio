@@ -1,0 +1,44 @@
+{
+  "slug": "event-planner-landing",
+  "brand": "Sắc Hội Event",
+  "industry": "Tổ chức sự kiện",
+  "industryEn": "Event Planner",
+  "summary": "Mẫu web tổ chức sự kiện: gói dịch vụ có giá, tính ngân sách theo số khách và form giữ ngày.",
+  "summaryEn": "Event planner template: priced service packages, guest-based budget estimator and date booking form.",
+  "caption": "🎉 Mẫu website tổ chức sự kiện – Sắc Hội Event\n\nKhách đặt tiệc cưới, hội nghị hay tất niên luôn hỏi câu đầu tiên: hết bao nhiêu tiền? Trả lời chậm hay mập mờ là họ tìm bên khác. Một website cho khách tự ước tính ngân sách và giữ ngày ngay sẽ giúp công ty sự kiện chốt hợp đồng nhanh hơn.\n\n✔ Bốn gói dịch vụ cưới, hội nghị, gala, tiệc riêng có giá khởi điểm rõ ràng\n✔ Tính ngân sách tức thì theo số khách, mức trang trí và hạng mục thêm\n✔ Quy trình đếm ngược từ 60 ngày đến ngày sự kiện\n✔ Form giữ ngày tự điền sẵn số khách và ngân sách vừa tính\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n#thietkeweb #vnwebstudio #tochucsukien #sukien",
+  "photos": [
+    { "id": 2609526, "file": "hero.jpg" },
+    { "id": 1846114, "file": "wedding.jpg" },
+    { "id": 3926344, "file": "conference.jpg" },
+    { "id": 4765941, "file": "gala.jpg" },
+    { "id": 4705709, "file": "party-table.jpg" }
+  ],
+  "reel": {
+    "hook": "Khách hỏi giá tiệc xong rồi im luôn?",
+    "hookSay": "Khách đặt tiệc cưới hay tất niên luôn hỏi hết bao nhiêu tiền, trả lời chậm là họ tìm bên khác. Website này giúp công ty sự kiện báo giá ngay.",
+    "features": [
+      {
+        "title": "Gói dịch vụ có giá rõ",
+        "say": "Tiệc cưới, hội nghị, gala và tiệc riêng đều ghi rõ giá khởi điểm và những gì đã bao gồm.",
+        "section": "#dich-vu"
+      },
+      {
+        "title": "Tính ngân sách tức thì",
+        "say": "Khách chọn loại tiệc, kéo số khách, chọn mức trang trí và hạng mục thêm, dự toán hiện ra ngay.",
+        "section": "#bao-gia"
+      },
+      {
+        "title": "Quy trình đếm ngược",
+        "say": "Từ buổi khảo sát trước sáu mươi ngày đến ngày diễn ra, khách biết rõ từng mốc chuẩn bị.",
+        "section": "#quy-trinh"
+      },
+      {
+        "title": "Giữ ngày trong một phút",
+        "say": "Form giữ ngày tự điền sẵn số khách và ngân sách vừa tính, khách chỉ cần để lại số điện thoại.",
+        "section": "#lien-he"
+      }
+    ],
+    "desktopSay": "Trên máy tính, giao diện cũng rộng rãi, sinh động và dễ thao tác.",
+    "outroSay": "Inbox VN Web Studio để nhận bản demo website tổ chức sự kiện theo thương hiệu của bạn nhé."
+  }
+}
