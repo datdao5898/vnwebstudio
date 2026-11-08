@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Rong Ruổi — cho thuê xe tự lái tại Đà Nẵng, giao xe sân bay trong 15 phút, xe đời mới, giá rõ ràng." />
+  <title>Rong Ruổi — Thuê xe tự lái Đà Nẵng, giao tận sân bay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600;700;800&family=Asap:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script data-goatcounter="https://vnwebstudio.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  <meta name="robots" content="noindex, follow">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="logo" href="#top" aria-label="Rong Ruổi - về đầu trang">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="#0e1b2e"/><path d="M8 25 Q20 6 32 25" stroke="#ff7a1a" stroke-width="3.5" fill="none" stroke-linecap="round"/><circle cx="20" cy="25" r="3" fill="#fff"/></svg>
+        Rong Ruổi
+      </a>
+      <nav class="nav" aria-label="Điều hướng">
+        <a href="#doi-xe">Đội xe</a><a href="#bang-gia">Tính giá</a><a href="#thu-tuc">Thủ tục</a><a href="#danh-gia">Đánh giá</a>
+      </nav>
+      <a class="btn small primary" href="#bang-gia">Đặt xe</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="wrap">
+        <div class="hero-frame">
+          <img class="hero-img" src="images/hero.jpg" alt="Xe SUV màu bạc đậu bên hồ lúc hoàng hôn" width="1280" height="853" />
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="dot"></span>Thuê xe tự lái · Đà Nẵng – Hội An – Huế</div>
+            <h1>Xuống máy bay là <em>có xe chờ sẵn.</em></h1>
+            <p>Hơn 60 xe đời 2022 trở lên, bảo dưỡng mỗi 5.000 km. Giao tận sảnh ga đến, giá thuê ghi rõ từng dòng, cọc hoàn trong 3 ngày.</p>
+            <ul class="hero-badges">
+              <li><strong>15 phút</strong>giao xe tại sân bay</li>
+              <li><strong>300 km</strong>mỗi ngày đã gồm trong giá</li>
+              <li><strong>24/7</strong>cứu hộ khắp miền Trung</li>
+            </ul>
+          </div>
+
+          <form class="search" id="search" aria-label="Tìm xe trống">
+            <label>Nhận xe tại
+              <select id="s-place">
+                <option value="airport">Sân bay Đà Nẵng</option>
+                <option value="center">Văn phòng Hải Châu</option>
+                <option value="hotel">Khách sạn nội thành</option>
+                <option value="hoian">Hội An</option>
+              </select>
+            </label>
+            <label>Ngày nhận<input type="date" id="s-from" required /></label>
+            <label>Ngày trả<input type="date" id="s-to" required /></label>
+            <label>Loại xe
+              <select id="s-type">
+                <option value="all">Tất cả</option>
+                <option value="5">4 – 5 chỗ</option>
+                <option value="7">7 chỗ</option>
+                <option value="pickup">Bán tải</option>
+                <option value="ev">Xe điện</option>
+              </select>
+            </label>
+            <button class="btn primary" type="submit">Xem xe trống</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="doi-xe" class="fleet">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <span class="kicker">Đội xe</span>
+            <h2>Chọn xe hợp chuyến đi</h2>
+            <p>Giá theo ngày 24 giờ, đã gồm bảo hiểm bắt buộc, camera hành trình và nước suối trên xe.</p>
+          </div>
+          <label class="switch"><input type="checkbox" id="autoOnly" /><span></span>Chỉ xe số tự động</label>
+        </div>
+        <div class="chips" id="chips" role="group" aria-label="Lọc theo loại xe"></div>
+        <p class="result-note" id="resultNote" aria-live="polite"></p>
+        <div class="grid" id="grid"></div>
+      </div>
+    </section>
+
+    <section id="bang-gia" class="calc">
+      <div class="wrap calc-wrap">
+        <div class="calc-form">
+          <span class="kicker">Tính giá thuê</span>
+          <h2>Biết trước tổng tiền, không phụ phí bất ngờ</h2>
+          <label class="field">Xe bạn chọn
+            <select id="c-car"></select>
+          </label>
+          <div class="field">
+            <span>Số ngày thuê</span>
+            <div class="stepper">
+              <button type="button" id="dayMinus" aria-label="Bớt một ngày">−</button>
+              <output id="c-days">3</output>
+              <button type="button" id="dayPlus" aria-label="Thêm một ngày">+</button>
+              <small id="c-tier"></small>
+            </div>
+          </div>
+          <div class="field">
+            <span>Nơi nhận xe</span>
+            <div class="seg" id="c-place" role="radiogroup" aria-label="Nơi nhận xe"></div>
+          </div>
+          <fieldset class="field extras">
+            <legend>Tuỳ chọn thêm</legend>
+            <label><input type="checkbox" value="ins" />Bảo hiểm thân vỏ mở rộng<b>120.000₫/ngày</b></label>
+            <label><input type="checkbox" value="kid" />Ghế an toàn trẻ em<b>50.000₫/ngày</b></label>
+            <label><input type="checkbox" value="wifi" />Bộ phát Wi-Fi 4G<b>40.000₫/ngày</b></label>
+            <label><input type="checkbox" value="driver" />Thêm người lái thứ hai<b>150.000₫/chuyến</b></label>
+          </fieldset>
+        </div>
+
+        <aside class="bill" aria-live="polite">
+          <div class="bill-car" id="billCar"></div>
+          <div class="lines" id="lines"></div>
+          <div class="total"><span>Tổng tiền thuê</span><strong id="total">0₫</strong></div>
+          <div class="deposit" id="deposit"></div>
+          <form class="hold" id="hold">
+            <label>Họ tên<input id="h-name" required value="Nguyễn Minh Anh" /></label>
+            <label>Số điện thoại<input id="h-phone" required inputmode="tel" value="0905 214 368" /></label>
+            <button class="btn primary" type="submit">Giữ xe · cọc 500.000₫</button>
+          </form>
+          <div class="ok" id="holdOk" hidden></div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="thu-tuc" class="steps-sec">
+      <div class="wrap steps-wrap">
+        <figure class="steps-photo">
+          <img src="images/car-door.jpg" alt="Bàn tay cầm chìa khóa chuẩn bị mở cửa xe màu bạc" width="1280" height="853" loading="lazy" />
+          <figcaption>
+            <strong>Giấy tờ cần có</strong>
+            <ul>
+              <li>CCCD gắn chip của người lái</li>
+              <li>Giấy phép lái xe hạng B còn hạn</li>
+              <li>Cọc 5 – 10 triệu đồng, chuyển khoản hoặc tiền mặt</li>
+            </ul>
+          </figcaption>
+        </figure>
+        <div>
+          <span class="kicker">Thủ tục</span>
+          <h2>Bốn bước, mất chưa tới 15 phút</h2>
+          <ol class="steps">
+            <li><b>01</b><div><h3>Đặt xe và giữ chỗ</h3><p>Chọn xe, ngày nhận trả trên web. Chuyển 500.000₫ giữ xe, số tiền này được trừ vào tiền thuê.</p></div></li>
+            <li><b>02</b><div><h3>Xác minh qua Zalo</h3><p>Gửi ảnh CCCD và bằng lái. Nhân viên duyệt trong 30 phút, gửi lại hợp đồng điện tử để ký.</p></div></li>
+            <li><b>03</b><div><h3>Nhận xe, kiểm tra cùng nhau</h3><p>Chụp ảnh bốn góc xe, ghi số km và mức xăng vào biên bản. Xe giao luôn đầy bình.</p></div></li>
+            <li><b>04</b><div><h3>Trả xe, hoàn cọc</h3><p>Đối chiếu km và xăng, thanh toán phần còn lại. Tiền cọc hoàn đủ trong 3 ngày làm việc.</p></div></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="vi-sao" class="why">
+      <div class="wrap why-wrap">
+        <div class="why-text">
+          <span class="kicker">Vì sao chọn Rong Ruổi</span>
+          <h2>Thuê xe như mượn xe của người quen</h2>
+          <div class="why-list">
+            <div><h3>Giá ghi rõ từng dòng</h3><p>Không thu phí vệ sinh nếu xe trả sạch. Vượt km tính 3.000₫ mỗi km, báo trước trong hợp đồng.</p></div>
+            <div><h3>Bảo hiểm hai chiều</h3><p>Mọi xe có bảo hiểm vật chất. Va quẹt nhỏ dưới 2 triệu đồng, khách không phải chi trả.</p></div>
+            <div><h3>Cứu hộ cả đèo Hải Vân</h3><p>Hotline 24/7, đổi xe khác trong 2 giờ nếu xe hỏng trên tuyến Đà Nẵng – Huế – Quảng Nam.</p></div>
+            <div><h3>Gợi ý lộ trình miễn phí</h3><p>Gửi kèm bản đồ cung đường Sơn Trà, Bà Nà, Hội An, chỗ đỗ xe và quán ăn dọc đường.</p></div>
+          </div>
+        </div>
+        <div class="why-photos">
+          <img class="p1" src="images/key-handover.jpg" alt="Bàn tay đưa chìa khóa xe cho khách" width="1280" height="853" loading="lazy" />
+          <img class="p2" src="images/car-keys.jpg" alt="Chùm chìa khóa xe đặt trên mặt bàn" width="1280" height="960" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section id="danh-gia" class="reviews">
+      <div class="wrap">
+        <div class="stats">
+          <div><strong>4,9/5</strong>từ 2.300 đánh giá Google</div>
+          <div><strong>18.000+</strong>chuyến đi từ 2019</div>
+          <div><strong>64 xe</strong>đời 2022 trở lên</div>
+          <div><strong>15 phút</strong>giao xe sân bay</div>
+        </div>
+        <div class="sec-head"><div><span class="kicker">Khách nói gì</span><h2>Những chuyến đi suôn sẻ</h2></div></div>
+        <div class="quotes">
+          <blockquote>
+            <p>“Hạ cánh 9 giờ tối, ra cửa đã thấy nhân viên cầm bảng tên chờ. Xe 7 chỗ sạch, đầy xăng, cả nhà đi Hội An ngay trong đêm.”</p>
+            <footer><span class="ava">MK</span><div><b>Anh Minh Khôi</b>Hà Nội · thuê 4 ngày</div></footer>
+          </blockquote>
+          <blockquote>
+            <p>“Mình đi đèo Hải Vân thì xe báo lốp non, gọi hotline 40 phút sau có người tới bơm và kiểm tra. Rất yên tâm.”</p>
+            <footer><span class="ava">TH</span><div><b>Chị Thu Hà</b>TP.HCM · thuê 6 ngày</div></footer>
+          </blockquote>
+          <blockquote>
+            <p>“Báo giá đúng như trang web, trả xe xong buổi chiều thì sáng hôm sau đã nhận lại tiền cọc qua tài khoản.”</p>
+            <footer><span class="ava">QB</span><div><b>Anh Quốc Bảo</b>Huế · khách quen</div></footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="dat-xe">
+      <div class="wrap">
+        <div>
+          <h2>Đi đoàn, thuê theo tháng hay cần xe cho công ty?</h2>
+          <p>Báo giá riêng trong 30 phút, giảm đến 25% khi thuê từ 3 xe hoặc từ 30 ngày.</p>
+        </div>
+        <div class="band-cta">
+          <a class="btn primary" href="tel:0905686123">Gọi 0905 686 123</a>
+          <a class="btn ghost" href="#bang-gia">Tính giá ngay</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="lien-he" class="foot">
+    <div class="wrap">
+      <div>
+        <a class="logo" href="#top">Rong Ruổi</a>
+        <p>Cho thuê xe tự lái Đà Nẵng · Hội An · Huế</p>
+      </div>
+      <div><strong>Văn phòng</strong>86 Nguyễn Văn Linh, Hải Châu, Đà Nẵng<br />Quầy giao xe: sảnh ga đến quốc nội, sân bay Đà Nẵng</div>
+      <div><strong>Hotline / Zalo</strong><span class="phone">0905 686 123</span>Cứu hộ 24/7: 0905 686 911</div>
+      <div><strong>Giờ làm việc</strong>Văn phòng 7:00 – 21:00, cả tuần<br />Giao xe sân bay theo giờ chuyến bay</div>
+    </div>
+    <div class="wrap fine">
+      <span>© 2026 Rong Ruổi. Website mẫu do VN Web Studio thiết kế.</span>
+      <span>Ảnh: Pixabay</span>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" hidden></div>
+  <script src="script.js"></script>
+</body>
+</html>

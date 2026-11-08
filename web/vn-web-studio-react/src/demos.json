@@ -334,5 +334,17 @@
       "en": "Event planner template: priced service packages, guest-based budget estimator and date booking form.",
       "vi": "Mẫu web tổ chức sự kiện: gói dịch vụ có giá, tính ngân sách theo số khách và form giữ ngày."
     }
+  },
+  {
+    "slug": "car-rental",
+    "name": "Rong Ruổi",
+    "type": {
+      "en": "Self-drive Car Rental",
+      "vi": "Cho thuê xe tự lái"
+    },
+    "description": {
+      "en": "Self-drive car rental template: availability search by date, fleet filter by type, rental cost calculator with deposit",
+      "vi": "Mẫu web thuê xe tự lái: tìm xe trống theo ngày, lọc đội xe theo loại, tính giá thuê kèm cọc"
+    }
   }
 ]
