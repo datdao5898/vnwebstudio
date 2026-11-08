@@ -7,21 +7,59 @@
   "summaryEn": "Self-drive car rental template: availability search by date, fleet filter by type, rental cost calculator with deposit",
   "caption": "🚗 Mẫu website cho thuê xe tự lái – Rong Ruổi\n\nKhách thuê xe luôn hỏi ba câu: còn xe không, tổng bao nhiêu tiền, cọc thế nào. Một website trả lời sẵn cả ba sẽ giúp chủ xe bớt trả lời tin nhắn và chốt đơn nhanh hơn.\n\n✔ Ô tìm xe trống theo ngày nhận, ngày trả và nơi giao xe\n✔ Đội xe lọc theo 4–5 chỗ, 7 chỗ, bán tải, xe điện, số tự động\n✔ Bảng tính giá tự cộng ngày thuê, giảm giá dài ngày, phụ phí và tiền cọc\n✔ Thủ tục 4 bước và giấy tờ cần có ghi rõ ngay trên trang\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n#thietkeweb #vnwebstudio #thuexetulai #websitechothuexe",
   "photos": [
-    { "id": 2359514, "file": "hero.jpg" },
-    { "id": 5246178, "file": "car-door.jpg" },
-    { "id": 791390, "file": "key-handover.jpg" },
-    { "id": 949094, "file": "car-keys.jpg" }
+    {
+      "id": 2359514,
+      "file": "hero.jpg"
+    },
+    {
+      "id": 5246178,
+      "file": "car-door.jpg"
+    },
+    {
+      "id": 791390,
+      "file": "key-handover.jpg"
+    },
+    {
+      "id": 949094,
+      "file": "car-keys.jpg"
+    }
   ],
   "reel": {
     "hook": "Khách hỏi giá thuê xe mãi không chốt?",
     "hookSay": "Chủ xe tự lái nào cũng mệt vì trả lời mãi một câu hỏi: còn xe không, thuê ba ngày hết bao nhiêu tiền.",
     "features": [
-      { "title": "Tìm xe trống theo ngày", "say": "Khách chọn ngày nhận, ngày trả và nơi giao xe, trang hiện ngay những mẫu xe còn trống.", "section": "#top" },
-      { "title": "Lọc đội xe theo loại", "say": "Đội xe lọc theo năm chỗ, bảy chỗ, bán tải hay xe điện, có cả nút chỉ xem xe số tự động.", "section": "#doi-xe" },
-      { "title": "Tính giá thuê và tiền cọc", "say": "Bảng tính tự cộng tiền thuê, giảm giá thuê dài ngày, phụ phí giao xe và báo luôn tiền cọc.", "section": "#bang-gia" },
-      { "title": "Thủ tục bốn bước rõ ràng", "say": "Thủ tục và giấy tờ cần mang được ghi rõ, khách đọc xong là biết phải chuẩn bị gì.", "section": "#thu-tuc" }
+      {
+        "title": "Tìm xe trống theo ngày",
+        "say": "Khách chọn ngày nhận, ngày trả và nơi giao xe, trang hiện ngay những mẫu xe còn trống.",
+        "section": "#top"
+      },
+      {
+        "title": "Lọc đội xe theo loại",
+        "say": "Đội xe lọc theo năm chỗ, bảy chỗ, bán tải hay xe điện, có cả nút chỉ xem xe số tự động.",
+        "section": "#doi-xe"
+      },
+      {
+        "title": "Tính giá thuê và tiền cọc",
+        "say": "Bảng tính tự cộng tiền thuê, giảm giá thuê dài ngày, phụ phí giao xe và báo luôn tiền cọc.",
+        "section": "#bang-gia"
+      },
+      {
+        "title": "Thủ tục bốn bước rõ ràng",
+        "say": "Thủ tục và giấy tờ cần mang được ghi rõ, khách đọc xong là biết phải chuẩn bị gì.",
+        "section": "#thu-tuc"
+      }
     ],
     "desktopSay": "Trên máy tính giao diện cũng rộng rãi, đẹp mắt và rất dễ đặt xe.",
     "outroSay": "Inbox VN Web Studio để nhận bản demo website thuê xe mang thương hiệu của bạn nhé."
-  }
+  },
+  "images": [
+    "car-rental-01-tong-quan.png",
+    "car-rental-02-trang-chu.png",
+    "car-rental-03-dien-thoai.png"
+  ],
+  "draft": false,
+  "postedCaption": "🚗 Mẫu website cho thuê xe tự lái – Rong Ruổi\n\nKhách thuê xe luôn hỏi ba câu: còn xe không, tổng bao nhiêu tiền, cọc thế nào. Một website trả lời sẵn cả ba sẽ giúp chủ xe bớt trả lời tin nhắn và chốt đơn nhanh hơn.\n\n✔ Ô tìm xe trống theo ngày nhận, ngày trả và nơi giao xe\n✔ Đội xe lọc theo 4–5 chỗ, 7 chỗ, bán tải, xe điện, số tự động\n✔ Bảng tính giá tự cộng ngày thuê, giảm giá dài ngày, phụ phí và tiền cọc\n✔ Thủ tục 4 bước và giấy tờ cần có ghi rõ ngay trên trang\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n👉 Xem demo: https://datdao5898.github.io/vnwebstudio/demos/car-rental/?utm_source=facebook&utm_campaign=2026-11-08\n🌐 Trang chủ VN Web Studio: https://datdao5898.github.io/vnwebstudio/?utm_source=facebook&utm_campaign=2026-11-08\n\n#thietkeweb #vnwebstudio #thuexetulai #websitechothuexe",
+  "postId": 134,
+  "facebookPostId": "1220847914452015_122127133215421469",
+  "dryRun": false
 }
