@@ -1,0 +1,44 @@
+{
+  "slug": "organic-food-landing",
+  "brand": "Rổ Xanh",
+  "industry": "Cửa hàng nông sản sạch",
+  "industryEn": "Organic Grocery Store",
+  "summary": "Mẫu web nông sản sạch: tự gói rổ rau theo tuần, đặt định kỳ giảm giá, tra mã nguồn gốc từng lô",
+  "summaryEn": "Organic grocery template: build-your-own weekly veggie box, discounted subscriptions, batch traceability lookup",
+  "caption": "🥬 Mẫu website cửa hàng nông sản sạch – Rổ Xanh\n\nKhách mua rau sạch luôn muốn biết rau từ vườn nào, hái lúc nào và có đáng tin không. Một website cho khách tự gói rổ và tự kiểm tra nguồn gốc sẽ giúp cửa hàng giữ chân khách đặt đều mỗi tuần.\n\n✔ Tự gói rổ rau củ, lọc theo nhóm, có sẵn rổ 2 người, 4 người, ăn dặm\n✔ Đặt định kỳ mỗi tuần giảm 10%, chọn ngày giao, tự tính phí giao\n✔ Ô tra mã lô hàng: xem vườn trồng, ngày hái, kết quả test dư lượng\n✔ Bảng giá hôm nay chạy ngang, báo món nào tăng, món nào giảm\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n#thietkeweb #vnwebstudio #nongsansach #websitebanrau",
+  "photos": [
+    { "id": 752153, "file": "hero.jpg" },
+    { "id": 1565597, "file": "farm.jpg" },
+    { "id": 673184, "file": "carrots.jpg" },
+    { "id": 1585075, "file": "potatoes.jpg" },
+    { "id": 1085063, "file": "mix.jpg" }
+  ],
+  "reel": {
+    "hook": "Khách hỏi rau của bạn sạch thật không?",
+    "hookSay": "Bán rau sạch, câu khách hỏi nhiều nhất là rau từ vườn nào, hái lúc nào. Trả lời bằng tin nhắn mãi thì rất mệt.",
+    "features": [
+      {
+        "title": "Tự gói rổ rau theo tuần",
+        "say": "Khách tự chọn rau củ theo nhóm, hoặc bấm rổ có sẵn cho hai người, bốn người, rổ ăn dặm cho bé.",
+        "section": "#ro"
+      },
+      {
+        "title": "Đặt định kỳ giảm 10%",
+        "say": "Đặt định kỳ mỗi tuần được giảm mười phần trăm, chọn ngày giao, trang tự tính phí giao hàng.",
+        "section": ".summary"
+      },
+      {
+        "title": "Tra mã nguồn gốc lô hàng",
+        "say": "Nhập mã in trên túi rau là thấy vườn trồng, giờ hái và kết quả kiểm tra dư lượng thuốc.",
+        "section": "#nguon-goc"
+      },
+      {
+        "title": "Bảng giá hôm nay",
+        "say": "Bảng giá chạy ngang ngay đầu trang, báo món nào đang giảm giá để khách mua thêm.",
+        "section": "#ticker"
+      }
+    ],
+    "desktopSay": "Trên máy tính giao diện cũng rộng rãi, tươi sáng và chọn rau rất dễ.",
+    "outroSay": "Inbox VN Web Studio để nhận bản demo website bán nông sản mang thương hiệu của bạn nhé."
+  }
+}

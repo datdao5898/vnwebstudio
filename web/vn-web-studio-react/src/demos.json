@@ -346,5 +346,17 @@
       "en": "Self-drive car rental template: availability search by date, fleet filter by type, rental cost calculator with deposit",
       "vi": "Mẫu web thuê xe tự lái: tìm xe trống theo ngày, lọc đội xe theo loại, tính giá thuê kèm cọc"
     }
+  },
+  {
+    "slug": "organic-food",
+    "name": "Rổ Xanh",
+    "type": {
+      "en": "Organic Grocery Store",
+      "vi": "Cửa hàng nông sản sạch"
+    },
+    "description": {
+      "en": "Organic grocery template: build-your-own weekly veggie box, discounted subscriptions, batch traceability lookup",
+      "vi": "Mẫu web nông sản sạch: tự gói rổ rau theo tuần, đặt định kỳ giảm giá, tra mã nguồn gốc từng lô"
+    }
   }
 ]

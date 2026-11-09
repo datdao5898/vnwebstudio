@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Rổ Xanh — nông sản sạch VietGAP từ Đà Lạt, Củ Chi, Mộc Châu, thu hoạch sáng nay, giao tận nhà trong ngày tại TP.HCM." />
+  <title>Rổ Xanh — Nông sản sạch thu hoạch sáng, giao chiều</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@500;600;700&family=Sarabun:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script data-goatcounter="https://vnwebstudio.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  <meta name="robots" content="noindex, follow">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="logo" href="#top" aria-label="Rổ Xanh">
+        <svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true">
+          <circle cx="20" cy="20" r="19" fill="#2e8b3d" />
+          <path d="M9 19h22l-2.6 10.4a3 3 0 0 1-2.9 2.3H14.5a3 3 0 0 1-2.9-2.3z" fill="#fff" />
+          <path d="M13 23h14M14 27h12" stroke="#2e8b3d" stroke-width="1.6" stroke-linecap="round" />
+          <path d="M20 18c0-5 3-8.5 8-9-0.4 5-3.6 8.4-8 9z" fill="#c8e86b" />
+          <path d="M19 18c0-3.6-2.2-6-6-6.6 0.2 3.8 2.6 6.2 6 6.6z" fill="#c8e86b" />
+        </svg>
+        <span>Rổ <b>Xanh</b></span>
+      </a>
+      <nav class="nav" aria-label="Điều hướng">
+        <a href="#ro">Chọn rổ</a><a href="#nguon-goc">Nguồn gốc</a><a href="#quy-trinh">Quy trình</a><a href="#khach-hang">Khách hàng</a>
+      </nav>
+      <a class="basket-btn" href="#ro" aria-label="Xem rổ hàng">
+        <span>Rổ của bạn</span><b id="count">0</b>
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="dot"></span>Thu hoạch 5:00 sáng · Giao trước 18:00 cùng ngày</div>
+          <h1>Rau củ sáng nay còn sương, <mark>chiều đã lên mâm.</mark></h1>
+          <p>Rổ Xanh lấy hàng trực tiếp từ 14 nông trại VietGAP ở Đà Lạt, Củ Chi và Mộc Châu. Không qua chợ đầu mối, không ủ hóa chất, mỗi lô đều có mã truy xuất để bạn tự kiểm tra.</p>
+          <div class="cta">
+            <a class="btn primary" href="#ro">Tự chọn rổ hôm nay</a>
+            <a class="btn ghost" href="#nguon-goc">Tra mã nguồn gốc</a>
+          </div>
+          <ul class="facts">
+            <li><strong>14</strong>nông trại liên kết</li>
+            <li><strong>8 tiếng</strong>từ vườn tới bếp</li>
+            <li><strong>300.000₫</strong>miễn phí giao từ</li>
+          </ul>
+        </div>
+        <div class="hero-media">
+          <img src="images/hero.jpg" alt="Rổ mây đựng xà lách, củ cải đường, ớt chuông vàng và cà chua vừa hái" width="1280" height="876" />
+          <div class="float f1">
+            <span class="badge">Lô hôm nay</span>
+            <strong>RX-1109-DT</strong>
+            <small>Xà lách thủy canh · Đức Trọng, Lâm Đồng</small>
+          </div>
+          <div class="float f2">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 2l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 15.4 6.7 18.4l1.2-6L3.4 8.3l6-.7z" fill="#ffc93c"/></svg>
+            <div><strong>4,9/5</strong><small>từ 2.380 đơn tháng này</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="ticker" aria-label="Giá hôm nay">
+        <div class="ticker-track" id="ticker"></div>
+      </div>
+    </section>
+
+    <section id="ro" class="shop">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <span class="kicker">Tự gói rổ</span>
+            <h2>Chọn đúng thứ nhà bạn ăn trong tuần</h2>
+            <p>Giá theo ngày, đã gồm rửa sơ và đóng túi giấy. Bấm rổ có sẵn để chọn nhanh rồi thêm bớt tùy ý.</p>
+          </div>
+          <div class="presets" id="presets"></div>
+        </div>
+
+        <div class="shop-grid">
+          <div>
+            <div class="chips" id="chips" role="tablist" aria-label="Lọc theo nhóm"></div>
+            <div class="products" id="products"></div>
+          </div>
+
+          <aside class="summary" aria-label="Rổ của bạn">
+            <div class="sum-head">
+              <h3>Rổ của bạn</h3>
+              <button class="link" id="clear" type="button">Xóa hết</button>
+            </div>
+            <div class="ship">
+              <div class="ship-bar"><i id="shipFill"></i></div>
+              <p id="shipText">Thêm 300.000₫ để được miễn phí giao</p>
+            </div>
+            <ul class="lines" id="lines"></ul>
+            <div class="freq" role="radiogroup" aria-label="Cách mua">
+              <label><input type="radio" name="freq" value="once" checked /><span>Mua một lần</span></label>
+              <label><input type="radio" name="freq" value="weekly" /><span>Định kỳ mỗi tuần <em>−10%</em></span></label>
+            </div>
+            <div class="days">
+              <span>Ngày giao</span>
+              <div class="day-list" id="days"></div>
+            </div>
+            <dl class="totals">
+              <div><dt>Tạm tính</dt><dd id="sub">0₫</dd></div>
+              <div><dt>Ưu đãi định kỳ</dt><dd id="disc">0₫</dd></div>
+              <div><dt>Phí giao</dt><dd id="fee">25.000₫</dd></div>
+              <div class="grand"><dt>Tổng</dt><dd id="total">0₫</dd></div>
+            </dl>
+            <form class="order" id="orderForm">
+              <input name="name" placeholder="Tên người nhận" required />
+              <input name="phone" type="tel" placeholder="Số điện thoại" pattern="[0-9 ]{9,12}" required />
+              <input name="addr" placeholder="Địa chỉ giao (quận, phường)" required />
+              <button class="btn primary full" type="submit">Đặt rổ</button>
+              <p class="note" id="orderMsg" role="status"></p>
+            </form>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="nguon-goc" class="origin">
+      <div class="wrap origin-grid">
+        <figure class="origin-photo">
+          <img src="images/farm.jpg" alt="Củ cà rốt nhú lên khỏi luống đất tơi xốp trong nắng sớm" width="1280" height="853" />
+          <figcaption>Vườn cà rốt của anh Tư, Đơn Dương, Lâm Đồng</figcaption>
+        </figure>
+        <div class="trace">
+          <span class="kicker">Truy xuất nguồn gốc</span>
+          <h2>Mỗi túi rau có một mã. Nhập vào là thấy vườn nào trồng.</h2>
+          <p>Mã in trên tem túi giấy. Bạn xem được ngày gieo, ngày hái, kết quả test nhanh dư lượng thuốc bảo vệ thực vật và giờ đóng rổ.</p>
+          <form class="trace-form" id="traceForm">
+            <label class="sr" for="code">Mã lô hàng</label>
+            <input id="code" name="code" placeholder="Ví dụ: RX-1109-DT" autocomplete="off" />
+            <button class="btn dark" type="submit">Tra cứu</button>
+          </form>
+          <div class="try">Thử nhanh:
+            <button type="button" data-code="RX-1109-DT">RX-1109-DT</button>
+            <button type="button" data-code="RX-1109-CC">RX-1109-CC</button>
+            <button type="button" data-code="RX-1108-MC">RX-1108-MC</button>
+          </div>
+          <div class="trace-result" id="traceResult" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="quy-trinh" class="process">
+      <div class="wrap">
+        <div class="sec-head center">
+          <span class="kicker">Từ luống đất tới cửa nhà</span>
+          <h2>Bốn chặng, chưa tới tám tiếng</h2>
+        </div>
+        <ol class="steps">
+          <li><span class="time">05:00</span><h3>Hái theo đơn</h3><p>Đơn chốt lúc 22:00 hôm trước. Nông trại chỉ hái đúng số lượng, không hái dư để tồn kho.</p></li>
+          <li><span class="time">07:30</span><h3>Test nhanh dư lượng</h3><p>Lấy mẫu mỗi lô bằng bộ test men Cholinesterase. Lô không đạt bị trả về, không bán.</p></li>
+          <li><span class="time">11:00</span><h3>Xe lạnh về kho Thủ Đức</h3><p>Giữ 8–12°C suốt đường. Rau lá được bọc giấy ẩm để không héo.</p></li>
+          <li><span class="time">14:00</span><h3>Đóng rổ và giao</h3><p>Shipper riêng của Rổ Xanh giao trong khung 2 tiếng, có ảnh chụp rổ gửi Zalo trước khi tới.</p></li>
+        </ol>
+
+        <div class="why">
+          <div class="why-photos">
+            <img class="p1" src="images/carrots.jpg" alt="Rổ mây đầy cà rốt cam tươi" width="1280" height="857" loading="lazy" />
+            <img class="p2" src="images/potatoes.jpg" alt="Khoai tây vàng đổ ra từ bao bố trên nền đất" width="1280" height="853" loading="lazy" />
+          </div>
+          <div class="why-list">
+            <h3>Vì sao gần 6.000 gia đình đặt rổ mỗi tuần</h3>
+            <ul>
+              <li><b>Đổi trả trong 24 giờ.</b> Rau dập, héo hay không như ảnh, chụp lại gửi Zalo là hoàn tiền hoặc giao bù ngay chiều đó.</li>
+              <li><b>Giá nhà vườn công khai.</b> Bảng giá cập nhật 6:00 mỗi sáng, không tăng giá ngày lễ.</li>
+              <li><b>Không túi ni lông.</b> Túi giấy kraft, hộp bã mía cho trái mềm, rổ nhựa thu hồi ở lần giao sau.</li>
+              <li><b>Bỏ qua tuần bất kỳ.</b> Đặt định kỳ nhưng đi du lịch thì bấm tạm dừng, không mất phí.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="khach-hang" class="reviews">
+      <div class="wrap">
+        <div class="stats">
+          <div><strong data-count="5840">0</strong><span>gia đình đặt định kỳ</span></div>
+          <div><strong data-count="14">0</strong><span>nông trại VietGAP</span></div>
+          <div><strong data-count="98">0</strong><span>% lô hàng đạt test lần đầu</span></div>
+          <div><strong data-count="2">0</strong><span>giờ hoàn tiền nếu rau lỗi</span></div>
+        </div>
+        <div class="quotes">
+          <blockquote>
+            <p>“Con nhỏ ăn dặm nên mình kỹ lắm. Thích nhất là tra được mã, biết rau cải hái lúc mấy giờ, ở vườn nào.”</p>
+            <footer><span class="av">TH</span><div><b>Chị Thu Hà</b><small>Thảo Điền, TP. Thủ Đức · đặt 8 tháng</small></div></footer>
+          </blockquote>
+          <blockquote>
+            <p>“Rổ 4 người tầm 460 nghìn ăn đủ tuần, rẻ hơn đi siêu thị mà rau giòn hơn hẳn. Thứ Bảy đi vắng thì bấm bỏ tuần.”</p>
+            <footer><span class="av">QM</span><div><b>Anh Quang Minh</b><small>Quận 7 · đặt định kỳ</small></div></footer>
+          </blockquote>
+          <blockquote>
+            <p>“Có lần xà lách bị dập vài lá, nhắn Zalo 20 phút sau đã có người giao bù. Phục vụ vậy là yên tâm.”</p>
+            <footer><span class="av">LA</span><div><b>Cô Lan Anh</b><small>Bình Thạnh · khách từ 2024</small></div></footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap band-grid">
+        <div>
+          <h2>Bếp ăn công ty, quán chay, nhà hàng?</h2>
+          <p>Nhận báo giá sỉ theo tuần, giao trước 9:00 sáng, xuất hóa đơn VAT đầy đủ.</p>
+        </div>
+        <img src="images/mix.jpg" alt="Cà rốt, mâm xôi, cà chua, rau xanh và hạt óc chó trên nền trắng" width="1280" height="846" loading="lazy" />
+        <a class="btn sun" href="#lien-he">Gọi 0938 246 135</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="lien-he" class="foot">
+    <div class="wrap foot-grid">
+      <div>
+        <a class="logo light" href="#top"><span>Rổ <b>Xanh</b></span></a>
+        <p>Nông sản sạch VietGAP, thu hoạch sáng giao chiều tại TP.HCM.</p>
+      </div>
+      <div>
+        <strong>Kho và cửa hàng</strong>
+        <p>48 Nguyễn Văn Hưởng, P. Thảo Điền, TP. Thủ Đức<br />215 Trần Não, P. An Khánh, TP. Thủ Đức</p>
+      </div>
+      <div>
+        <strong>Giờ nhận đơn</strong>
+        <p>6:00 – 22:00 mỗi ngày<br />Giao 9:00 – 20:00, chủ nhật nghỉ giao</p>
+      </div>
+      <div>
+        <strong>Hotline · Zalo</strong>
+        <p class="phone">0938 246 135</p>
+        <p>hello@roxanh.vn</p>
+      </div>
+    </div>
+    <div class="wrap foot-bottom">
+      <span>© 2026 Rổ Xanh. Mẫu website demo của VN Web Studio.</span>
+      <span>Ảnh: Pixabay</span>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" hidden></div>
+  <script src="script.js"></script>
+</body>
+</html>
