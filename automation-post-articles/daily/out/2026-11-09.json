@@ -7,11 +7,26 @@
   "summaryEn": "Organic grocery template: build-your-own weekly veggie box, discounted subscriptions, batch traceability lookup",
   "caption": "🥬 Mẫu website cửa hàng nông sản sạch – Rổ Xanh\n\nKhách mua rau sạch luôn muốn biết rau từ vườn nào, hái lúc nào và có đáng tin không. Một website cho khách tự gói rổ và tự kiểm tra nguồn gốc sẽ giúp cửa hàng giữ chân khách đặt đều mỗi tuần.\n\n✔ Tự gói rổ rau củ, lọc theo nhóm, có sẵn rổ 2 người, 4 người, ăn dặm\n✔ Đặt định kỳ mỗi tuần giảm 10%, chọn ngày giao, tự tính phí giao\n✔ Ô tra mã lô hàng: xem vườn trồng, ngày hái, kết quả test dư lượng\n✔ Bảng giá hôm nay chạy ngang, báo món nào tăng, món nào giảm\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n#thietkeweb #vnwebstudio #nongsansach #websitebanrau",
   "photos": [
-    { "id": 752153, "file": "hero.jpg" },
-    { "id": 1565597, "file": "farm.jpg" },
-    { "id": 673184, "file": "carrots.jpg" },
-    { "id": 1585075, "file": "potatoes.jpg" },
-    { "id": 1085063, "file": "mix.jpg" }
+    {
+      "id": 752153,
+      "file": "hero.jpg"
+    },
+    {
+      "id": 1565597,
+      "file": "farm.jpg"
+    },
+    {
+      "id": 673184,
+      "file": "carrots.jpg"
+    },
+    {
+      "id": 1585075,
+      "file": "potatoes.jpg"
+    },
+    {
+      "id": 1085063,
+      "file": "mix.jpg"
+    }
   ],
   "reel": {
     "hook": "Khách hỏi rau của bạn sạch thật không?",
@@ -40,5 +55,15 @@
     ],
     "desktopSay": "Trên máy tính giao diện cũng rộng rãi, tươi sáng và chọn rau rất dễ.",
     "outroSay": "Inbox VN Web Studio để nhận bản demo website bán nông sản mang thương hiệu của bạn nhé."
-  }
+  },
+  "images": [
+    "organic-food-01-tong-quan.png",
+    "organic-food-02-trang-chu.png",
+    "organic-food-03-dien-thoai.png"
+  ],
+  "draft": false,
+  "postedCaption": "🥬 Mẫu website cửa hàng nông sản sạch – Rổ Xanh\n\nKhách mua rau sạch luôn muốn biết rau từ vườn nào, hái lúc nào và có đáng tin không. Một website cho khách tự gói rổ và tự kiểm tra nguồn gốc sẽ giúp cửa hàng giữ chân khách đặt đều mỗi tuần.\n\n✔ Tự gói rổ rau củ, lọc theo nhóm, có sẵn rổ 2 người, 4 người, ăn dặm\n✔ Đặt định kỳ mỗi tuần giảm 10%, chọn ngày giao, tự tính phí giao\n✔ Ô tra mã lô hàng: xem vườn trồng, ngày hái, kết quả test dư lượng\n✔ Bảng giá hôm nay chạy ngang, báo món nào tăng, món nào giảm\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n👉 Xem demo: https://datdao5898.github.io/vnwebstudio/demos/organic-food/?utm_source=facebook&utm_campaign=2026-11-09\n🌐 Trang chủ VN Web Studio: https://datdao5898.github.io/vnwebstudio/?utm_source=facebook&utm_campaign=2026-11-09\n\n#thietkeweb #vnwebstudio #nongsansach #websitebanrau",
+  "postId": 137,
+  "facebookPostId": "1220847914452015_122127241149421469",
+  "dryRun": false
 }
