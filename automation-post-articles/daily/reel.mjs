@@ -2,8 +2,8 @@
 // Chạy từ thư mục automation-post-articles, sau publish.mjs:
 //   node daily/reel.mjs 2026-11-01            → dựng video, lên lịch Reel lúc REEL_AT (mặc định 19:30) hôm đó
 //   node daily/reel.mjs 2026-11-01 --no-post  → chỉ dựng video
-// Các bước: chụp toàn trang (điện thoại 390px + máy tính 1440px) → storyboard (mục "reel" trong out/DATE.json,
-// thiếu thì tự rút từ caption) → daily/reel/build.py (giọng VieNeu + cảnh HyperFrames) → hyperframes render → đăng.
+// Các bước: chụp toàn trang điện thoại (390px) → storyboard (mục "reel" trong out/DATE.json,
+// thiếu thì tự rút từ caption) → daily/reel/build.py (giọng VieNeu Hải Đăng, trang cuộn toàn màn hình kèm nhãn từng phần) → hyperframes render → đăng.
 // Đã có video.mp4 thì dùng lại; muốn dựng lại thì xoá thư mục project trong REEL_DIR.
 import fs from 'fs';
 import path from 'path';
@@ -39,7 +39,7 @@ function fallbackReel() {
   return {
     hook: `Mẫu website ${job.industry.toLowerCase()} – ${job.brand}`,
     hookSay: `${firstSentence}`,
-    features: bullets.slice(0, 4).map(b => ({ title: b.split(/[:,–]/)[0].trim().split(' ').slice(0, 6).join(' '), say: b.replace(/\s*\/\s*/g, ' và ') + '.' }))
+    features: bullets.slice(0, 6).map(b => ({ title: b.split(/[:,–]/)[0].trim().split(' ').slice(0, 6).join(' '), say: b.replace(/\s*\/\s*/g, ' và ') + '.' }))
   };
 }
 const reel = job.reel?.features?.length ? job.reel : fallbackReel();
@@ -50,7 +50,8 @@ async function capture() {
   const browser = await puppeteer.launch({ executablePath: exe, headless: true, args: ['--allow-file-access-from-files', '--hide-scrollbars'] });
   const res = {};
   try {
-    for (const [key, width, height, dpr, maxH] of [['mobile', 390, 844, 2, 12000], ['desktop', 1440, 900, 1, 2800]]) {
+    // dpr 2,77: ảnh rộng đúng 1080px, phủ kín khung Reel mà không phải phóng to.
+    for (const [key, width, height, dpr, maxH] of [['mobile', 390, 844, 2.77, 12000]]) {
       const page = await browser.newPage();
       await page.setViewport({ width, height, deviceScaleFactor: dpr, isMobile: key === 'mobile', hasTouch: key === 'mobile' });
       await page.goto(pathToFileURL(siteIndex).href, { waitUntil: 'networkidle0', timeout: 60000 }).catch(() => {});
@@ -83,21 +84,20 @@ async function capture() {
 const videoFile = path.join(project, 'video.mp4');
 if (!fs.existsSync(videoFile)) {
   const cap = await capture();
-  console.log('Đã chụp trang:', cap.mobile.height, 'px (điện thoại),', cap.desktop.height, 'px (máy tính)');
+  console.log('Đã chụp trang:', cap.mobile.height, 'px (điện thoại)');
   const board = {
     brand: job.brand, industry: job.industry,
     hook: clean(reel.hook),
     hookSay: clean(reel.hookSay || reel.hook),
-    features: reel.features.slice(0, 4).map((f, i) => ({ title: clean(f.title), say: clean(f.say), offset: cap.offsets[i] })),
-    desktopSay: clean(reel.desktopSay || 'Trên máy tính, giao diện vẫn rõ ràng và dễ dùng như trên điện thoại.'),
+    features: reel.features.slice(0, 6).map((f, i) => ({ title: clean(f.title), label: clean(f.label || f.title), say: clean(f.say), offset: cap.offsets[i] })),
     outroSay: clean(reel.outroSay || 'Inbox VN Web Studio để nhận bản demo theo thương hiệu của bạn nhé.'),
-    mobile: cap.mobile, desktop: cap.desktop
+    mobile: cap.mobile
   };
   // Phần nằm ngoài ảnh chụp thì bỏ offset (cuộn chia đều).
-  board.features.forEach(f => { if (f.offset != null && f.offset > cap.mobile.height - 400) f.offset = null; });
+  board.features.forEach(f => { if (f.offset != null && f.offset > cap.mobile.height - 300) f.offset = null; });
   const boardFile = path.join(shots, 'storyboard.json');
   // Lời đọc không đổi so với lần dựng trước thì dùng lại giọng đã tạo.
-  const says = b => JSON.stringify([b.hookSay, ...b.features.map(f => f.say), b.desktopSay, b.outroSay]);
+  const says = b => JSON.stringify([b.hookSay, ...b.features.map(f => f.say), b.outroSay]);
   const old = fs.existsSync(boardFile) ? JSON.parse(fs.readFileSync(boardFile, 'utf8')) : null;
   const reuseVoice = old && says(old) === says(board) && fs.existsSync(path.join(project, '.vo', 'timing.json'));
   fs.writeFileSync(boardFile, JSON.stringify(board, null, 2));
@@ -113,7 +113,8 @@ if (noPost) { console.log('Chỉ dựng video (--no-post):', videoFile); process
 const homeUrl = process.env.SITE_URL || 'https://datdao5898.github.io/vnwebstudio/';
 const utm = `?utm_source=facebook&utm_medium=reel&utm_campaign=${date}`;
 const tags = (job.caption.match(/#\w+/g) || ['#thietkeweb', '#vnwebstudio']).join(' ');
-const message = `${job.caption.split('\n')[0].trim()}\n\n${clean(reel.hookSay || reel.hook)}\n\n👉 Xem demo: ${homeUrl}demos/${base}/${utm}\n💬 Inbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n${tags} #reels`;
+const parts = ['mở đầu', ...reel.features.slice(0, 6).map(f => clean(f.label || f.title).toLowerCase())].join(' · ');
+const message = `${job.caption.split('\n')[0].trim()}\n\n${clean(reel.hookSay || reel.hook)}\n\nVideo đi qua từng phần của trang: ${parts}.\n\n👉 Xem demo: ${homeUrl}demos/${base}/${utm}\n💬 Inbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n${tags} #reels`;
 
 // Lên lịch REEL_AT (giờ Việt Nam) hôm nay; đã quá giờ đó (còn dưới 20 phút) thì đăng ngay.
 const at = process.env.REEL_AT || '19:30';

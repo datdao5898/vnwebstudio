@@ -68,22 +68,23 @@ Caption viết theo giọng các bài trong `web/fanpage-content/noi-dung-dang-f
 - Thêm 3 đến 4 hashtag không dấu, có `#thietkeweb` và `#vnwebstudio`.
 - Độ dài dưới 900 ký tự.
 
-Thêm mục `"reel"` vào cùng file JSON. Đây là kịch bản Reel dọc khoảng 30–40 giây: điện thoại cuộn qua website, có giọng đọc tiếng Việt và phụ đề.
+Thêm mục `"reel"` vào cùng file JSON. Đây là kịch bản Reel dọc khoảng 30–40 giây: trang web trên điện thoại phủ kín khung hình, cuộn từ trên xuống qua từng phần. Mỗi phần có nhãn `01 / 05 · THƯƠNG HIỆU · PHẦN` và câu `say` hiện chữ lớn ở đáy, giọng Hải Đăng đọc đúng câu đó. Video kết bằng thẻ tối "Làm website cho thương hiệu của bạn".
 
 ```json
 "reel": {
   "hook": "Chữ lớn ở khung đầu, dưới 60 ký tự, nói thẳng nỗi đau hoặc kết quả",
-  "hookSay": "1–2 câu đọc mở đầu, nói về nhu cầu thật của chủ doanh nghiệp ngành này (dưới 160 ký tự)",
+  "hookSay": "Câu mở đầu giới thiệu mẫu: ngành gì, thương hiệu nào, điểm đặc biệt (dưới 110 ký tự)",
   "features": [
-    { "title": "Tên tính năng, tối đa 28 ký tự", "say": "1 câu đọc giải thích tính năng (dưới 140 ký tự)", "section": "#id-cua-section" }
+    { "title": "Tên tính năng, tối đa 28 ký tự", "label": "Tên phần, 1–3 chữ", "say": "1 câu nói phần này làm được gì cho khách (dưới 110 ký tự)", "section": "#id-cua-section" }
   ],
-  "desktopSay": "1 câu nói giao diện máy tính cũng đẹp, dễ dùng",
-  "outroSay": "1 câu mời inbox VN Web Studio để nhận bản demo"
+  "outroSay": "1 câu mời nhắn tin cho VN Web Studio để nhận bản demo"
 }
 ```
 
-- `features` có đúng 3 hoặc 4 mục, theo đúng các tính năng `✔` trong caption.
+- `features` có 4 đến 6 mục, đi lần lượt từ trên xuống dưới trang (ví dụ: bảng giá, công cụ tra cứu, sản phẩm, quy trình, đánh giá, đặt lịch). Các tính năng `✔` trong caption phải có mặt.
+- `label` là tên ngắn của phần đó, hiện trên nhãn, ví dụ `Bảng giá`, `Lịch tiêm`, `Đặt lịch`.
 - `section` là selector CSS (thường là `#id`) của phần trên trang minh họa tính năng đó, phải tồn tại trong `index.html` bạn vừa làm.
+- Câu `say` hiện nguyên văn trên hình nên phải ngắn, đọc một hơi là hết.
 - Câu đọc viết như người nói, không dùng emoji, ký hiệu, dấu `/` hay chữ viết tắt. Viết số tiền và số liệu bằng chữ khi dễ đọc hơn.
 
 ## 4. Đánh dấu đã làm
