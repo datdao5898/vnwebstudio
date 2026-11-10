@@ -1,0 +1,27 @@
+{
+  "slug": "bbq-restaurant-landing",
+  "brand": "Than Hồng",
+  "industry": "Quán lẩu nướng",
+  "industryEn": "Hot Pot & BBQ Restaurant",
+  "summary": "Mẫu web quán lẩu nướng: thực đơn có tab, chọn vị nước lẩu, tính tiền buffet, đặt bàn theo khung giờ",
+  "summaryEn": "Hot pot & BBQ template: tabbed menu, broth picker, buffet bill calculator, table booking by time slot",
+  "caption": "🔥 Mẫu website quán lẩu nướng – Than Hồng\n\nKhách đi nhóm đông hay hỏi đi 4 người lớn 1 bé thì hết bao nhiêu, tối nay còn bàn không. Nếu trang web trả lời được hết, quán đỡ phải nhắn tin qua lại và khách cũng chốt bàn nhanh hơn.\n\n✔ Thực đơn có tab: đồ nướng, lẩu, món kèm, đồ uống, giá rõ từng phần\n✔ Chọn vị nước lẩu, xem nồi đổi màu và mức độ cay\n✔ Tính tiền buffet theo gói, số người lớn, trẻ em, ngày thường hay cuối tuần\n✔ Đặt bàn theo khung giờ, hiện khung nào còn bàn, khung nào đã kín\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n#thietkeweb #vnwebstudio #quanlaunuong #websitenhahang",
+  "photos": [
+    { "id": 8579177, "file": "hero.jpg" },
+    { "id": 2098020, "file": "platter.jpg" },
+    { "id": 1836053, "file": "wings.jpg" },
+    { "id": 1155130, "file": "kitchen.jpg" }
+  ],
+  "reel": {
+    "hook": "Khách hỏi: đi 5 người hết bao nhiêu tiền?",
+    "hookSay": "Đây là mẫu website quán lẩu nướng Than Hồng, khách tự xem món, tự tính tiền và tự giữ bàn.",
+    "features": [
+      { "title": "Thực đơn có tab, giá rõ", "label": "Thực đơn", "say": "Thực đơn chia tab đồ nướng, lẩu, món kèm và đồ uống, món nào cũng ghi rõ giá.", "section": "#thuc-don" },
+      { "title": "Chọn vị nước lẩu", "label": "Nước lẩu", "say": "Khách bấm chọn vị nước lẩu, nồi lẩu đổi màu và hiện luôn mức độ cay.", "section": "#nuoc-lau" },
+      { "title": "Tính tiền buffet", "label": "Buffet", "say": "Chọn gói buffet, số người lớn, trẻ em, ngày đi ăn, trang tự tính ra tổng tiền.", "section": "#buffet" },
+      { "title": "Bếp sạch, thịt trong ngày", "label": "Bếp", "say": "Phần giới thiệu bếp cho khách thấy thịt cắt trong ngày và than hoa không khói.", "section": "#bep" },
+      { "title": "Đặt bàn theo khung giờ", "label": "Đặt bàn", "say": "Khách chọn giờ đến, thấy ngay khung nào còn bàn, bấm một lần là giữ chỗ.", "section": "#dat-ban" }
+    ],
+    "outroSay": "Nhắn tin cho VN Web Studio để nhận bản demo website quán lẩu nướng mang thương hiệu của bạn nhé."
+  }
+}

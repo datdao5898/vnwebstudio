@@ -25,7 +25,7 @@
   { "slug": "event-planner", "industry": "Tổ chức sự kiện", "done": "2026-11-07", "photoQueries": ["event decoration", "banquet hall", "conference stage"] },
   { "slug": "car-rental", "industry": "Cho thuê xe tự lái", "done": "2026-11-08", "photoQueries": ["car on road", "car keys", "suv road trip"] },
   { "slug": "organic-food", "industry": "Cửa hàng nông sản sạch", "done": "2026-11-09", "photoQueries": ["organic vegetables", "farmers market", "fresh produce"] },
-  { "slug": "bbq-restaurant", "industry": "Quán lẩu nướng", "done": null, "photoQueries": ["grilled meat", "hot pot", "bbq restaurant"] },
+  { "slug": "bbq-restaurant", "industry": "Quán lẩu nướng", "done": "2026-11-10", "photoQueries": ["grilled meat", "hot pot", "bbq restaurant"] },
   { "slug": "furniture-store", "industry": "Cửa hàng nội thất gỗ", "done": null, "photoQueries": ["wooden furniture", "wood dining table", "furniture workshop"] },
   { "slug": "eyewear-store", "industry": "Cửa hàng mắt kính", "done": null, "photoQueries": ["eyeglasses", "glasses on table", "optical store"] },
   { "slug": "music-school", "industry": "Trung tâm dạy nhạc", "done": null, "photoQueries": ["piano keys", "acoustic guitar", "violin lesson"] }

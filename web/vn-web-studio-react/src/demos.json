@@ -358,5 +358,17 @@
       "en": "Organic grocery template: build-your-own weekly veggie box, discounted subscriptions, batch traceability lookup",
       "vi": "Mẫu web nông sản sạch: tự gói rổ rau theo tuần, đặt định kỳ giảm giá, tra mã nguồn gốc từng lô"
     }
+  },
+  {
+    "slug": "bbq-restaurant",
+    "name": "Than Hồng",
+    "type": {
+      "en": "Hot Pot & BBQ Restaurant",
+      "vi": "Quán lẩu nướng"
+    },
+    "description": {
+      "en": "Hot pot & BBQ template: tabbed menu, broth picker, buffet bill calculator, table booking by time slot",
+      "vi": "Mẫu web quán lẩu nướng: thực đơn có tab, chọn vị nước lẩu, tính tiền buffet, đặt bàn theo khung giờ"
+    }
   }
 ]
