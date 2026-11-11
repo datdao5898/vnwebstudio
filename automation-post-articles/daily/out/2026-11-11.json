@@ -7,11 +7,26 @@
   "summaryEn": "Wood furniture template: filter by room and wood type, build-your-own dining table with live pricing, showroom booking",
   "caption": "🪑 Mẫu website cửa hàng nội thất gỗ – Vân Sồi\n\nKhách mua đồ gỗ hay hỏi bàn 1m8 gỗ sồi giá bao nhiêu, đổi sang óc chó thì thêm mấy triệu, bao lâu có hàng. Nếu trang web tự trả lời được, xưởng đỡ báo giá từng tin nhắn và khách cũng chốt cọc nhanh hơn.\n\n✔ Lọc mẫu theo phòng và loại gỗ, giá ghi rõ từng món\n✔ Tự cấu hình bàn ăn: chọn gỗ, kéo kích thước, đổi kiểu chân, bản vẽ và giá đổi theo ngay\n✔ Bảng so sánh bốn loại gỗ: màu, độ cứng, hợp với phòng nào\n✔ Hẹn lịch xem mẫu tại showroom, kèm sẵn cấu hình khách vừa chọn\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n#thietkeweb #vnwebstudio #noithatgo #websitenoithat",
   "photos": [
-    { "id": 8697166, "file": "hero.jpg" },
-    { "id": 3103185, "file": "wood.jpg" },
-    { "id": 1839184, "file": "bedroom.jpg" },
-    { "id": 2113987, "file": "table.jpg" },
-    { "id": 4749771, "file": "workshop.jpg" }
+    {
+      "id": 8697166,
+      "file": "hero.jpg"
+    },
+    {
+      "id": 3103185,
+      "file": "wood.jpg"
+    },
+    {
+      "id": 1839184,
+      "file": "bedroom.jpg"
+    },
+    {
+      "id": 2113987,
+      "file": "table.jpg"
+    },
+    {
+      "id": 4749771,
+      "file": "workshop.jpg"
+    }
   ],
   "reel": {
     "hook": "Khách hỏi: bàn gỗ sồi 1m8 giá bao nhiêu?",
@@ -55,5 +70,15 @@
       }
     ],
     "outroSay": "Nhắn tin cho VN Web Studio để nhận bản demo website nội thất gỗ mang thương hiệu của bạn nhé."
-  }
+  },
+  "images": [
+    "furniture-store-01-tong-quan.png",
+    "furniture-store-02-trang-chu.png",
+    "furniture-store-03-dien-thoai.png"
+  ],
+  "draft": false,
+  "postedCaption": "🪑 Mẫu website cửa hàng nội thất gỗ – Vân Sồi\n\nKhách mua đồ gỗ hay hỏi bàn 1m8 gỗ sồi giá bao nhiêu, đổi sang óc chó thì thêm mấy triệu, bao lâu có hàng. Nếu trang web tự trả lời được, xưởng đỡ báo giá từng tin nhắn và khách cũng chốt cọc nhanh hơn.\n\n✔ Lọc mẫu theo phòng và loại gỗ, giá ghi rõ từng món\n✔ Tự cấu hình bàn ăn: chọn gỗ, kéo kích thước, đổi kiểu chân, bản vẽ và giá đổi theo ngay\n✔ Bảng so sánh bốn loại gỗ: màu, độ cứng, hợp với phòng nào\n✔ Hẹn lịch xem mẫu tại showroom, kèm sẵn cấu hình khách vừa chọn\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n👉 Xem demo: https://datdao5898.github.io/vnwebstudio/demos/furniture-store/?utm_source=facebook&utm_campaign=2026-11-11\n🌐 Trang chủ VN Web Studio: https://datdao5898.github.io/vnwebstudio/?utm_source=facebook&utm_campaign=2026-11-11\n\n#thietkeweb #vnwebstudio #noithatgo #websitenoithat",
+  "postId": 147,
+  "facebookPostId": "1220847914452015_122127600555421469",
+  "dryRun": false
 }
