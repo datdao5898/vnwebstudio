@@ -370,5 +370,17 @@
       "en": "Hot pot & BBQ template: tabbed menu, broth picker, buffet bill calculator, table booking by time slot",
       "vi": "Mẫu web quán lẩu nướng: thực đơn có tab, chọn vị nước lẩu, tính tiền buffet, đặt bàn theo khung giờ"
     }
+  },
+  {
+    "slug": "furniture-store",
+    "name": "Vân Sồi",
+    "type": {
+      "en": "Wood Furniture Store",
+      "vi": "Cửa hàng nội thất gỗ"
+    },
+    "description": {
+      "en": "Wood furniture template: filter by room and wood type, build-your-own dining table with live pricing, showroom booking",
+      "vi": "Mẫu web nội thất gỗ: lọc mẫu theo phòng và loại gỗ, tự cấu hình bàn ăn xem giá ngay, hẹn xem showroom"
+    }
   }
 ]

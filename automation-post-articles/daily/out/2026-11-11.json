@@ -1,0 +1,59 @@
+{
+  "slug": "furniture-store-landing",
+  "brand": "Vân Sồi",
+  "industry": "Cửa hàng nội thất gỗ",
+  "industryEn": "Wood Furniture Store",
+  "summary": "Mẫu web nội thất gỗ: lọc mẫu theo phòng và loại gỗ, tự cấu hình bàn ăn xem giá ngay, hẹn xem showroom",
+  "summaryEn": "Wood furniture template: filter by room and wood type, build-your-own dining table with live pricing, showroom booking",
+  "caption": "🪑 Mẫu website cửa hàng nội thất gỗ – Vân Sồi\n\nKhách mua đồ gỗ hay hỏi bàn 1m8 gỗ sồi giá bao nhiêu, đổi sang óc chó thì thêm mấy triệu, bao lâu có hàng. Nếu trang web tự trả lời được, xưởng đỡ báo giá từng tin nhắn và khách cũng chốt cọc nhanh hơn.\n\n✔ Lọc mẫu theo phòng và loại gỗ, giá ghi rõ từng món\n✔ Tự cấu hình bàn ăn: chọn gỗ, kéo kích thước, đổi kiểu chân, bản vẽ và giá đổi theo ngay\n✔ Bảng so sánh bốn loại gỗ: màu, độ cứng, hợp với phòng nào\n✔ Hẹn lịch xem mẫu tại showroom, kèm sẵn cấu hình khách vừa chọn\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n#thietkeweb #vnwebstudio #noithatgo #websitenoithat",
+  "photos": [
+    { "id": 8697166, "file": "hero.jpg" },
+    { "id": 3103185, "file": "wood.jpg" },
+    { "id": 1839184, "file": "bedroom.jpg" },
+    { "id": 2113987, "file": "table.jpg" },
+    { "id": 4749771, "file": "workshop.jpg" }
+  ],
+  "reel": {
+    "hook": "Khách hỏi: bàn gỗ sồi 1m8 giá bao nhiêu?",
+    "hookSay": "Đây là mẫu website nội thất gỗ Vân Sồi, khách tự chọn gỗ, chọn kích thước và xem giá ngay.",
+    "features": [
+      {
+        "title": "Lọc mẫu theo phòng, loại gỗ",
+        "label": "Sản phẩm",
+        "say": "Khách lọc mẫu theo từng phòng và từng loại gỗ, món nào cũng ghi rõ kích thước và giá.",
+        "section": "#san-pham"
+      },
+      {
+        "title": "Tự cấu hình bàn ăn",
+        "label": "Đặt đóng",
+        "say": "Chọn gỗ, kéo chiều dài, đổi kiểu chân, bản vẽ và giá tiền thay đổi theo ngay lập tức.",
+        "section": "#dat-dong"
+      },
+      {
+        "title": "So sánh bốn loại gỗ",
+        "label": "Chất gỗ",
+        "say": "Bảng chất gỗ nói rõ màu sắc, độ cứng và mỗi loại hợp với phòng nào trong nhà.",
+        "section": "#chat-go"
+      },
+      {
+        "title": "Đóng trọn bộ tiết kiệm",
+        "label": "Trọn bộ",
+        "say": "Các bộ phòng ngủ, phòng ăn đóng trọn gói có ảnh thật và giá đã giảm sẵn.",
+        "section": "#bo-suu-tap"
+      },
+      {
+        "title": "Quy trình mười tám ngày",
+        "label": "Quy trình",
+        "say": "Năm bước từ đo đạc đến lắp đặt ghi rõ từng ngày, khách biết trước khi nào có hàng.",
+        "section": "#quy-trinh"
+      },
+      {
+        "title": "Hẹn xem mẫu tại showroom",
+        "label": "Hẹn xem",
+        "say": "Khách chọn ngày giờ đến showroom, cấu hình vừa chọn được gửi kèm cho xưởng.",
+        "section": "#hen-xem"
+      }
+    ],
+    "outroSay": "Nhắn tin cho VN Web Studio để nhận bản demo website nội thất gỗ mang thương hiệu của bạn nhé."
+  }
+}
