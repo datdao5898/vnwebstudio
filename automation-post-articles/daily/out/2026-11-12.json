@@ -1,0 +1,53 @@
+{
+  "slug": "eyewear-store-landing",
+  "brand": "Kính Mắt Tinh Tường",
+  "industry": "Cửa hàng mắt kính",
+  "industryEn": "Eyewear Store",
+  "summary": "Mẫu web mắt kính: lọc gọng theo khuôn mặt, tính giá tròng và độ dày theo độ cận, đặt lịch đo mắt",
+  "summaryEn": "Eyewear template: filter frames by face shape, lens price and thickness calculator, eye exam booking",
+  "caption": "👓 Mẫu website cửa hàng mắt kính – Kính Mắt Tinh Tường\n\nKhách cận nặng hay nhắn hỏi tròng mỏng giá bao nhiêu, gọng nào hợp mặt tròn, có lấy ngay trong ngày không. Nếu trang web trả lời sẵn, cửa hàng đỡ tư vấn từng tin nhắn và khách đến là chốt kính luôn.\n\n✔ Lọc gọng theo chất liệu và khuôn mặt, ghi rõ số đo và giá\n✔ Tính giá trọn bộ kính: chọn gọng, loại tròng, chiết suất, kéo độ cận là thấy tròng dày bao nhiêu và tổng tiền\n✔ Báo trước thời gian lấy kính: có sẵn 45 phút hay phải đặt tròng\n✔ Đặt lịch đo mắt theo cửa hàng, ngày và khung giờ còn trống\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n#thietkeweb #vnwebstudio #matkinh #websitebanhang",
+  "photos": [],
+  "reel": {
+    "hook": "Cận sáu độ, tròng mỏng giá bao nhiêu?",
+    "hookSay": "Đây là mẫu website cửa hàng mắt kính Tinh Tường, khách tự chọn gọng, tính giá tròng và đặt lịch đo mắt.",
+    "features": [
+      {
+        "title": "Lọc gọng theo khuôn mặt",
+        "label": "Gọng kính",
+        "say": "Khách lọc gọng theo chất liệu và khuôn mặt, mẫu nào cũng ghi rõ số đo và giá.",
+        "section": "#frames"
+      },
+      {
+        "title": "Tính giá trọn bộ kính",
+        "label": "Tính giá",
+        "say": "Chọn gọng, loại tròng và kéo độ cận, giá trọn bộ kính hiện ra ngay lập tức.",
+        "section": "#lenses"
+      },
+      {
+        "title": "Xem tròng dày bao nhiêu",
+        "label": "Độ dày tròng",
+        "say": "Hình mặt cắt cho khách thấy tròng mỏng đi bao nhiêu khi đổi chiết suất cao hơn.",
+        "section": ".calc-out"
+      },
+      {
+        "title": "Quy trình bốn bước",
+        "label": "Quy trình",
+        "say": "Bốn bước từ đo mắt đến chỉnh gọng, kèm cam kết đổi tròng miễn phí trong ba mươi ngày.",
+        "section": "#process"
+      },
+      {
+        "title": "Đặt lịch đo mắt",
+        "label": "Đặt lịch",
+        "say": "Khách chọn cửa hàng, ngày và khung giờ còn trống, đến nơi là vào đo ngay.",
+        "section": "#booking"
+      },
+      {
+        "title": "Con số và cảm nhận",
+        "label": "Đánh giá",
+        "say": "Con số thật và lời khách kể giúp người mới yên tâm đặt lịch.",
+        "section": "#reviews"
+      }
+    ],
+    "outroSay": "Nhắn tin cho VN Web Studio để nhận bản demo website mắt kính mang thương hiệu của bạn nhé."
+  }
+}

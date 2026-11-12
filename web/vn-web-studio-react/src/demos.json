@@ -382,5 +382,17 @@
       "en": "Wood furniture template: filter by room and wood type, build-your-own dining table with live pricing, showroom booking",
       "vi": "Mẫu web nội thất gỗ: lọc mẫu theo phòng và loại gỗ, tự cấu hình bàn ăn xem giá ngay, hẹn xem showroom"
     }
+  },
+  {
+    "slug": "eyewear-store",
+    "name": "Kính Mắt Tinh Tường",
+    "type": {
+      "en": "Eyewear Store",
+      "vi": "Cửa hàng mắt kính"
+    },
+    "description": {
+      "en": "Eyewear template: filter frames by face shape, lens price and thickness calculator, eye exam booking",
+      "vi": "Mẫu web mắt kính: lọc gọng theo khuôn mặt, tính giá tròng và độ dày theo độ cận, đặt lịch đo mắt"
+    }
   }
 ]

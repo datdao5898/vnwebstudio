@@ -27,6 +27,6 @@
   { "slug": "organic-food", "industry": "Cửa hàng nông sản sạch", "done": "2026-11-09", "photoQueries": ["organic vegetables", "farmers market", "fresh produce"] },
   { "slug": "bbq-restaurant", "industry": "Quán lẩu nướng", "done": "2026-11-10", "photoQueries": ["grilled meat", "hot pot", "bbq restaurant"] },
   { "slug": "furniture-store", "industry": "Cửa hàng nội thất gỗ", "done": "2026-11-11", "photoQueries": ["wooden furniture", "wood dining table", "furniture workshop"] },
-  { "slug": "eyewear-store", "industry": "Cửa hàng mắt kính", "done": null, "photoQueries": ["eyeglasses", "glasses on table", "optical store"] },
+  { "slug": "eyewear-store", "industry": "Cửa hàng mắt kính", "done": "2026-11-12", "photoQueries": ["eyeglasses", "glasses on table", "optical store"] },
   { "slug": "music-school", "industry": "Trung tâm dạy nhạc", "done": null, "photoQueries": ["piano keys", "acoustic guitar", "violin lesson"] }
 ]
