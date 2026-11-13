@@ -394,5 +394,17 @@
       "en": "Eyewear template: filter frames by face shape, lens price and thickness calculator, eye exam booking",
       "vi": "Mẫu web mắt kính: lọc gọng theo khuôn mặt, tính giá tròng và độ dày theo độ cận, đặt lịch đo mắt"
     }
+  },
+  {
+    "slug": "music-school",
+    "name": "Cung Đàn",
+    "type": {
+      "en": "Music School",
+      "vi": "Trung tâm dạy nhạc"
+    },
+    "description": {
+      "en": "Music school template with a playable piano keyboard, tuition calculator by package and trial lesson booking",
+      "vi": "Mẫu web trung tâm dạy nhạc: bàn phím piano chơi thử, tính học phí theo gói và đặt lịch học thử"
+    }
   }
 ]

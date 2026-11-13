@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Cung Đàn — trung tâm dạy piano, guitar, violin và thanh nhạc cho trẻ em và người lớn tại Cầu Giấy, Hà Nội. Học thử miễn phí." />
+  <title>Cung Đàn — Học đàn từ nốt đầu tiên đến sân khấu đầu tiên</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;0,700;0,800;1,500;1,700&family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script data-goatcounter="https://vnwebstudio.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  <meta name="robots" content="noindex, follow">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="logo" href="#top" aria-label="Cung Đàn — về đầu trang">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#172554"/><path d="M13 22.5V9.5l9-2v12" fill="none" stroke="#f08a24" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="11" cy="22.5" rx="3" ry="2.3" fill="#f08a24"/><ellipse cx="20" cy="19.5" rx="3" ry="2.3" fill="#f08a24"/></svg>
+        <span>Cung <i>Đàn</i></span>
+      </a>
+      <nav class="nav" aria-label="Điều hướng">
+        <a href="#courses">Khóa học</a>
+        <a href="#tryplay">Thử đàn</a>
+        <a href="#fee">Học phí</a>
+        <a href="#path">Lộ trình</a>
+      </nav>
+      <a class="btn small primary" href="#trial">Học thử miễn phí</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="dot"></span>Khai giảng lớp mới mỗi thứ Hai · Cầu Giấy, Hà Nội</div>
+          <h1>Học đàn từ <em>nốt đầu tiên</em> đến sân khấu đầu tiên.</h1>
+          <p class="lead">Piano, guitar, violin và thanh nhạc cho bé từ 4 tuổi và người đi làm. Lớp 1 kèm 1 hoặc nhóm nhỏ, giáo viên tốt nghiệp Học viện Âm nhạc Quốc gia, cuối mỗi học kỳ có buổi biểu diễn cho phụ huynh.</p>
+          <div class="cta">
+            <a class="btn primary" href="#trial">Đăng ký buổi học thử</a>
+            <a class="btn ghost" href="#fee">Tính học phí</a>
+          </div>
+          <ul class="facts">
+            <li><strong>45 phút</strong>học thử 1 kèm 1, không mất phí</li>
+            <li><strong>12 phòng</strong>cách âm, đàn cơ được lên dây mỗi quý</li>
+            <li><strong>Học bù</strong>khi báo nghỉ trước 24 giờ</li>
+          </ul>
+        </div>
+        <div class="hero-media">
+          <div class="frame">
+            <img src="images/hero.jpg" alt="Cây đàn guitar cổ điển bằng gỗ đặt trên bãi cỏ" width="1280" height="853" />
+          </div>
+          <div class="staff" aria-hidden="true">
+            <svg viewBox="0 0 220 60"><g stroke="#172554" stroke-opacity=".28" stroke-width="1.2"><line x1="0" y1="10" x2="220" y2="10"/><line x1="0" y1="20" x2="220" y2="20"/><line x1="0" y1="30" x2="220" y2="30"/><line x1="0" y1="40" x2="220" y2="40"/><line x1="0" y1="50" x2="220" y2="50"/></g><g fill="#f08a24"><ellipse cx="40" cy="45" rx="6" ry="4.5"/><ellipse cx="80" cy="35" rx="6" ry="4.5"/><ellipse cx="120" cy="25" rx="6" ry="4.5"/><ellipse cx="160" cy="15" rx="6" ry="4.5"/></g><g stroke="#f08a24" stroke-width="2"><line x1="46" y1="45" x2="46" y2="12"/><line x1="86" y1="35" x2="86" y2="4"/><line x1="126" y1="25" x2="126" y2="-6"/><line x1="166" y1="15" x2="166" y2="-16"/></g></svg>
+          </div>
+          <div class="float-card">
+            <div class="fc-k">Lịch tuần này</div>
+            <div class="fc-row"><span>Piano cho bé</span><b>T3 · 17:30</b></div>
+            <div class="fc-row"><span>Guitar đệm hát</span><b>T5 · 19:00</b></div>
+            <div class="fc-row"><span>Violin cơ bản</span><b>T7 · 09:00</b></div>
+            <div class="fc-note">Còn 7 suất học thử</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="courses" class="courses">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <span class="kicker">Khóa học</span>
+            <h2>Sáu lớp, một lộ trình rõ ràng</h2>
+          </div>
+          <div class="chips" id="courseChips" role="tablist" aria-label="Lọc theo độ tuổi">
+            <button class="chip on" data-age="all" role="tab" aria-selected="true">Tất cả</button>
+            <button class="chip" data-age="kid" role="tab" aria-selected="false">Trẻ em</button>
+            <button class="chip" data-age="adult" role="tab" aria-selected="false">Người lớn</button>
+          </div>
+        </div>
+        <div class="course-grid" id="courseGrid"></div>
+        <p class="note">Học phí tính theo tháng, 8 buổi. Giáo trình và sổ theo dõi tiến độ đã bao gồm.</p>
+      </div>
+    </section>
+
+    <section id="tryplay" class="tryplay">
+      <div class="wrap">
+        <div class="try-copy">
+          <span class="kicker">Thử đàn ngay trên điện thoại</span>
+          <h2>Bấm vài phím, nghe thử <em>Kìa con bướm vàng</em></h2>
+          <p>Phím sáng màu cam là nốt tiếp theo. Bé chơi trọn bài là đã quen với Đô, Rê, Mi, Fa, Son, La. Buổi học thử đầu tiên ở Cung Đàn cũng bắt đầu đúng như vậy.</p>
+          <div class="try-actions">
+            <button class="btn primary" id="playSong" type="button">Nghe cả bài</button>
+            <button class="btn ghost" id="resetSong" type="button">Chơi lại từ đầu</button>
+          </div>
+          <div class="progress" aria-live="polite"><span id="progressText">Nốt tiếp theo: Đô</span><div class="bar"><i id="progressBar"></i></div></div>
+        </div>
+        <div class="keyboard-wrap">
+          <div class="kb-photo"><img src="images/piano-keys.jpg" alt="Cận cảnh phím đàn piano đen trắng" width="1280" height="853" /></div>
+          <div class="keyboard" id="keyboard" aria-label="Bàn phím đàn mô phỏng"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fee" class="fee">
+      <div class="wrap">
+        <div class="sec-head center">
+          <span class="kicker">Học phí</span>
+          <h2>Tính học phí trong 10 giây</h2>
+          <p>Chọn nhạc cụ, hình thức và gói học. Đóng theo quý hoặc nửa năm được giảm thêm.</p>
+        </div>
+        <div class="calc">
+          <form class="calc-form" id="calcForm">
+            <fieldset>
+              <legend>Nhạc cụ</legend>
+              <div class="seg" id="segInstrument">
+                <label><input type="radio" name="ins" value="piano" checked /><span>Piano</span></label>
+                <label><input type="radio" name="ins" value="guitar" /><span>Guitar</span></label>
+                <label><input type="radio" name="ins" value="violin" /><span>Violin</span></label>
+                <label><input type="radio" name="ins" value="voice" /><span>Thanh nhạc</span></label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Hình thức</legend>
+              <div class="seg">
+                <label><input type="radio" name="mode" value="solo" checked /><span>1 kèm 1</span></label>
+                <label><input type="radio" name="mode" value="group" /><span>Nhóm 4 học viên</span></label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Số buổi mỗi tuần</legend>
+              <div class="seg">
+                <label><input type="radio" name="freq" value="1" /><span>1 buổi</span></label>
+                <label><input type="radio" name="freq" value="2" checked /><span>2 buổi</span></label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Gói đóng phí</legend>
+              <div class="seg">
+                <label><input type="radio" name="pack" value="1" checked /><span>1 tháng</span></label>
+                <label><input type="radio" name="pack" value="3" /><span>3 tháng · −5%</span></label>
+                <label><input type="radio" name="pack" value="6" /><span>6 tháng · −10%</span></label>
+              </div>
+            </fieldset>
+          </form>
+          <aside class="calc-result" aria-live="polite">
+            <div class="cr-k">Tổng học phí</div>
+            <div class="cr-total" id="crTotal">0₫</div>
+            <div class="cr-sub" id="crSub"></div>
+            <ul class="cr-list" id="crList"></ul>
+            <a class="btn primary block" href="#trial" id="crCta">Giữ suất học thử</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="path" class="path">
+      <div class="wrap">
+        <div class="path-media">
+          <img src="images/piano-vintage.jpg" alt="Phím đàn piano gỗ cũ dưới ánh sáng ấm" width="1280" height="855" />
+          <div class="badge-cert"><strong>ABRSM · Trinity</strong>Luyện thi chứng chỉ quốc tế từ cấp 1</div>
+        </div>
+        <div class="path-copy">
+          <span class="kicker">Lộ trình</span>
+          <h2>Mỗi học kỳ 16 tuần, có mục tiêu đo được</h2>
+          <ol class="levels">
+            <li><b>Làm quen</b><span>Tư thế, đọc nốt khóa Son, 3 bài nhạc thiếu nhi.</span></li>
+            <li><b>Cơ bản</b><span>Hai tay độc lập, nhịp 3/4, đệm hợp âm C–G–Am–F.</span></li>
+            <li><b>Trung cấp</b><span>Etude Czerny, Sonatine, chơi cùng nhóm hòa tấu.</span></li>
+            <li><b>Nâng cao</b><span>Luyện thi chứng chỉ, biểu diễn độc tấu trên sân khấu.</span></li>
+          </ol>
+          <div class="reasons">
+            <div><h3>Sổ tiến độ sau mỗi buổi</h3><p>Giáo viên ghi nhận xét và bài tập về nhà, gửi phụ huynh qua Zalo trước 21:00.</p></div>
+            <div><h3>Phòng tập mở cả cuối tuần</h3><p>Học viên đặt phòng tập đàn miễn phí 2 giờ mỗi tuần, khỏi lo nhà chưa có đàn.</p></div>
+            <div><h3>Biểu diễn mỗi học kỳ</h3><p>Hai lần một năm, cả lớp lên sân khấu 120 chỗ ngồi, có quay video gửi gia đình.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="reviews">
+      <div class="wrap">
+        <div class="stats">
+          <div><strong data-count="1450">1.450</strong><span>học viên đã theo học từ 2017</span></div>
+          <div><strong data-count="26">26</strong><span>giáo viên chuyên ngành</span></div>
+          <div><strong data-count="94" data-suffix="%">94%</strong><span>đỗ chứng chỉ ABRSM lần đầu</span></div>
+          <div><strong data-count="18">18</strong><span>buổi hòa nhạc học viên đã tổ chức</span></div>
+        </div>
+        <div class="sec-head">
+          <div><span class="kicker">Cảm nhận</span><h2>Phụ huynh và học viên nói gì</h2></div>
+        </div>
+        <div class="quotes">
+          <figure>
+            <blockquote>“Bé nhà mình học piano 8 tháng, giờ tự đánh được Für Elise đoạn đầu. Thích nhất là sổ nhận xét sau mỗi buổi, đọc là biết con cần tập gì.”</blockquote>
+            <figcaption><span class="av">TH</span><span><b>Chị Thu Hà</b>Mẹ bé Bông, 7 tuổi · Dịch Vọng</span></figcaption>
+          </figure>
+          <figure>
+            <blockquote>“Ba mươi hai tuổi mới học guitar, sợ chậm nhưng lớp nhóm 4 người rất thoải mái. Ba tháng đã đệm hát được cho cả nhà nghe dịp Tết.”</blockquote>
+            <figcaption><span class="av">QM</span><span><b>Anh Quang Minh</b>Kỹ sư phần mềm · Mỹ Đình</span></figcaption>
+          </figure>
+          <figure>
+            <blockquote>“Cô dạy violin rất kiên nhẫn, sửa tư thế cầm vĩ từng chút. Con được lên sân khấu biểu diễn cuối kỳ, cả nhà đi xem ai cũng xúc động.”</blockquote>
+            <figcaption><span class="av">LA</span><span><b>Chị Lan Anh</b>Mẹ bé Su, 9 tuổi · Nghĩa Đô</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="trial" class="trial">
+      <div class="trial-bg"><img src="images/piano-dark.jpg" alt="Phím đàn piano trắng trên nền tối" width="1280" height="960" /></div>
+      <div class="wrap">
+        <div class="trial-copy">
+          <span class="kicker light">Học thử miễn phí</span>
+          <h2>Một buổi 45 phút để biết con hợp nhạc cụ nào</h2>
+          <p>Giáo viên kiểm tra cảm âm, tiết tấu và độ dài ngón tay, rồi gợi ý nhạc cụ và lớp phù hợp. Không bán gói ngay tại buổi học thử.</p>
+          <ul class="ticks">
+            <li>Gọi xác nhận trong 2 giờ làm việc</li>
+            <li>Phụ huynh được ngồi dự cùng bé</li>
+            <li>Mượn đàn tại lớp, không cần mang theo</li>
+          </ul>
+        </div>
+        <form class="trial-form" id="trialForm" novalidate>
+          <h3>Giữ suất học thử</h3>
+          <label>Họ tên người đăng ký<input name="name" required placeholder="Nguyễn Thu Hà" /></label>
+          <label>Số điện thoại<input name="phone" required inputmode="tel" placeholder="09xx xxx xxx" /></label>
+          <div class="two">
+            <label>Nhạc cụ
+              <select name="ins" id="trialIns">
+                <option value="Piano">Piano</option>
+                <option value="Guitar">Guitar</option>
+                <option value="Violin">Violin</option>
+                <option value="Thanh nhạc">Thanh nhạc</option>
+                <option value="Chưa biết">Chưa biết, cần tư vấn</option>
+              </select>
+            </label>
+            <label>Độ tuổi học viên
+              <select name="age">
+                <option>4–6 tuổi</option>
+                <option selected>7–12 tuổi</option>
+                <option>13–17 tuổi</option>
+                <option>Người lớn</option>
+              </select>
+            </label>
+          </div>
+          <div class="slot-label">Khung giờ mong muốn</div>
+          <div class="slots" id="slots"></div>
+          <button class="btn primary block" type="submit">Gửi đăng ký</button>
+          <p class="form-msg" id="formMsg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="wrap">
+      <div>
+        <a class="logo" href="#top"><span>Cung <i>Đàn</i></span></a>
+        <p>Trung tâm âm nhạc Cung Đàn<br />86 Trần Thái Tông, Dịch Vọng Hậu, Cầu Giấy, Hà Nội</p>
+      </div>
+      <div><strong>Hotline / Zalo</strong><p class="phone">0912 368 586</p><p>hoc@cungdan.vn</p></div>
+      <div><strong>Giờ mở cửa</strong><p>Thứ Hai – Thứ Sáu: 14:00 – 21:00<br />Thứ Bảy – Chủ nhật: 8:00 – 20:00</p></div>
+      <div class="foot-bottom">© 2026 Cung Đàn. Mẫu website demo bởi VN Web Studio. <span>Ảnh: Pixabay</span></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "slug": "music-school-landing",
+  "brand": "Cung Đàn",
+  "industry": "Trung tâm dạy nhạc",
+  "industryEn": "Music School",
+  "summary": "Mẫu web trung tâm dạy nhạc: bàn phím piano chơi thử, tính học phí theo gói và đặt lịch học thử",
+  "summaryEn": "Music school template with a playable piano keyboard, tuition calculator by package and trial lesson booking",
+  "caption": "🎹 Mẫu website trung tâm dạy nhạc – Cung Đàn\n\nPhụ huynh tìm lớp nhạc cho con thường hỏi đi hỏi lại ba điều: học phí bao nhiêu, học những gì, có được học thử không. Website trả lời sẵn cả ba, để tư vấn viên chỉ cần chốt lịch.\n\n✔ Danh sách khóa học piano, guitar, violin, thanh nhạc có giá rõ ràng, lọc theo trẻ em hay người lớn\n✔ Bàn phím piano chơi thử ngay trên điện thoại, bé bấm theo bài Kìa con bướm vàng\n✔ Tính học phí theo nhạc cụ, hình thức học và gói 1, 3, 6 tháng\n✔ Đăng ký học thử miễn phí, chọn khung giờ còn suất\n\nInbox VN Web Studio để nhận bản demo theo thương hiệu của mình nhé.\n\n#thietkeweb #vnwebstudio #trungtamamnhac #websitegiaoduc",
+  "photos": [
+    { "id": 2276181, "file": "hero.jpg" },
+    { "id": 10046998, "file": "piano-keys.jpg" },
+    { "id": 3505109, "file": "piano-vintage.jpg" },
+    { "id": 2412400, "file": "piano-dark.jpg" }
+  ],
+  "reel": {
+    "hook": "Phụ huynh hỏi học phí? Website trả lời thay bạn",
+    "hookSay": "Đây là mẫu website trung tâm dạy nhạc Cung Đàn, có cả bàn phím piano cho bé bấm thử.",
+    "features": [
+      { "title": "Khóa học kèm giá rõ ràng", "label": "Khóa học", "say": "Sáu khóa piano, guitar, violin và thanh nhạc, ghi rõ học phí, lọc theo trẻ em hay người lớn.", "section": "#courses" },
+      { "title": "Bàn phím piano chơi thử", "label": "Thử đàn", "say": "Bé bấm phím sáng màu cam để tự chơi bài Kìa con bướm vàng ngay trên điện thoại.", "section": "#tryplay" },
+      { "title": "Tính học phí theo gói", "label": "Học phí", "say": "Chọn nhạc cụ, học một kèm một hay học nhóm, đóng ba tháng là thấy ngay số tiền tiết kiệm.", "section": "#fee" },
+      { "title": "Lộ trình bốn cấp độ", "label": "Lộ trình", "say": "Lộ trình bốn cấp độ, mỗi học kỳ có mục tiêu rõ và buổi biểu diễn cho phụ huynh.", "section": "#path" },
+      { "title": "Con số và cảm nhận", "label": "Cảm nhận", "say": "Con số thật và lời kể của phụ huynh giúp người mới yên tâm gửi con.", "section": "#reviews" },
+      { "title": "Đặt lịch học thử miễn phí", "label": "Học thử", "say": "Đăng ký học thử miễn phí, chọn khung giờ còn suất chỉ trong một phút.", "section": "#trial" }
+    ],
+    "outroSay": "Nhắn tin cho VN Web Studio để nhận bản demo mang thương hiệu trung tâm của bạn nhé."
+  }
+}
